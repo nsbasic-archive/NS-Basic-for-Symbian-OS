@@ -1,0 +1,1994 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+
+xmlns:o="urn:schemas-microsoft-com:office:office"
+
+xmlns:w="urn:schemas-microsoft-com:office:word"
+
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+
+xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+<head>
+
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+
+<meta name=ProgId content=Word.Document>
+
+<meta name=Generator content="Microsoft Word 10">
+
+<meta name=Originator content="Microsoft Word 10">
+
+<link rel=File-List href="TN20.images/filelist.xml">
+
+<link rel=Edit-Time-Data
+
+href="TN20.images/editdata.mso">
+
+<!--[if !mso]>
+
+<style>
+
+v\:* {behavior:url(#default#VML);}
+
+o\:* {behavior:url(#default#VML);}
+
+w\:* {behavior:url(#default#VML);}
+
+.shape {behavior:url(#default#VML);}
+
+</style>
+
+<![endif]-->
+
+<title>Using the Palm OS Emulator (POSE)</title>
+
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+
+ name="PlaceType"/>
+
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+
+ name="PlaceName"/>
+
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+
+ name="country-region"/>
+
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+
+ name="place"/>
+
+<!--[if gte mso 9]><xml>
+
+ <o:DocumentProperties>
+
+  <o:Author>Michael Verive</o:Author>
+
+  <o:Template>Normal</o:Template>
+
+  <o:LastAuthor>Michael Verive</o:LastAuthor>
+
+  <o:Revision>3</o:Revision>
+
+  <o:TotalTime>13</o:TotalTime>
+
+  <o:Created>2002-07-28T19:29:00Z</o:Created>
+
+  <o:LastSaved>2002-07-28T19:42:00Z</o:LastSaved>
+
+  <o:Pages>1</o:Pages>
+
+  <o:Words>1643</o:Words>
+
+  <o:Characters>9367</o:Characters>
+
+  <o:Company>www.mverive.com</o:Company>
+
+  <o:Lines>78</o:Lines>
+
+  <o:Paragraphs>21</o:Paragraphs>
+
+  <o:CharactersWithSpaces>10989</o:CharactersWithSpaces>
+
+  <o:Version>10.3501</o:Version>
+
+ </o:DocumentProperties>
+
+</xml><![endif]--><!--[if gte mso 9]><xml>
+
+ <w:WordDocument>
+
+  <w:Zoom>75</w:Zoom>
+
+  <w:SpellingState>Clean</w:SpellingState>
+
+  <w:GrammarState>Clean</w:GrammarState>
+
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+
+ </w:WordDocument>
+
+</xml><![endif]--><!--[if !mso]><object
+
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+
+<style>
+
+st1\:*{behavior:url(#ieooui) }
+
+</style>
+
+<![endif]-->
+
+<style>
+
+<!--
+
+ /* Font Definitions */
+
+ @font-face
+
+	{font-family:"MS Mincho";
+
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+
+	mso-font-charset:128;
+
+	mso-generic-font-family:modern;
+
+	mso-font-pitch:fixed;
+
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+
+@font-face
+
+	{font-family:"Gill Sans MT";
+
+	panose-1:2 11 5 2 2 1 4 2 2 3;
+
+	mso-font-charset:0;
+
+	mso-generic-font-family:swiss;
+
+	mso-font-pitch:variable;
+
+	mso-font-signature:7 0 0 0 3 0;}
+
+@font-face
+
+	{font-family:"Arial Black";
+
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+
+	mso-font-charset:0;
+
+	mso-generic-font-family:swiss;
+
+	mso-font-pitch:variable;
+
+	mso-font-signature:647 0 0 0 159 0;}
+
+@font-face
+
+	{font-family:"\@MS Mincho";
+
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+
+	mso-font-charset:128;
+
+	mso-generic-font-family:modern;
+
+	mso-font-pitch:fixed;
+
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+
+ /* Style Definitions */
+
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+
+	{mso-style-parent:"";
+
+	margin:0in;
+
+	margin-bottom:.0001pt;
+
+	mso-pagination:widow-orphan;
+
+	font-size:12.0pt;
+
+	font-family:"Times New Roman";
+
+	mso-fareast-font-family:"Times New Roman";}
+
+h1
+
+	{mso-style-next:Normal;
+
+	margin-top:12.0pt;
+
+	margin-right:0in;
+
+	margin-bottom:3.0pt;
+
+	margin-left:0in;
+
+	mso-pagination:widow-orphan;
+
+	page-break-after:avoid;
+
+	mso-outline-level:1;
+
+	font-size:16.0pt;
+
+	font-family:Arial;
+
+	mso-font-kerning:16.0pt;}
+
+h2
+
+	{mso-style-name:"Heading 2\,Heading 2 Char";
+
+	mso-style-link:"Heading 2 Char Char";
+
+	mso-style-next:Normal;
+
+	margin-top:12.0pt;
+
+	margin-right:0in;
+
+	margin-bottom:0in;
+
+	margin-left:0in;
+
+	margin-bottom:.0001pt;
+
+	mso-pagination:widow-orphan;
+
+	page-break-after:avoid;
+
+	mso-outline-level:2;
+
+	font-size:14.0pt;
+
+	mso-bidi-font-size:12.0pt;
+
+	font-family:Arial;
+
+	mso-bidi-font-family:"Times New Roman";
+
+	font-weight:normal;
+
+	font-style:italic;
+
+	mso-bidi-font-style:normal;}
+
+h3
+
+	{mso-style-next:Normal;
+
+	margin-top:12.0pt;
+
+	margin-right:0in;
+
+	margin-bottom:0in;
+
+	margin-left:0in;
+
+	margin-bottom:.0001pt;
+
+	mso-pagination:widow-orphan;
+
+	page-break-after:avoid;
+
+	mso-outline-level:3;
+
+	font-size:12.0pt;
+
+	font-family:"Arial Black";
+
+	font-weight:normal;}
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+
+	{mso-style-name:"Body Text\,Body Text Char1\,Body Text Char Char\,Body Text Char1 Char1 Char\,Body Text Char Char Char1 Char\,Body Text Char1 Char Char Char\,Body Text Char Char Char Char Char\,Body Text Char Char1";
+
+	mso-style-link:"Body Text Char1 Char\,Body Text Char Char Char\,Body Text Char1 Char1 Char Char\,Body Text Char Char Char1 Char Char\,Body Text Char1 Char Char Char Char\,Body Text Char Char Char Char Char Char\,Body Text Char Char1 Char";
+
+	margin:0in;
+
+	margin-bottom:.0001pt;
+
+	text-indent:.25in;
+
+	mso-pagination:widow-orphan;
+
+	font-size:12.0pt;
+
+	font-family:"Times New Roman";
+
+	mso-fareast-font-family:"Times New Roman";}
+
+a:link, span.MsoHyperlink
+
+	{color:blue;
+
+	text-decoration:underline;
+
+	text-underline:single;}
+
+a:visited, span.MsoHyperlinkFollowed
+
+	{color:purple;
+
+	text-decoration:underline;
+
+	text-underline:single;}
+
+span.Heading2CharChar
+
+	{mso-style-name:"Heading 2 Char Char";
+
+	mso-style-link:"Heading 2\,Heading 2 Char";
+
+	mso-ansi-font-size:14.0pt;
+
+	mso-bidi-font-size:12.0pt;
+
+	font-family:Arial;
+
+	mso-ascii-font-family:Arial;
+
+	mso-hansi-font-family:Arial;
+
+	mso-bidi-font-family:Arial;
+
+	mso-ansi-language:EN-US;
+
+	mso-fareast-language:EN-US;
+
+	mso-bidi-language:AR-SA;
+
+	font-weight:bold;
+
+	mso-bidi-font-weight:normal;
+
+	font-style:italic;
+
+	mso-bidi-font-style:normal;}
+
+span.BodyTextChar1Char
+
+	{mso-style-name:"Body Text Char1 Char\,Body Text Char Char Char\,Body Text Char1 Char1 Char Char\,Body Text Char Char Char1 Char Char\,Body Text Char1 Char Char Char Char\,Body Text Char Char Char Char Char Char\,Body Text Char Char1 Char";
+
+	mso-style-link:"Body Text\,Body Text Char1\,Body Text Char Char\,Body Text Char1 Char1 Char\,Body Text Char Char Char1 Char\,Body Text Char1 Char Char Char\,Body Text Char Char Char Char Char\,Body Text Char Char1";
+
+	mso-ansi-font-size:12.0pt;
+
+	mso-bidi-font-size:12.0pt;
+
+	mso-ansi-language:EN-US;
+
+	mso-fareast-language:EN-US;
+
+	mso-bidi-language:AR-SA;}
+
+span.NoteCharChar
+
+	{mso-style-name:"Note Char Char";
+
+	mso-style-link:"Note Char";
+
+	mso-ansi-font-size:12.0pt;
+
+	mso-bidi-font-size:12.0pt;
+
+	font-family:"Gill Sans MT";
+
+	mso-ascii-font-family:"Gill Sans MT";
+
+	mso-hansi-font-family:"Gill Sans MT";
+
+	mso-ansi-language:EN-US;
+
+	mso-fareast-language:EN-US;
+
+	mso-bidi-language:AR-SA;}
+
+p.NoteChar, li.NoteChar, div.NoteChar
+
+	{mso-style-name:"Note Char";
+
+	mso-style-link:"Note Char Char";
+
+	mso-style-next:"Body Text\,Body Text Char1\,Body Text Char Char\,Body Text Char1 Char1 Char\,Body Text Char Char Char1 Char\,Body Text Char1 Char Char Char\,Body Text Char Char Char Char Char\,Body Text Char Char1";
+
+	margin-top:12.0pt;
+
+	margin-right:.5in;
+
+	margin-bottom:12.0pt;
+
+	margin-left:.5in;
+
+	line-height:12.0pt;
+
+	mso-line-height-rule:exactly;
+
+	mso-pagination:widow-orphan;
+
+	font-size:12.0pt;
+
+	font-family:"Gill Sans MT";
+
+	mso-fareast-font-family:"Times New Roman";
+
+	mso-bidi-font-family:"Times New Roman";}
+
+p.SBBody, li.SBBody, div.SBBody
+
+	{mso-style-name:"SB Body";
+
+	margin:0in;
+
+	margin-bottom:.0001pt;
+
+	mso-pagination:widow-orphan;
+
+	font-size:12.0pt;
+
+	font-family:Arial;
+
+	mso-fareast-font-family:"Times New Roman";
+
+	mso-bidi-font-family:"Times New Roman";}
+
+p.Tip, li.Tip, div.Tip
+
+	{mso-style-name:Tip;
+
+	mso-style-parent:"Note Char";
+
+	mso-style-next:"Body Text\,Body Text Char1\,Body Text Char Char\,Body Text Char1 Char1 Char\,Body Text Char Char Char1 Char\,Body Text Char1 Char Char Char\,Body Text Char Char Char Char Char\,Body Text Char Char1";
+
+	margin-top:12.0pt;
+
+	margin-right:.5in;
+
+	margin-bottom:0in;
+
+	margin-left:.5in;
+
+	margin-bottom:.0001pt;
+
+	line-height:150%;
+
+	mso-pagination:widow-orphan;
+
+	font-size:9.0pt;
+
+	mso-bidi-font-size:12.0pt;
+
+	font-family:"Gill Sans MT";
+
+	mso-fareast-font-family:"Times New Roman";
+
+	mso-bidi-font-family:"Times New Roman";}
+
+span.SpellE
+
+	{mso-style-name:"";
+
+	mso-spl-e:yes;}
+
+span.GramE
+
+	{mso-style-name:"";
+
+	mso-gram-e:yes;}
+
+@page Section1
+
+	{size:8.5in 11.0in;
+
+	margin:1.0in 1.25in 1.0in 1.25in;
+
+	mso-header-margin:.5in;
+
+	mso-footer-margin:.5in;
+
+	mso-paper-source:0;}
+
+div.Section1
+
+	{page:Section1;}
+
+-->
+
+</style>
+
+<!--[if gte mso 10]>
+
+<style>
+
+ /* Style Definitions */
+
+ table.MsoNormalTable
+
+	{mso-style-name:"Table Normal";
+
+	mso-tstyle-rowband-size:0;
+
+	mso-tstyle-colband-size:0;
+
+	mso-style-noshow:yes;
+
+	mso-style-parent:"";
+
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+
+	mso-para-margin:0in;
+
+	mso-para-margin-bottom:.0001pt;
+
+	mso-pagination:widow-orphan;
+
+	font-size:10.0pt;
+
+	font-family:"Times New Roman";}
+
+</style>
+
+<![endif]--><!--[if gte mso 9]><xml>
+
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+
+</xml><![endif]--><!--[if gte mso 9]><xml>
+
+ <o:shapelayout v:ext="edit">
+
+  <o:idmap v:ext="edit" data="1"/>
+
+ </o:shapelayout></xml><![endif]-->
+
+</head>
+
+
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+
+
+<div class=Section1>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=478>
+
+<TR><TD WIDTH="22%" VALIGN="TOP">
+
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+
+<TD WIDTH="78%" VALIGN="TOP">
+
+<B><FONT FACE="Helvetica" SIZE=5>
+
+      <P>Tech Note 20: Using the Palm OS Emulator (POSE)</P>
+
+      <P>April 02, 2003</P>
+
+</FONT><FONT FACE="Helvetica" SIZE=4><P>&nbsp;</P>
+
+</FONT></B></TD>
+
+</TR>
+
+</TABLE>
+
+
+
+<HR>
+There is also a good tutorial on <A HREF="http://oasis.palm.com/dev/kb/papers/1311.cfm">Palmsource's web site</A>.
+<br><br><BR><BR>
+
+<p class=MsoNormal align=center style='text-align:center'><i style='mso-bidi-font-style:
+
+normal'>(<span class=GramE>adapted</span> from &quot;<a
+
+href="http://www.nsbasicprogrammingforpalmos.com/">NS Basic Programming for
+
+Palm OS</a>&quot;, by Michael J. Verive)<o:p></o:p></i></p>
+
+
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>NS Basic doesn't contain
+
+its own embedded Palm emulator or debugger, but instead uses the Palm OS Emulator,
+
+commonly known as POSE</span><!--[if supportFields]><span style='font-size:
+
+10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>.<span style='mso-spacerun:yes'>  </span>By using
+
+POSE, NS Basic allows you to test your applications using a wide variety of OS
+
+versions.<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText align=center style='text-align:center'><span
+
+style='font-size:10.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+
+ filled="f" stroked="f">
+
+ <v:stroke joinstyle="miter"/>
+
+ <v:formulas>
+
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+
+  <v:f eqn="sum @0 1 0"/>
+
+  <v:f eqn="sum 0 0 @1"/>
+
+  <v:f eqn="prod @2 1 2"/>
+
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+
+  <v:f eqn="sum @0 0 1"/>
+
+  <v:f eqn="prod @6 1 2"/>
+
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+
+  <v:f eqn="sum @8 21600 0"/>
+
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+
+  <v:f eqn="sum @10 21600 0"/>
+
+ </v:formulas>
+
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+
+ <o:lock v:ext="edit" aspectratio="t"/>
+
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:159pt;
+
+ height:243pt' o:bordertopcolor="this" o:borderleftcolor="this"
+
+ o:borderbottomcolor="this" o:borderrightcolor="this">
+
+ <v:imagedata src="TN20.images/image001.png"
+
+  o:title="MJVF1816"/>
+
+ <v:shadow on="t" opacity=".5" offset="6pt,6pt"/>
+
+ <w:bordertop type="single" width="4"/>
+
+ <w:borderleft type="single" width="4"/>
+
+ <w:borderbottom type="single" width="4"/>
+
+ <w:borderright type="single" width="4"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=222 height=334
+
+src="TN20.images/image002.gif" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>If you want to experiment
+
+with different device ROM</span><!--[if supportFields]><span style='font-size:
+
+10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>'s, you will need to either download your own device's
+
+ROM (using a serial cable and the &quot;ROM Transfer&quot; app that comes with
+
+POSE) or get ROM's from Palm, Inc. (or your device's manufacturer). From Palm,
+
+Inc.'s web site at <a href="http://www.palmos.com/dev/tools/emulator/">www.palmos.com/dev/tools/emulator/</a>:<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><span
+
+style='font-size:9.0pt'><span style='mso-spacerun:yes'> </span>&quot;For legal
+
+reasons, you must sign an agreement with Palm Inc. to download ROM images. To
+
+obtain the agreement, you must be a member of the Palm OS Developer Program.
+
+After joining that program, we recommend that you also join the Developer
+
+Seeding Program, which requires that you return a signed agreement to us. This
+
+allows you to access pre-release ROM images and other valuable tools. If you
+
+are based in the </span><st1:country-region><st1:place><span style='font-size:
+
+  9.0pt'>USA</span></st1:place></st1:country-region><span style='font-size:
+
+9.0pt'>, you may also obtain images using a &quot;<span class=SpellE>clickwrap</span>&quot;
+
+agreement that does not require a signed agreement.&quot;<span
+
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>I couldn't have said it any
+
+better.<o:p></o:p></span></p>
+
+
+
+<h3><a name="_Toc5216083"></a><a name="_Toc5215820"></a><a name="_Toc3993354"><span
+
+style='mso-bookmark:_Toc5215820'><span style='mso-bookmark:_Toc5216083'><span
+
+style='font-size:10.0pt'>Installing POSE</span></span></span></a><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> is normally installed with the NSBasic for Palm
+
+installation, and should exist in your NSBasic Tools directory (by default at
+
+c:\nsbasic\tools).<span style='mso-spacerun:yes'>  </span>If you are installing
+
+POSE from the zipped archive, extract the emulator files into a new directory
+
+(I'd call it &quot;POSE&quot;, but you can use whatever name you'd like).<span
+
+style='mso-spacerun:yes'>  </span>Create a subdirectory named &quot;Skins&quot;
+
+within this directory, and extract the skin files here.<span
+
+style='mso-spacerun:yes'>  </span>This directory MUST be named
+
+&quot;Skins&quot;, and the skin files MUST be in this directory, in order for
+
+POSE to find them.<span style='mso-spacerun:yes'>  </span>Note that when you
+
+attempt to extract the skins, they will go to their previously stored directory
+
+names unless you tell your uninstaller (I use WinZip ñ you can get the latest
+
+version at www.winzip.com) to ignore the directory names.<span
+
+style='mso-spacerun:yes'>  </span>If you forget this step, and POSE always
+
+starts with the default &quot;generic&quot; skin, look at the &quot;Skins&quot;
+
+directory, and you'll probably see another directory within it that contains
+
+the skins.<span style='mso-spacerun:yes'>  </span>Move the skins to the
+
+&quot;Skins&quot; directory, and everything should work appropriately.<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>These skins aren't merely
+
+close approximations ñ they have the exact look <i style='mso-bidi-font-style:
+
+normal'>and feel</i> of the real Palm devices, like this PalmIIIc: <o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText align=center style='text-align:center'><span
+
+style='font-size:10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+
+ style='width:167.25pt;height:263.25pt' o:bordertopcolor="this"
+
+ o:borderleftcolor="this" o:borderbottomcolor="this" o:borderrightcolor="this">
+
+ <v:imagedata src="TN20.images/image003.png"
+
+  o:title="MJVF1817"/>
+
+ <v:shadow on="t" opacity=".5" offset="6pt,6pt"/>
+
+ <w:bordertop type="single" width="4"/>
+
+ <w:borderleft type="single" width="4"/>
+
+ <w:borderbottom type="single" width="4"/>
+
+ <w:borderright type="single" width="4"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=233 height=361
+
+src="TN20.images/image004.gif" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+
+
+
+<p class=NoteChar><span class=NoteCharChar><b style='mso-bidi-font-weight:normal'><span
+
+style='mso-bidi-font-size:10.0pt;mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></b></span></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><b style='mso-bidi-font-weight:
+
+normal'><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:
+
+"Gill Sans MT";mso-fareast-font-family:"MS Mincho"'><!--[if gte vml 1]><v:shape
+
+ id="_x0000_i1027" type="#_x0000_t75" style='width:38.25pt;height:15.75pt'>
+
+ <v:imagedata src="TN20.images/image005.png"
+
+  o:title="NOTE"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=21
+
+src="TN20.images/image018.jpg" v:shapes="_x0000_i1027"><![endif]><span
+
+class=NoteCharChar><span style='mso-ansi-font-size:9.0pt;mso-bidi-font-size:
+
+10.0pt'><span style='mso-spacerun:yes'> </span></span></span></span></b><span
+
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'><span
+
+style='mso-spacerun:yes'> </span>OK ñ I lied ñ the skins don't <i
+
+style='mso-bidi-font-style:normal'>really</i> make POSE</span><!--[if supportFields]><span
+
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'><span style='mso-element:
+
+field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'><span style='mso-element:
+
+field-end'></span></span><![endif]--><span style='font-size:9.0pt;mso-bidi-font-size:
+
+10.0pt'> <i style='mso-bidi-font-style:normal'>feel</i> like the actual
+
+device.<span style='mso-spacerun:yes'>  </span>But they do look impressive!</span><span
+
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<h3><a name="_Toc5216084"></a><a name="_Toc5215821"></a><a name="_Toc3993355"><span
+
+style='mso-bookmark:_Toc5215821'><span style='mso-bookmark:_Toc5216084'><span
+
+style='font-size:10.0pt'>Using POSE</span></span></span></a><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993355'><span style='mso-bookmark:_Toc5215821'><span
+
+style='mso-bookmark:_Toc5216084'></span></span></span><span style='mso-element:
+
+field-begin'></span><span style='mso-bookmark:_Toc3993355'><span
+
+style='mso-bookmark:_Toc5215821'><span style='mso-bookmark:_Toc5216084'></span></span></span><![endif]--><span
+
+style='mso-bookmark:_Toc3993355'><span style='mso-bookmark:_Toc5215821'><span
+
+style='mso-bookmark:_Toc5216084'></span></span></span><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993355'><span style='mso-bookmark:_Toc5215821'><span
+
+style='mso-bookmark:_Toc5216084'></span></span></span><span style='mso-element:
+
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc3993355'><span
+
+style='mso-bookmark:_Toc5215821'><span style='mso-bookmark:_Toc5216084'></span></span></span><span
+
+style='mso-bookmark:_Toc3993355'><span style='mso-bookmark:_Toc5215821'><span
+
+style='mso-bookmark:_Toc5216084'><span style='font-size:10.0pt'> with your
+
+device's ROM</span></span></span></span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>As previously mentioned,
+
+POSE</span><!--[if supportFields]><span style='font-size:10.0pt'><span
+
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> doesn't ship with any ROMs.<span
+
+style='mso-spacerun:yes'>  </span>However, it does come with a ROM</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> Transfer app that you can load to your Palm device,
+
+and use it to transfer a copy of your ROM to your hard drive (currently this
+
+only works with devices with a serial cradle, but as more and more devices use
+
+USB, this may change by the time you read this).<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>To transfer the ROM</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>, start POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> on your desktop computer, then with POSE running,
+
+right-click on POSE, and select &quot;Transfer ROM&quot;.<span
+
+style='mso-spacerun:yes'>  </span>Follow the directions step by step, and
+
+within a few minutes you should have your ROM downloaded and ready to use.<o:p></o:p></span></p>
+
+
+
+<h3><a name="_Toc5216085"></a><a name="_Toc5215822"></a><a name="_Toc3993356"><span
+
+style='mso-bookmark:_Toc5215822'><span style='mso-bookmark:_Toc5216085'><span
+
+style='font-size:10.0pt'>Using POSE</span></span></span></a><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993356'><span style='mso-bookmark:_Toc5215822'><span
+
+style='mso-bookmark:_Toc5216085'></span></span></span><span style='mso-element:
+
+field-begin'></span><span style='mso-bookmark:_Toc3993356'><span
+
+style='mso-bookmark:_Toc5215822'><span style='mso-bookmark:_Toc5216085'></span></span></span><![endif]--><span
+
+style='mso-bookmark:_Toc3993356'><span style='mso-bookmark:_Toc5215822'><span
+
+style='mso-bookmark:_Toc5216085'></span></span></span><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993356'><span style='mso-bookmark:_Toc5215822'><span
+
+style='mso-bookmark:_Toc5216085'></span></span></span><span style='mso-element:
+
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc3993356'><span
+
+style='mso-bookmark:_Toc5215822'><span style='mso-bookmark:_Toc5216085'></span></span></span><span
+
+style='mso-bookmark:_Toc3993356'><span style='mso-bookmark:_Toc5215822'><span
+
+style='mso-bookmark:_Toc5216085'><span style='font-size:10.0pt'> with NS Basic</span></span></span></span><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>Although you can run POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> from within NS Basic, and have NS Basic automatically
+
+load and run your applications after they are compiled, I personally prefer to
+
+have POSE running in one window, the NS Basic IDE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> in a second window, and a third window open to the NS
+
+Basic download directory.<span style='mso-spacerun:yes'>  </span>I set the
+
+compile options to neither download to POSE nor install to device ñ I prefer to
+
+install the applications into POSE myself.<span style='mso-spacerun:yes'> 
+
+</span>Navigating among the windows is only a few keystrokes or mouse clicks
+
+away, and loading an app into POSE is easily accomplished by dragging its PRC
+
+into POSE (as long as POSE isn't currently running the app).<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>That's enough talking about
+
+POSE</span><!--[if supportFields]><span style='font-size:10.0pt'><span
+
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> ñ let's walk through the steps and get POSE
+
+running.<span style='mso-spacerun:yes'>  </span>If you haven't installed POSE
+
+yet, now would be a good time to do so.<o:p></o:p></span></p>
+
+
+
+<h3><a name="_Toc5216086"></a><a name="_Toc5215823"></a><a name="_Toc3993357"><span
+
+style='mso-bookmark:_Toc5215823'><span style='mso-bookmark:_Toc5216086'><span
+
+style='font-size:10.0pt'>Running POSE</span></span></span></a><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993357'><span style='mso-bookmark:_Toc5215823'><span
+
+style='mso-bookmark:_Toc5216086'></span></span></span><span style='mso-element:
+
+field-begin'></span><span style='mso-bookmark:_Toc3993357'><span
+
+style='mso-bookmark:_Toc5215823'><span style='mso-bookmark:_Toc5216086'></span></span></span><![endif]--><span
+
+style='mso-bookmark:_Toc3993357'><span style='mso-bookmark:_Toc5215823'><span
+
+style='mso-bookmark:_Toc5216086'></span></span></span><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993357'><span style='mso-bookmark:_Toc5215823'><span
+
+style='mso-bookmark:_Toc5216086'></span></span></span><span style='mso-element:
+
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc3993357'><span
+
+style='mso-bookmark:_Toc5215823'><span style='mso-bookmark:_Toc5216086'></span></span></span><span
+
+style='mso-bookmark:_Toc3993357'><span style='mso-bookmark:_Toc5215823'><span
+
+style='mso-bookmark:_Toc5216086'><span style='font-size:10.0pt'> for the first
+
+time</span></span></span></span><span style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>To make running POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> as simple as possible, I prefer to have a shortcut to
+
+POSE on my desktop.<span style='mso-spacerun:yes'>  </span>You can do this
+
+easily by locating the Emulator.exe file (again, usually in the
+
+c:\nsbasic\tools directory), then right-clicking on the file, and dragging it
+
+to the desktop.<span style='mso-spacerun:yes'>  </span>Windows</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+
+style='mso-spacerun:yes'>  </span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span>will ask you if
+
+you want to copy, move, or create a shortcut ñ choose the shortcut.<span
+
+style='mso-spacerun:yes'>  </span>Then, when you want to run POSE, just
+
+double-click on the shortcut, and you're in business.<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>Before POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> will actually run, you'll need to give it a ROM</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>.<span style='mso-spacerun:yes'>  </span>The first
+
+time you attempt to run POSE, you will be asked to select a few different
+
+options, including starting a new session. <o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText align=center style='text-align:center'><span
+
+style='font-size:10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+
+ style='width:264.75pt;height:134.25pt'>
+
+ <v:imagedata src="TN20.images/image007.png"
+
+  o:title=""/>
+
+ <v:shadow on="t" opacity=".5" offset="6pt,6pt"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=361 height=187
+
+src="TN20.images/image008.gif" v:shapes="_x0000_i1028"><![endif]><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><span
+
+style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>Click &quot;New&quot;, and
+
+select a Palm ROM</span><!--[if supportFields]><span style='font-size:10.0pt'><span
+
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> (the ROM from your device, if you used the ROM
+
+Transfer application, or a ROM from Palm, Handspring, or other manufacturer)
+
+for your POSE</span><!--[if supportFields]><span style='font-size:10.0pt'><span
+
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> session.<span style='mso-spacerun:yes'>  </span>You
+
+should see POSE display the Palm startup screen</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>, then the Prefs screen.<span
+
+style='mso-spacerun:yes'>  </span>Click on the application launcher &quot;silk
+
+screen&quot; button, and you should see the familiar Palm screen with
+
+application icons.<span style='mso-spacerun:yes'>  </span>You're in business!<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><b style='mso-bidi-font-weight:
+
+normal'><span style='font-size:9.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+
+ type="#_x0000_t75" style='width:38.25pt;height:15.75pt'>
+
+ <v:imagedata src="TN20.images/image009.png"
+
+  o:title="Tip"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=21
+
+src="TN20.images/image010.jpg" v:shapes="_x0000_i1029"><![endif]><span
+
+style='mso-spacerun:yes'> </span></span></b><span style='font-size:9.0pt'>You
+
+don't <i style='mso-bidi-font-style:normal'>really</i> want to go through all
+
+these steps each time, do you?<span style='mso-spacerun:yes'>  </span>Before
+
+going any further, right click on POSE</span><!--[if supportFields]><span
+
+style='font-size:9.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:9.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:9.0pt'>, select &quot;Save&quot;, and save your POSE session
+
+(as an Emulator Session File, with a .psf extension).<span
+
+style='mso-spacerun:yes'>  </span>You can then directly run POSE with this ROM</span><!--[if supportFields]><span
+
+style='font-size:9.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:9.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:9.0pt'> by selecting this session file.<span
+
+style='mso-spacerun:yes'>  </span>Later, when you have applications installed
+
+into POSE, you can save additional session files, effectively saving different
+
+Palm &quot;devices&quot;, each with different applications installed.<span
+
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><span
+
+style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<h3><a name="_Toc5216087"></a><a name="_Toc5215824"></a><a name="_Toc3993358"><span
+
+style='mso-bookmark:_Toc5215824'><span style='mso-bookmark:_Toc5216087'><span
+
+style='font-size:10.0pt'>Installing applications and databases into POSE</span></span></span></a><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>As I briefly mentioned
+
+earlier, you can install applications and databases into POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> by dragging them into POSE while it's running, or by
+
+right-clicking on POSE, and selecting the &quot;Install
+
+Application/Database&quot; option (remember, these PRC and PDB</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> files must be in Palm format ñ don't just drag an
+
+Access database</span><!--[if supportFields]><span style='font-size:10.0pt'><span
+
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> or Word document into POSE and expect them to
+
+load).<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<h3><a name="_Toc5216088"></a><a name="_Toc5215825"></a><a name="_Toc3993359"><span
+
+style='mso-bookmark:_Toc5215825'><span style='mso-bookmark:_Toc5216088'><span
+
+style='font-size:10.0pt'>Automatically loading applications and databases into
+
+POSE</span></span></span></a><!--[if supportFields]><span style='font-size:
+
+10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>If there are PDB</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>'s or PRC's that you always want to load each time you
+
+run POSE</span><!--[if supportFields]><span style='font-size:10.0pt'><span
+
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> or the NS Basic emulator, create a subdirectory named
+
+<span class=SpellE>AutoLoad</span> in the directory that contains POSE or the
+
+NS Basic emulator (this will usually be c:\NS Basic\tools).<span
+
+style='mso-spacerun:yes'>  </span>Any PDB or PRC file in this <span
+
+class=SpellE>AutoLoad</span></span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span> XE
+
+&quot;AutoLoad&quot; </span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span>directory will
+
+be loaded automatically.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><b style='mso-bidi-font-weight:
+
+normal'><span style='font-size:9.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+
+ type="#_x0000_t75" style='width:38.25pt;height:15.75pt'>
+
+ <v:imagedata src="TN20.images/image011.png"
+
+  o:title="CAUTION"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=21
+
+src="TN20.images/image019.jpg" v:shapes="_x0000_i1030"><![endif]><span
+
+style='mso-spacerun:yes'> </span></span></b><span style='font-size:9.0pt'>This
+
+can be a blessing or a curse, since you can easily forget to include these
+
+files with your applications for distribution!<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<h3><a name="_Toc5216089"></a><a name="_Toc5215826"></a><a name="_Toc3993360"><span
+
+style='mso-bookmark:_Toc5215826'><span style='mso-bookmark:_Toc5216089'><span
+
+style='font-size:10.0pt'>Exporting applications and databases from POSE</span></span></span></a><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>Exporting databases and
+
+applications from POSE</span><!--[if supportFields]><span style='font-size:
+
+10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> is a different story, however - you can't simply drag
+
+databases and applications from POSE to your Windows</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+
+style='mso-spacerun:yes'>  </span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span>desktop.<span
+
+style='mso-spacerun:yes'>  </span>Instead, to export from POSE, right click on
+
+POSE while it's running, and select the &quot;Export database</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>&quot; option.<span style='mso-spacerun:yes'> 
+
+</span>You can export any of the existing Palm applications or databases.<span
+
+style='mso-spacerun:yes'>  </span>This makes it easy for you to use your NS
+
+Basic applications to create databases within POSE, <span class=GramE>then</span>
+
+you can export the databases to share with other users.<span
+
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><b style='mso-bidi-font-weight:
+
+normal'><span style='font-size:9.0pt;font-family:"Gill Sans MT";mso-fareast-font-family:
+
+"MS Mincho"'><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+
+ style='width:38.25pt;height:15.75pt'>
+
+ <v:imagedata src="TN20.images/image005.png"
+
+  o:title="NOTE"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=21
+
+src="TN20.images/image018.jpg" v:shapes="_x0000_i1031"><![endif]></span></b><span
+
+style='font-size:9.0pt'><span style='mso-spacerun:yes'> </span>You can also use
+
+the POSE dbexport application (load the <span class=SpellE>posedbexport.prc</span>
+
+file into the emulator) to export any of the RAM-based databases on the
+
+emulator.<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<h3><a name="_Toc5216090"></a><a name="_Toc5215827"></a><a name="_Toc3993361"><span
+
+style='mso-bookmark:_Toc5215827'><span style='mso-bookmark:_Toc5216090'><span
+
+style='font-size:10.0pt'>POSE</span></span></span></a><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993361'><span style='mso-bookmark:_Toc5215827'><span
+
+style='mso-bookmark:_Toc5216090'></span></span></span><span style='mso-element:
+
+field-begin'></span><span style='mso-bookmark:_Toc3993361'><span
+
+style='mso-bookmark:_Toc5215827'><span style='mso-bookmark:_Toc5216090'></span></span></span><![endif]--><span
+
+style='mso-bookmark:_Toc3993361'><span style='mso-bookmark:_Toc5215827'><span
+
+style='mso-bookmark:_Toc5216090'></span></span></span><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993361'><span style='mso-bookmark:_Toc5215827'><span
+
+style='mso-bookmark:_Toc5216090'></span></span></span><span style='mso-element:
+
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc3993361'><span
+
+style='mso-bookmark:_Toc5215827'><span style='mso-bookmark:_Toc5216090'></span></span></span><span
+
+style='mso-bookmark:_Toc3993361'><span style='mso-bookmark:_Toc5215827'><span
+
+style='mso-bookmark:_Toc5216090'><span style='font-size:10.0pt'> Error messages
+
+and debugging options</span></span></span></span><span style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> is a great tool, and you'll be tempted to assume that
+
+an application that runs on POSE will run on the actual Palm device.<span
+
+style='mso-spacerun:yes'>  </span>While I haven't found many exceptions to
+
+this, it's always possible that the actual device will behave differently than
+
+POSE.<span style='mso-spacerun:yes'>  </span>Actually, POSE is much more strict
+
+and unforgiving that the actual Palm devices, and will surprise you from time
+
+to time with very strange error messages.<span style='mso-spacerun:yes'> 
+
+</span>While many of these messages can be ignored, it's essential to test your
+
+applications on real devices before distributing them.<span
+
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>With POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> 3.4, you have considerable control over just how
+
+strict POSE is with how applications behave, and can tailor the error reporting
+
+to your needs.<span style='mso-spacerun:yes'>  </span>Right click on POSE,
+
+select &quot;Settings&quot;, &quot;Debugging...&quot;, and you'll see numerous
+
+Debug Options:<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText align=center style='text-align:center'><span
+
+style='font-size:10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+
+ style='width:318.75pt;height:122.25pt' o:bordertopcolor="this"
+
+ o:borderleftcolor="this" o:borderbottomcolor="this" o:borderrightcolor="this">
+
+ <v:imagedata src="TN20.images/image013.png"
+
+  o:title=""/>
+
+ <v:shadow on="t" opacity=".5" offset="6pt,6pt"/>
+
+ <w:bordertop type="single" width="4"/>
+
+ <w:borderleft type="single" width="4"/>
+
+ <w:borderbottom type="single" width="4"/>
+
+ <w:borderright type="single" width="4"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=435 height=173
+
+src="TN20.images/image020.gif" v:shapes="_x0000_i1032"><![endif]><o:p></o:p></span></p>
+
+
+
+<p class=Tip><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:
+
+9.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+
+
+
+<p class=SBBody style='margin-top:0in;margin-right:.5in;margin-bottom:0in;
+
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'><b style='mso-bidi-font-weight:
+
+normal'><span style='font-size:9.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1033"
+
+ type="#_x0000_t75" style='width:38.25pt;height:15.75pt'>
+
+ <v:imagedata src="TN20.images/image009.png"
+
+  o:title="Tip"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=21
+
+src="TN20.images/image010.jpg" v:shapes="_x0000_i1033"><![endif]><span
+
+style='mso-spacerun:yes'> </span></span></b><span style='font-size:9.0pt'>For
+
+most NS Basic applications, you can safely avoid common, &quot;ignorable&quot;
+
+errors by <span class=SpellE>unchecking</span> the &quot;<span class=SpellE>MemMgr</span>
+
+</span><u><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>D</span></u><span
+
+style='font-size:9.0pt'>ata Access&quot;, &quot;</span><span class=SpellE><u><span
+
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>O</span></u><span
+
+style='font-size:9.0pt'>ffscreen</span></span><span style='font-size:9.0pt'>
+
+Form Object&quot;, and &quot;<span class=SpellE>U<u><span style='mso-bidi-font-size:
+
+10.0pt'>I</span></u>Mgr</span> Data Access&quot; options.<span
+
+style='mso-spacerun:yes'>  </span>These errors don't occur on the actual Palm
+
+OS devices, so having POSE</span><!--[if supportFields]><span style='font-size:
+
+9.0pt;mso-bidi-font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'><span style='mso-element:
+
+field-end'></span></span><![endif]--><span style='font-size:9.0pt'> ignore
+
+these errors can speed up your debugging process considerably, allowing you to
+
+focus on &quot;real&quot; errors.<o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<h3><a name="_Toc5216091"></a><a name="_Toc5215828"></a><a name="_Toc3993362"><span
+
+style='mso-bookmark:_Toc5215828'><span style='mso-bookmark:_Toc5216091'><span
+
+style='font-size:10.0pt'>Letting POSE</span></span></span></a><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993362'><span style='mso-bookmark:_Toc5215828'><span
+
+style='mso-bookmark:_Toc5216091'></span></span></span><span style='mso-element:
+
+field-begin'></span><span style='mso-bookmark:_Toc3993362'><span
+
+style='mso-bookmark:_Toc5215828'><span style='mso-bookmark:_Toc5216091'></span></span></span><![endif]--><span
+
+style='mso-bookmark:_Toc3993362'><span style='mso-bookmark:_Toc5215828'><span
+
+style='mso-bookmark:_Toc5216091'></span></span></span><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993362'><span style='mso-bookmark:_Toc5215828'><span
+
+style='mso-bookmark:_Toc5216091'></span></span></span><span style='mso-element:
+
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc3993362'><span
+
+style='mso-bookmark:_Toc5215828'><span style='mso-bookmark:_Toc5216091'></span></span></span><span
+
+style='mso-bookmark:_Toc3993362'><span style='mso-bookmark:_Toc5215828'><span
+
+style='mso-bookmark:_Toc5216091'><span style='font-size:10.0pt'> be your first
+
+beta tester</span></span></span></span><span style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>When you get around to
+
+experimenting with POSE</span><!--[if supportFields]><span style='font-size:
+
+10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>, you'll come upon gremlins.<span
+
+style='mso-spacerun:yes'>  </span>I swear to you that I didn't make this
+
+up!<span style='mso-spacerun:yes'>  </span>Right click on POSE, and you'll see
+
+&quot;Gremlins&quot;.<span style='mso-spacerun:yes'>  </span>Basically,
+
+Gremlins are best thought of as tireless users who try to enter any kind of
+
+information in any field, tap and scroll anywhere ñ in short, <i
+
+style='mso-bidi-font-style:normal'>really nasty beta testers</i>.<span
+
+style='mso-spacerun:yes'>  </span>If you select &quot;Gremlins</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span> XE
+
+ìGremlins&quot; </span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>&quot;, &quot;New&quot; you'll be given the chance to
+
+create a New Gremlin Horde (<span class=SpellE>POSE's</span> nomenclature, not
+
+mine!) that will run any application or group of applications.<span
+
+style='mso-spacerun:yes'>  </span>You can also determine how many times to run
+
+each app, and how to log the different events, errors, and activities that
+
+might occur.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText align=center style='text-align:center'><span
+
+style='font-size:10.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+
+ style='width:251.25pt;height:315pt' o:bordertopcolor="this" o:borderleftcolor="this"
+
+ o:borderbottomcolor="this" o:borderrightcolor="this">
+
+ <v:imagedata src="TN20.images/image015.png"
+
+  o:title="MJVF1819"/>
+
+ <v:shadow on="t" opacity=".5" offset="6pt,6pt"/>
+
+ <w:bordertop type="single" width="4"/>
+
+ <w:borderleft type="single" width="4"/>
+
+ <w:borderbottom type="single" width="4"/>
+
+ <w:borderright type="single" width="4"/>
+
+</v:shape><![endif]--><![if !vml]><img border=0 width=345 height=430
+
+src="TN20.images/image016.gif" v:shapes="_x0000_i1034"><![endif]><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>I strongly suggest that you
+
+use Gremlins to test your software ñ not in place of beta testers, but to
+
+complement them.<span style='mso-spacerun:yes'>  </span>POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> has many, many options ñ so many that you can easily
+
+get overwhelmed.<span style='mso-spacerun:yes'>  </span>Relax, only try one new
+
+technique at a time, and you'll do just fine.<o:p></o:p></span></p>
+
+
+
+<h3><a name="_Toc5216092"></a><a name="_Toc5215829"></a><a name="_Toc3993363"><span
+
+style='mso-bookmark:_Toc5215829'><span style='mso-bookmark:_Toc5216092'><span
+
+style='font-size:10.0pt'>HotSyncing POSE</span></span></span></a><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>You can even HotSync</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> your POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'> session as though it were a really device, although
+
+it's a little tricky (and slow!).<span style='mso-spacerun:yes'>  </span>Here's
+
+one method, using two serial ports on your Windows</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+
+style='mso-spacerun:yes'>  </span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span>machine that's
+
+running POSE.<span style='mso-spacerun:yes'>  </span>One should be already set
+
+up to run HotSync.<span style='mso-spacerun:yes'>  </span>In order to allow
+
+POSE to HotSync on this machine, right click on POSE, select
+
+&quot;Settings&quot;, &quot;Properties&quot;, and under &quot;</span><st1:place><st1:PlaceName><span
+
+  style='font-size:10.0pt'>Serial</span></st1:PlaceName><span style='font-size:
+
+ 10.0pt'> </span><st1:PlaceType><span style='font-size:10.0pt'>Port</span></st1:PlaceType></st1:place><span
+
+style='font-size:10.0pt'>&quot;, select the other serial port for POSE to
+
+use.<span style='mso-spacerun:yes'>  </span>Connect the two ports through the
+
+use of a null <span class=GramE>modem,</span> and with HotSync and POSE both
+
+running, select &quot;HotSync&quot; from the &quot;System&quot; group on
+
+POSE.<span style='mso-spacerun:yes'>  </span>You should see the familiar
+
+HotSync dialog, and will be prompted for the user name if you haven't already
+
+wet it up through the same &quot;Settings&quot;, &quot;Properties&quot; option
+
+in POSE.<span style='mso-spacerun:yes'>  </span>HotSync will be much slower
+
+when running on the same machine as POSE, but you can speed it up by making
+
+sure that POSE is the &quot;foreground&quot; application, with HotSync running
+
+in the background.<o:p></o:p></span></p>
+
+
+
+<h3><a name="_Toc5216093"></a><a name="_Toc5215830"></a><a name="_Toc3993364"><span
+
+style='mso-bookmark:_Toc5215830'><span style='mso-bookmark:_Toc5216093'><span
+
+style='font-size:10.0pt'>Quitting your POSE</span></span></span></a><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993364'><span style='mso-bookmark:_Toc5215830'><span
+
+style='mso-bookmark:_Toc5216093'></span></span></span><span style='mso-element:
+
+field-begin'></span><span style='mso-bookmark:_Toc3993364'><span
+
+style='mso-bookmark:_Toc5215830'><span style='mso-bookmark:_Toc5216093'></span></span></span><![endif]--><span
+
+style='mso-bookmark:_Toc3993364'><span style='mso-bookmark:_Toc5215830'><span
+
+style='mso-bookmark:_Toc5216093'></span></span></span><!--[if supportFields]><span
+
+style='mso-bookmark:_Toc3993364'><span style='mso-bookmark:_Toc5215830'><span
+
+style='mso-bookmark:_Toc5216093'></span></span></span><span style='mso-element:
+
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc3993364'><span
+
+style='mso-bookmark:_Toc5215830'><span style='mso-bookmark:_Toc5216093'></span></span></span><span
+
+style='mso-bookmark:_Toc3993364'><span style='mso-bookmark:_Toc5215830'><span
+
+style='mso-bookmark:_Toc5216093'><span style='font-size:10.0pt'> session</span></span></span></span><span
+
+style='font-size:10.0pt'><o:p></o:p></span></h3>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>Before I go, I should
+
+probably tell you how to exit POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>, since it doesn't have the same Windows</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+
+style='mso-spacerun:yes'>  </span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'><span style='mso-spacerun:yes'> </span>interface that
+
+you're accustomed to.<span style='mso-spacerun:yes'>  </span>To exit your POSE
+
+session, right click on POSE, and select &quot;Exit&quot;.<span
+
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+
+
+<p class=MsoBodyText><span style='font-size:10.0pt'>Experiment with POSE</span><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+
+style='font-size:10.0pt'>, and learn to use it well.<span
+
+style='mso-spacerun:yes'>  </span>However, I must stress this again: don't rely
+
+on POSE for the final testing of your applications.<span
+
+style='mso-spacerun:yes'>  </span>There's no substitute for the real thing!<o:p></o:p></span></p>
+
+
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
+

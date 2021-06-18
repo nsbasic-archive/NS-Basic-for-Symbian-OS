@@ -1,0 +1,79 @@
+// Copyright 2008 NS BASIC Corporation
+
+STRUCT RSS_SIGNATURE
+    {
+    LONG signature= 4 ;
+    SRLINK self;
+    }
+
+STRUCT TBUF
+    {
+    BUF buf; // non-zero terminated text string
+    }
+
+STRUCT EIK_APP_INFO
+    {
+    LLINK hotkeys=0;
+    LLINK menubar=0;
+    LLINK toolbar=0;
+    LLINK toolband=0;
+    LLINK cba=0;	
+    LLINK status_pane=0;
+    LLINK custom_app_info_extension=0;	
+    }
+
+STRUCT TBUF32	{ BUF<32> buf; }
+
+STRUCT CAPTION_AND_ICON_INFO
+	{
+	LONG reserved_long = 0; // reserved for future use, do not use
+	LLINK reserved_llink = 0; // reserved for future use, do not use
+	LTEXT caption(256 ) = "";
+	WORD number_of_icons = 0; // each icon must be a bitmap/mask pair
+	LTEXT icon_file(256 ) = "";
+	}
+
+STRUCT LOCALISABLE_APP_INFO
+	{
+	LONG reserved_long = 0; // reserved for future use, do not use
+	LLINK reserved_llink = 0; // reserved for future use, do not use
+	LTEXT short_caption(256 ) = "";
+	STRUCT caption_and_icon; // CAPTION_AND_ICON_INFO
+	LEN WORD STRUCT view_list[]; // VIEW_DATA
+	LTEXT group_name(16 ) = "";
+	}
+
+
+# 19 "C:\\Symbian\\Carbide\\workspace\\StyleTapLauncherS60\\data\\StyleTapLauncherS60.rss" 2
+
+NAME STYL	// 4 letter ID
+
+
+RESOURCE RSS_SIGNATURE
+	{
+	}
+
+
+RESOURCE TBUF r_default_document_name
+	{
+	buf="STYL";
+	}
+
+RESOURCE EIK_APP_INFO
+	{
+	}
+
+RESOURCE TBUF32 r_caption_string { buf= "***name***" ; }
+
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+	{
+	short_caption = "***name***" ;
+	caption_and_icon = 
+	CAPTION_AND_ICON_INFO
+		{
+		caption = "***name***" ;
+
+		number_of_icons = 1;
+		icon_file = "\\resource\\apps\\***mifFile***_***uid3***.mif";
+		};
+	}

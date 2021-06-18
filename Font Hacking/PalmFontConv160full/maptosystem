@@ -1,0 +1,30 @@
+#! /bin/sh
+# $Id: maptosystem,v 1.5 2004/03/27 21:30:09 arpruss Exp $
+./toprc SonyBold.prc "Bold" Font Plkr -f NFNT0420 hrBoldFont -f NFNT0421 hrBoldFont \
+    -f NFNT0422 hrLargeBoldFont \
+    -f NFNT0423 hrLargeBoldFont -f NFNT0424 hrBoldFont \
+    -f NFNT0426 stdFixedFont_sony
+./toprc SonyLargeBold.prc "Large bold" Font Plkr -f NFNT0420 hrLargeBoldFont -f NFNT0421 hrLargeBoldFont \
+    -f NFNT0422 hrLargeBoldFont \
+    -f NFNT0423 hrLargeBoldFont -f NFNT0424 hrBoldFont \
+    -f NFNT0426 stdFixedFont_sony
+./toprc SonySmallBold.prc "Small bold" Font Plkr -f NFNT0420 hrSmallBoldFont -f NFNT0421 hrSmallBoldFont \
+    -f NFNT0422 hrBoldFont \
+    -f NFNT0423 hrBoldFont -f NFNT0424 hrSmallFont \
+    -f NFNT0426 narrowFixedFont
+./toprc AllStandard.prc "All standard fonts" Font Plkr \
+  -f nfnt0620 stdFont -f nfnt0621 stdFont -f nfnt0622 stdFont \
+  -f nfnt0623 stdFont -f nfnt0624 stdFont -f nfnt0626 stdFont \
+  -f nfnt0660 stdFont -f nfnt0661 stdFont -f nfnt0662 stdFont \
+  -f nfnt0663 stdFont -f nfnt0664 stdFont -f nfnt0666 stdFont \
+  -f NFNT0220 stdFont -f NFNT0221 stdFont -f NFNT0222 stdFont \
+  -f NFNT0223 stdFont -f NFNT0224 stdFont -f NFNT0226 stdFont \
+  -f NFNT0260 stdFont -f NFNT0261 stdFont -f NFNT0262 stdFont \
+  -f NFNT0263 stdFont -f NFNT0264 stdFont -f NFNT0266 stdFont \
+  -f NFNT0420 hrStdFont -f NFNT0421 hrStdFont -f NFNT0422 hrStdFont \
+  -f NFNT0423 hrStdFont -f NFNT0424 hrStdFont -f NFNT0426 hrStdFont \
+  -f NFNT0460 hrStdFont -f NFNT0461 hrStdFont -f NFNT0462 hrStdFont \
+  -f NFNT0463 hrStdFont -f NFNT0464 hrStdFont -f NFNT0466 hrStdFont
+./toprc AllSystem.prc "All system fonts" Font Plkr -f NFNT0224 stdFont -f NFNT0226 stdFont -f NFNT0424 hrStdFont \
+  -f NFNT0426 hrStdFont -f nfnt0624 stdFont -f nfnt0626 stdFont
+

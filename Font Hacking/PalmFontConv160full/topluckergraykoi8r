@@ -1,0 +1,27 @@
+#! /bin/sh
+# $Id: topluckergraykoi8r,v 1.1 2003/10/26 04:08:49 arpruss Exp $
+# Convert a font to Plucker Gray scale format
+if test "X$1" = Xsonyhi; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; versions=GU14; fonttype=NFNT; fi
+if test "X$1" = Xlo; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; versions=GU14; fonttype=NFNT; fi
+if test "X$1" = Xpalmhi; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; versions=GU34; fonttype=nfnt; fi
+if test "X$1" = Xsonyhi.right; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; versions="GU14 GR14"; fonttype=NFNT; fi
+if test "X$1" = Xlo.right; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; fonttype=NFNT; versions="GU14 GR14"; fi
+if test "X$1" = Xpalmhi.right; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; fonttype=nfnt; versions="GU34 GR34"; fi
+if test "X$1" = Xsonyhi.left; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; versions="GU14 GL14"; fonttype=NFNT; fi
+if test "X$1" = Xlo.left; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; fonttype=NFNT; versions="GU14 GL14"; fi
+if test "X$1" = Xpalmhi.left; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; fonttype=nfnt; versions="GU34 GL34"; fi
+if test "X$1" = Xsonyhi.both; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; versions="GU14 GL14 GR13"; fonttype=NFNT; fi
+if test "X$1" = Xlo.both; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; fonttype=NFNT; versions="GU14 GL14 GR14"; fi
+if test "X$1" = Xpalmhi.both; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; fonttype=nfnt; versions="GU34 GL34 GR34"; fi
+depth=4
+if test "X$bitmapversion" = X; then echo "topluckergray lo|palmhi|sonyhi[.right|.left|.both] dbname inputfilename pixelsize [inputfilename boldpixelsize [inputfilename narrowpixelsize]]"; exit; fi
+rm G*.bin nfnt*.bin NFNT*.bin 2> /dev/null
+echo Processing outline fonts...
+if ! ./topalmtext -KOI8R -f $3 $4 gray > topluckergray-font.txt; then echo "Error processing"; exit; fi
+if test "X$6" != X; then echo \(bold\)...; ./topalmtext -KOI8R -f $5 $6 gray > topluckergray-boldfont.txt; extra_args="- $fonttype$boldrecordid topluckergray-boldfont.txt $versions"; fi
+if test "X$8" != X; then echo \(narrow\)...; ./topalmtext -KOI8R -f $7 $8 gray > topluckergray-narrowfont.txt; extra_args2="- $fonttype$narrowrecordid topluckergray-narrowfont.txt $versions"; fi
+echo Generating Plucker bitmaps in versions $versions...
+./togray $fonttype$recordid topluckergray-font.txt $versions $extra_args $extra_args2
+#par c -a "resource|backup" $2.prc "$2" Font Plkr *.bin
+./toprc $2.prc "$2" Font Plkr *.bin
+

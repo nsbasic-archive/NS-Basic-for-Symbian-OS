@@ -1,0 +1,76 @@
+END USER LICENSE AGREEMENT
+
+IMPORTANT: READ CAREFULLY - This SOFTWARE, including any "online" or electronic documentation provided in connection herewith, is subject to the terms and conditions of this agreement. 
+
+BY INSTALLING, COPYING OR OTHERWISE USING THE COMPONENTS, YOU ("CUSTOMER") AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT. IF CUSTOMER DOES NOT AGREE TO THESE TERMS AND CONDITIONS, DO NOT INSTALL, COPY OR USE THE SOFTWARE. IF CUSTOMER DOES NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, SELECT THE BUTTON LABELLED "Cancel" AND CANCEL THE INSTALLATION PROCESS.
+
+In this Agreement, "COMPANY" is defined as NS BASIC Corporation and StyleTap, Inc., as separate Agreements with each of the two companies.
+
+THIS AGREEMENT made as of the date of the first installation of the accompanying SOFTWARE (defined herein), between COMPANY INC., an Ontario incorporated company ("COMPANY") and you (the "CUSTOMER").
+
+WHEREAS COMPANY is the developer of certain related object code and documentation (the "SOFTWARE"). The CUSTOMER desires to license the SOFTWARE on the terms and conditions herein;
+
+IN CONSIDERATION of the mutual covenants and agreements set forth herein, and other good and valuable consideration, the parties hereto mutually agree as follows:
+
+1. Grant of License
+
+a. Subject to the terms of this Agreement, CUSTOMER shall have a non-exclusive, non-assignable, non-transferable license to install and use the SOFTWARE on one handheld computer. 
+
+b. All other rights are reserved to COMPANY. COMPANY and its suppliers shall retain title and all ownership rights to the SOFTWARE, and this Agreement shall not be construed in any manner as transferring any rights of ownership to the SOFTWARE or to the features or information therein. The SOFTWARE is protected by intellectual property laws and international treaties, including laws and treaties relating to copyrights, trademarks, patents and trade secrets. The SOFTWARE is licensed, not sold. 
+
+c. After installing SOFTWARE for the first time, CUSTOMER may use the SOFTWARE for an evaluation period of 14 days. After this period, the license terminates automatically, unless the CUSTOMER purchases an unlocking code for the SOFTWARE from COMPANY according to the terms discussed in the SOFTWARE documentation.
+
+d. CUSTOMER shall not use the SOFTWARE in any way that infringes the intellectual property rights of any third party, including those arising under the patent, trademark, copyright, or trade secret law of any jurisdiction.
+
+2. Termination
+ 
+This Agreement is effective until terminated in accordance with the terms contained herein. CUSTOMER may terminate this Agreement at any time by destroying all copies of the SOFTWARE. COMPANY may terminate this Agreement if CUSTOMER fails to comply with any of these terms and conditions. COMPANY will terminate this Agreement at the end of evaluation period if the CUSTOMER does not purchase an unlocking code for the SOFTWARE. Any such termination by COMPANY shall be in addition to and without prejudice to such other rights and remedies as may be available to COMPANY, including injunction and other equitable remedies. Upon termination, CUSTOMER's license to use the SOFTWARE shall terminate and CUSTOMER shall promptly return to COMPANY, or certify destruction of, all full or partial copies of such SOFTWARE and related materials provided by COMPANY. Sections 1b, and 4 to 12 herein shall survive termination of this Agreement.
+
+3. Compatibility
+
+The SOFTWARE is not necessarily compatible with any device.
+
+4. Confidentiality
+
+The SOFTWARE is proprietary and confidential to COMPANY and its suppliers. CUSTOMER agrees not to disclose or provide any of the SOFTWARE, documentation, or any information relating to the SOFTWARE and its operation to any third party except as expressly provided herein without COMPANY's express written permission. However, CUSTOMER may disclose Confidential Information in accordance with judicial or other governmental order, provided CUSTOMER shall give COMPANY reasonable notice prior to such disclosure and shall comply with any applicable protective order or equivalent. CUSTOMER shall not be liable to COMPANY for such information which CUSTOMER can prove (1) is already known to CUSTOMER; (2) becomes publicly known through no wrongful act of CUSTOMER; (3) is rightfully received from a third party without similar restriction and without breach of this Agreement; or (4) is independently developed by CUSTOMER. This provision shall survive the termination or expiration of this Agreement.
+
+5. No Warranties and Disclaimer of Warranty. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITH ALL FAULTS, AND WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, COMPANY FURTHER DISCLAIMS ALL WARRANTIES, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, NON-INFRINGEMENT, ACCURACY OR COMPLETENESS OF RESPONSES, WORKMANLIKE EFFORT AND LACK OF NEGLIGENCE. THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF THE SOFTWARE AND DOCUMENTATION REMAINS WITH CUSTOMER.
+
+6. Limitation of Liability and Remedies
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL COMPANY OR ITS SUPPLIERS BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME STATES/JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO CUSTOMER. THE ENTIRE LIABILITY OF COMPANY OR ANY OF ITS SUPPLIERS FOR ANY DAMAGES SHALL BE LIMITED TO THE LESSER OF THE AMOUNT ACTUALLY PAID BY THE CUSTOMER FOR THE PRODUCT, AND USD$1,000. THE FOREGOING LIMITATION, EXCLUSION AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS ITS ESSENTIAL PURPOSE.
+
+7. Additional Limitations
+
+EXCEPT AS LAWFULLY PERMITTED, CUSTOMER CANNOT MODIFY, TRANSLATE, REVERSE ENGINEER, DECOMPILE, DISASSEMBLE OR REPRODUCE, IN WHOLE OR IN PART, OR CREATE DERIVATIVE WORKS BASED ON THE SOFTWARE OR INFORMATION CONTAINED THEREIN. CUSTOMER CANNOT RENT, LEASE, SELL, SUBLICENSE, ASSIGN, LEND, OR OTHERWISE TRANSFER THE SOFTWARE.
+
+8. Governing Law and Jurisdiction
+
+This Agreement is made, executed, and delivered in Ontario, Canada, and any controversy arising hereunder or relation to this Agreement shall be governed by and construed in accordance with the domestic laws of the Province of Ontario. CUSTOMER agrees that any claim arising under or relating to this agreement shall be adjudicated only in a court of competent jurisdiction in the Province of Ontario, Canada. The parties hereto hereby agree that the application of the United Nations Convention on Contracts for the International Sale of Goods to this Agreement does not apply and is strictly excluded. In the event of any litigation or other dispute arising as a result of or by reason of this Agreement, the prevailing party in any such litigation or other dispute shall be entitled to, in addition to any other damages assessed, its reasonable legal fees, and all other costs and expenses incurred in connection with settling or resolving such dispute.
+
+9. Modification of Terms and Conditions
+
+Any modifications or departure from these terms and conditions must be written and approved by an authorized signing officer for COMPANY. COMPANY reserves the right to modify these terms.
+
+10. Export Restrictions
+
+CUSTOMER shall not export or re-export the SOFTWARE to any country, person or entity, without COMPANY's prior written consent.
+
+11. High Risk Activities and Warning on Supporting Technology
+
+THIS TECHNOLOGY AND THIS SOFTWARE ARE NOT FAULT TOLERANT AND ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR USE OR RESALE AS ONLINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS IN (BUT NOT LIMITED TO) THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THESE TECHNOLOGIES COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE. COMPANY AND ITS SUPPLIERS SPECIFICALLY DISCLAIM ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+
+12. Entire Agreement
+
+This Agreement is the complete and exclusive agreement between CUSTOMER and COMPANY (including its dealers, distributors, agents and employees) concerning the SOFTWARE which supersedes any proposal or prior agreement or license, oral or written, and any other communications related to the subject matter of this Agreement. If one or more of the provisions of this Agreement is found to be illegal or unenforceable, this Agreement shall not be rendered inoperative but the remaining provisions shall continue in full force and effect.
+
+If you have any questions about this Agreement, write to COMPANY at
+
+
+NS BASIC Corporation, 71 Hill Crescent, Toronto, Ontario, Canada M1M 1J3
+StyleTap Inc., Suite 308, 512 King Street East, Toronto, Ontario, Canada M5A 1M1
+
+
+BY PRESSING "OK" YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT AND AGREE TO BE BOUND BY ITS TERMS.

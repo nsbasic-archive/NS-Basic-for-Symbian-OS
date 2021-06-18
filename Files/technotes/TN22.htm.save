@@ -1,0 +1,1279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="TN22_files/filelist.xml">
+<link rel=Edit-Time-Data href="TN22_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Tech Note 22: Printing using PalmPrint/SCSPrint</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="date"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Michael Verive</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Michael Verive</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2002-10-03T20:16:00Z</o:Created>
+  <o:LastSaved>2002-10-03T20:17:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1781</o:Words>
+  <o:Characters>10158</o:Characters>
+  <o:Company>www.mverive.com</o:Company>
+  <o:Lines>84</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>11916</o:CharactersWithSpaces>
+  <o:Version>10.3501</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	color:windowtext;
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-name:"Body Text\,Body Text Char1\,Body Text Char Char\,Body Text Char1 Char1 Char\,Body Text Char Char Char1 Char\,Body Text Char1 Char Char Char\,Body Text Char Char Char Char Char\,Body Text Char Char1";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p.BodyTextFirstChar, li.BodyTextFirstChar, div.BodyTextFirstChar
+	{mso-style-name:"Body Text First Char";
+	mso-style-parent:"";
+	mso-style-next:"Body Text\,Body Text Char1\,Body Text Char Char\,Body Text Char1 Char1 Char\,Body Text Char Char Char1 Char\,Body Text Char1 Char Char Char\,Body Text Char Char Char Char Char\,Body Text Char Char1";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=478
+ style='width:358.5pt;mso-cellspacing:0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes'>
+  <td width="22%" valign=top style='width:22.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p><img width=86 height=103 id="_x0000_i1025" src="images/BigIcon.GIF"></p>
+  </td>
+  <td width="78%" valign=top style='width:78.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p><b><span style='font-size:18.0pt;font-family:Helvetica'>Tech Note 22:
+  Printing using PalmPrint/SCSPrint<o:p></o:p></span></b></p>
+  <p><st1:date Year="2002" Day="2" Month="10"><b><span style='font-size:18.0pt;
+   font-family:Helvetica'>October 2, 2002</span></b></st1:date><b><span
+  style='font-size:18.0pt;font-family:Helvetica'><o:p></o:p></span></b></p>
+  <p><b><span style='font-size:13.5pt;font-family:Helvetica'>&nbsp;<o:p></o:p></span></b></p>
+  <p><b><span style='font-size:10.0pt;font-family:Helvetica'>Copyright 2002 NS
+  BASIC Corporation</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><i>Contributed by <a href="mailto:mverive@peoplepc.com">Michael J. Verive</a>,
+author of <a
+href="http://www.nsbasic.com/palm/info/NSBasicProgrammingForPalm.html">NS BASIC
+Programming for Palm OS</a></i> </p>
+
+<h1><a name="_Toc6993625"></a><a name="_Toc5215786"></a><a name="_Toc4992417"><span
+style='mso-bookmark:_Toc5215786'><span style='mso-bookmark:_Toc6993625'><span
+style='mso-fareast-font-family:"MS Mincho"'>Printing</span></span></span></a><!--[if supportFields]><span
+style='mso-bookmark:_Toc4992417'><span style='mso-bookmark:_Toc5215786'><span
+style='mso-bookmark:_Toc6993625'></span></span></span><span style='mso-element:
+field-begin'></span><span style='mso-bookmark:_Toc4992417'><span
+style='mso-bookmark:_Toc5215786'><span style='mso-bookmark:_Toc6993625'> XE
+&#8220;P</span></span></span><span style='mso-bookmark:_Toc4992417'><span
+style='mso-bookmark:_Toc5215786'><span style='mso-bookmark:_Toc6993625'><span
+style='mso-fareast-font-family:"MS Mincho"'>rinting</span>&quot; </span></span></span><![endif]--><span
+style='mso-bookmark:_Toc4992417'><span style='mso-bookmark:_Toc5215786'><span
+style='mso-bookmark:_Toc6993625'></span></span></span><!--[if supportFields]><span
+style='mso-bookmark:_Toc4992417'><span style='mso-bookmark:_Toc5215786'><span
+style='mso-bookmark:_Toc6993625'></span></span></span><span style='mso-element:
+field-end'></span><![endif]--><span style='mso-bookmark:_Toc4992417'><span
+style='mso-bookmark:_Toc5215786'><span style='mso-bookmark:_Toc6993625'></span></span></span><span
+style='mso-bookmark:_Toc4992417'><span style='mso-bookmark:_Toc5215786'><span
+style='mso-bookmark:_Toc6993625'><span style='mso-fareast-font-family:"MS Mincho"'><span
+style='mso-spacerun:yes'> </span>in NS Basic</span></span></span></span><span
+style='mso-fareast-font-family:"MS Mincho"'> using PalmPrint/SCSPrint<o:p></o:p></span></h1>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>Storing information in your Palm device is
+great, and HotSync</span><!--[if supportFields]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'> allows
+you to transfer this data to your desktop computer, where you&#8217;re likely
+to do most of your printing.<span style='mso-spacerun:yes'>  </span>However,
+you may need to print directly from your Palm device, either through the serial
+port or to an IR-enabled printer.<span style='mso-spacerun:yes'>  </span>NS
+Basic doesn&#8217;t have any built-in print routines, so currently the only way
+to print from NS Basic is to do so using the serial I/O functions, or through
+the use of third-party applications such as SCSPrint or PalmPrint (available
+from Stevens Creek Software at <a href="http://www.stevenscreek.com/">www.stevenscreek.com</a>).<span
+style='mso-spacerun:yes'>  </span>Printing through PalmPrint in NS Basic is
+somewhat different from how you may be used to printing in other dialects of
+Basic (printing using SCSPrint is handled using the same code as PalmPrint, so
+I&#8217;ll just refer to PalmPrint for either PalmPrint or SCSPrint).<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>The easiest way to print to PalmPrint</span><!--[if supportFields]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-begin'></span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'> XE &#8220;P</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>almPrint</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>&quot; </span><![endif]--><!--[if supportFields]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-spacerun:yes'> </span>in NS Basic is through the use of the
+AppLaunch statement.<span style='mso-spacerun:yes'>  </span>Since it&#8217;s
+not always easy to remember the syntax of this statement or the launch code
+used, you can use this subroutine in a code module for your <span class=GramE>applications
+</span></span><!--[if supportFields]><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;mso-fareast-font-family:"MS Mincho"'><span style='mso-element:field-begin'></span></span><![endif]--><!--[if supportFields]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Sub <span class=GramE>PalmPrint(</span><span class=SpellE>PrintString</span>
+as String)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim CardNo as Integer <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim <span class=SpellE>LaunchCode</span> as Integer <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim result as Integer <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>CardNo=0<span style='mso-spacerun:yes'>   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>LaunchCode</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=32768<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch</span><!--[if supportFields]><span
+style='mso-fareast-font-family:"MS Mincho"'><span style='mso-element:field-begin'></span></span>
+XE &quot;<span style='mso-fareast-font-family:"MS Mincho"'>AppLaunch</span>&quot;
+<![endif]--><!--[if supportFields]><span style='mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-size:
+9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-fareast-font-family:
+"MS Mincho";mso-bidi-font-family:"Times New Roman"'>(<span class=SpellE>CardNo,&quot;PalmPrint&quot;,LaunchCode,PrintString</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>If result&lt;&gt;0 Then <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'><span style='mso-spacerun:yes'>    </span><span class=GramE>result=</span>alert(&quot;PalmPrint&quot;,
+&quot;Error printing to PalmPrint&quot;,3,&quot;OK&quot;)<span
+style='mso-spacerun:yes'>                                                                    
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>End If<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>End Sub<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>If you load this code module into your
+application, when you need to print to PalmPrint from any of your forms or
+objects, all you need to provide is the name of the subroutine and the string
+to be printed:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>PalmPrint &quot;This is the print string&quot;<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span class=GramE><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>or</span></span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Call <span class=GramE>PalmPrint(</span>&quot;This is the
+print string&quot;)<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>This is fine if all you want to do is
+print a single line of text.<span style='mso-spacerun:yes'>  </span>Most of the
+time, however, you&#8217;ll need to print multiple lines (or pages) of
+information.<span style='mso-spacerun:yes'>  </span>Using the PalmPrint
+statement with each individual line will work, but with an undesirable side
+effect &#8211; each line will be printed on a separate page!<span
+style='mso-spacerun:yes'>  </span>The PalmPrint subroutine runs PalmPrint as a
+separate &quot;print job&quot; each time it&#8217;s called, so PalmPrint
+faithfully ejects the page after each job.<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>To print multiple lines on the same page,
+you&#8217;ll need to modify your string so that it contains all of the lines to
+be printed PLUS the necessary codes to tell the printer to move to the next
+line as needed (or, use line-by-line printing, discussed later).<span
+style='mso-spacerun:yes'>  </span>If you are concatenating lines to create a
+single &quot;print string&quot;, you're in luck; the code for moving to the
+next line when printing is the same as the code for moving to a new line in a
+field &#8211; the Chr(10), or &quot;line feed&quot; character:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim <span class=SpellE>PrintString</span> as string<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>PrintString</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=&quot;This
+is the first line.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>PrintString</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=<span
+class=SpellE>PrintString+<span class=GramE>chr</span></span><span class=GramE>(</span>10)+&quot;This
+is the next line.&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>PrintString</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=<span
+class=SpellE>PrintString+<span class=GramE>chr</span></span><span class=GramE>(</span>10)+&quot;and
+so on&#8230;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>PalmPrint <span class=SpellE>PrintString</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>PalmPrint allows you to determine whether
+you want a line feed, a &quot;carriage return&quot; (the ASCII code <span
+class=GramE>Chr(</span>13)), or both at the end of a line (even if your lines
+end with the line feed alone, as above).<span style='mso-spacerun:yes'> 
+</span>Most printers will print properly if the line feed and carriage return
+pair is used (but you may have to experiment with your printer).<span
+style='mso-spacerun:yes'>  </span>PalmPrint also allows you to select from a
+wide variety of printers, and knows which codes to send to tell the printer to
+print using different fonts, point sizes, and other settings.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>Printing with PalmPrint is easy with
+supported IR-enabled printers, and printing through the serial port is only
+slightly more complicated.<span style='mso-spacerun:yes'>  </span>Your
+application won&#8217;t need to handle printing any differently, but you&#8217;ll
+need to make sure that PalmPrint and your printer are set to use the same baud
+rate and other serial parameters.<span style='mso-spacerun:yes'>  </span>You
+may also need to use a &quot;null modem&quot; cable or adapter, depending on
+your printer, if you are printing through the Palm serial port connected
+directly to a printer.<o:p></o:p></span></p>
+
+<h1><span style='mso-fareast-font-family:"MS Mincho"'>Advanced Printing &#8211;
+Formatting with Control Codes<o:p></o:p></span></h1>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>For most purposes, PalmPrint works well
+&quot;out of the box&quot;, since it knows internally how to print <span
+class=GramE>to</span> many different printers.<span style='mso-spacerun:yes'> 
+</span>In fact, PalmPrint was written to be &quot;printer independent&quot;, so
+that if you have something that you print on one type of printer, then switch
+to another type of printer, you&#8217;ll still get the same (or very similar)
+output. However, there may be times that you&#8217;ll want to &quot;spice
+up&quot; your output with bold, double-wide, condensed, or other print
+formatting.<span style='mso-spacerun:yes'>  </span>PalmPrint makes this easy by
+allowing you to embed special &quot;escape&quot; codes to tell your printer
+what formatting you&#8217;d like to use.<span style='mso-spacerun:yes'> 
+</span>Not all of the special formatting codes work the same with all printers,
+however, so you end up trading printer independence for this added formatting
+power.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>Formatting codes are inserted in strings
+sent to PalmPrint as one to three digit numeric values surrounded by the
+&quot;double-less-than&quot; and &quot;double-greater-than&quot;
+(&quot;&lt;&lt;&quot; and &quot;&gt;&gt;&quot;) characters.<span
+style='mso-spacerun:yes'>  </span>Note that these refer to ASCII 171 and 187,
+NOT merely two less-than or two greater-than signs together, but the characters
+found in the lower right corner of the &quot;Int'l&quot; portion of the popup
+keyboard on the Palm (normal and shifted).<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>Many of the formatting codes use the
+&quot;ESC&quot; (ASCII 27) character to tell the printer that formatting
+commands follow, so only the value 27 needs to be in the
+&quot;&lt;&lt;&gt;&gt;&quot; string.<span style='mso-spacerun:yes'>  </span>For
+example, &quot;ESC&quot;W1 turns on a special &quot;double-wide&quot; mode on a
+Canon printer, and &quot;ESC&quot;W0 turns it off.<span
+style='mso-spacerun:yes'>  </span>So, the following code will print with a
+special &quot;double wide&quot; string (27 is the numeric value of the ESC
+character), followed by normal text:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim <span class=SpellE>EscStart</span> as byte<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim <span class=SpellE>EscEnd</span> as byte<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>EscStart</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=<span
+class=GramE>chr(</span>171)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>EscEnd</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=<span
+class=GramE>chr(</span>187)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Msg=EscStart+&quot;27&quot;+EscEnd+&quot;W1This is
+double-wide&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Msg=<span class=SpellE>msg+<span class=GramE>chr</span></span><span
+class=GramE>(</span>10)+EscStart+&quot;27&quot;+EscEnd+&quot;W0And this is back
+to normal&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>PalmPrint Msg <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>As an added &quot;bonus&quot;, PalmPrint
+expects only numeric values between the &quot;&lt;&lt;&gt;&gt;&quot;
+characters, so non-numeric strings are ignored, and can be used to embed
+comments in the string:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Msg=&quot;&lt;&lt;This text is
+double-wide&gt;&gt;&quot;+EscStart+&quot;27&quot;+EscEnd+&quot;W1 Profits 2nd
+Quarter&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Msg=<span class=SpellE>msg+<span class=GramE>chr</span></span><span
+class=GramE>(</span>10)+&quot;&lt;&lt;Back to
+normal&gt;&gt;&quot;+EscStart+&quot;27&quot;+EscEnd+&quot;W0Region:
+Northwest&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>PalmPrint Msg <o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>For some printers, you may need to enter
+the ESC character without the &quot;&lt;&lt;&gt;&gt;&quot; delimiters:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Dim <span class=SpellE>EscChar</span> as string<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>EscChar</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>=<span
+class=GramE>chr(</span>27)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Msg=<span class=SpellE>EscChar</span> +&quot;W1 Profits 2nd
+Quarter&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>Msg=<span class=SpellE>msg+<span class=GramE>chr</span></span><span
+class=GramE>(</span>10)+<span class=SpellE>EscChar</span> +&quot;W0Region:
+Northwest&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'>PalmPrint Msg <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>Remember that these &quot;escape
+sequences&quot; are printer-dependent, although many printers have
+&quot;Epson-compatible&quot; or &quot;HP-compatible&quot; modes, allowing you
+to use standard Epson or Hewlett-Packard codes.<span style='mso-spacerun:yes'> 
+</span>Consult your printer manual for the specific codes to use.<span
+style='mso-spacerun:yes'>  </span>The following table gives common escape
+sequences and their functions for most Epson (and Epson-compatible) printers:<o:p></o:p></span></p>
+
+<p class=BodyTextFirstChar><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-fareast-font-family:
+"MS Mincho"'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=BodyTextFirstChar><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-fareast-font-family:
+"MS Mincho"'>Epson Printer Control Codes (Esc=<span class=GramE>chr(</span>27)).<o:p></o:p></span></i></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid black .75pt;mso-yfti-tbllook:32;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .75pt;background:black;mso-shading:white;
+  mso-pattern:solid black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Code String<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  background:black;mso-shading:white;mso-pattern:solid black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Effect<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc @<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Reset Printer<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc -1<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Turns
+  underlining on<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc -0<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Turns
+  underlining off<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc E<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Turns
+  emphasized (bold) on<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc F<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Cancels
+  emphasized mode<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc G<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Starts
+  double-strike mode<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc H<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Cancels
+  double-strike mode<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc P<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>10 character
+  per inch (CPI) mode (pica)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc M<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>12 CPI mode
+  (elite)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>chr(15)<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Condensed
+  print<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc S0<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Starts
+  superscript mode (S0)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc S1<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Starts
+  subscript mode (S1)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc T<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Cancels
+  subscript/superscript modes<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc W1<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Starts
+  double-wide mode<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15;mso-yfti-lastrow:yes'>
+  <td width=88 valign=top style='width:66.2pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Esc W0<o:p></o:p></span></p>
+  </td>
+  <td width=240 valign=top style='width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Cancels
+  double-wide mode<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<h1><span style='mso-fareast-font-family:"MS Mincho"'>Advanced Printing - using
+AppLaunch and Launch Codes<o:p></o:p></span></h1>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>Starting with version 2.0, PalmPrint provides
+yet another way to control print formatting, and this method maintains
+printer-independence.<span style='mso-spacerun:yes'>  </span>It&#8217;s a
+little more involved, and sacrifices a little printer control (e.g., you
+don&#8217;t have the ability to select printer-specific fonts), but it may work
+better for routine formatting when you don&#8217;t have control over which
+printer will be used.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>The secret to this method of formatting is
+the fact that PalmPrint can accept various different launch codes in the
+AppLaunch statement (like the 32768 used to tell PalmPrint to print the string
+passed to it):<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32768,PrintString)<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>The following table gives the Launch codes
+that are available from within NS Basic (there are other codes available, but
+require pointers not available using the AppLaunch statement in NSBasic):<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=BodyTextFirstChar><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;mso-fareast-font-family:
+"MS Mincho"'>PalmPrint Launch Codes available using NS Basic<o:p></o:p></span></i></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid black .75pt;mso-yfti-tbllook:32;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .75pt;background:black;mso-shading:white;
+  mso-pattern:solid black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Launch Code</span><!--[if supportFields]><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:
+  "MS Mincho"'><span style='mso-element:field-begin'></span></span><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt'> XE &#8220;P</span><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:
+  "MS Mincho"'>almPrint:</span><span style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt'>launch codes&quot; </span><![endif]--><!--[if supportFields]><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:
+  "MS Mincho"'><span style='mso-element:field-end'></span></span><![endif]--><span
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:
+  "MS Mincho"'><o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  background:black;mso-shading:white;mso-pattern:solid black;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Description<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32768<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Print string,
+  then eject page when finished<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32770<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Marks the start
+  of a series of print commands (&quot;print job&quot;)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32774<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Marks the end
+  of a series of print commands<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32771<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Marks the
+  start of a series of transmit commands<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32775<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Marks the end
+  of a series of transmit commands<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32772<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Sends a string
+  of characters to the printer (without ending the &quot;print job&quot; like
+  code 32768)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32773<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Transmits a
+  string of characters<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32800<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Sends a form
+  feed to the printer (ejects the page)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32802<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Sets plain
+  printing<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32804<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Sets bold
+  printing<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32828<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Sets printer
+  into portrait mode (PCL and Postscript only)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;mso-yfti-lastrow:yes'>
+  <td width=108 valign=top style='width:81.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>32830<o:p></o:p></span></p>
+  </td>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyText style='text-indent:0in'><span style='font-size:10.0pt;
+  mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>Sets printer
+  into landscape mode (PCL and Postscript only)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>As seen in the above table, you can tell
+PalmPrint to start a &quot;print job&quot; (series of print commands), send the
+necessary formatting commands, use 32772 instead of 32768 to print your text,
+then tell PalmPrint to end the print job.<span style='mso-spacerun:yes'> 
+</span>Here&#8217;s an example of printing the same report as in the previous
+example, but using the different launch codes rather than escape sequences:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32770,&quot;&quot;)
+' start print job<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32804,&quot;&quot;)
+' set bold<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32772,&quot;Profits
+2nd Quarter&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32802,&quot;&quot;)
+' set default print<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32772,&quot;
+Region: Northwest&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-fareast-font-family:"MS Mincho";
+mso-bidi-font-family:"Times New Roman"'>result=</span></span><span
+style='font-size:9.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:"Times New Roman"'>AppLaunch(CardNo,&quot;PalmPrint&quot;,32774,&quot;&quot;)
+' end print job<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-fareast-font-family:"MS Mincho";mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>You&#8217;ll also notice in the table
+above that there are launch codes for controlling character transmission.<span
+style='mso-spacerun:yes'>  </span>PalmPrint allows you to send output to
+terminal programs like <span class=SpellE>HyperTerm</span></span><!--[if supportFields]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-begin'></span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'> XE &#8220;H</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>yperTerm</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>&quot; </span><![endif]--><!--[if supportFields]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>, as well
+as to printers.<span style='mso-spacerun:yes'>  </span>By using codes 32771
+(start transmission), 32773 (transmit line), and 32775 (end transmission) you
+can send your output to a serial program for capture, rather than a
+printer.<span style='mso-spacerun:yes'>  </span>You will most likely need a
+null-modem adapter, and will also need to make sure that PalmPrint and your
+receiving application are set to the same baud rate (PalmPrint&#8217;s other
+serial parameters: 8 data bits, 1 stop bit, no parity, hardware flow
+control).<span style='mso-spacerun:yes'>  </span>If you are using PalmPrint for
+this feature, consult its documentation for more specifics.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span class=GramE><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'>One last point
+about printing using PalmPrint.</span></span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;mso-fareast-font-family:"MS Mincho"'><span
+style='mso-spacerun:yes'>  </span>You may have certain applications that
+require you to send a null (<span class=GramE>chr(</span>0)) as a character
+embedded in the print string.<span style='mso-spacerun:yes'>  </span>However,
+the Palm OS uses the null character to mark the end of a string, so using the
+actual null character will cause the output to be cut off past the null.<span
+style='mso-spacerun:yes'>  </span>If you need to use the null character, use <span
+class=GramE>chr(</span>255) instead &#8211; PalmPrint will translate it into
+the null character for output (however, this means that you won&#8217;t be able
+to send a chr(255) to your printer).<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"MS Mincho"'>PalmPrint is a very flexible application,
+so study its documentation thoroughly, and check at <a
+href="http://www.stevenscreek.com/">www.stevenscreek.com</a> to see if your
+specific printer is supported.<span style='mso-spacerun:yes'>  </span>PalmPrint
+may work with printers not specifically mentioned, but you risk causing
+compatibility problems that might be difficult to debug.<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

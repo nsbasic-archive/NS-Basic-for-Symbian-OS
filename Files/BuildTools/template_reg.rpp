@@ -1,0 +1,54 @@
+// Copyright 2008 NS BASIC Corporation
+
+STRUCT DATATYPE
+	{
+	LONG priority;
+	LTEXT8 type(256 );
+	}
+
+STRUCT APP_REGISTRATION_INFO
+	{
+	LONG reserved_long = 0; // reserved for future use, do not use
+	LLINK reserved_llink = 0; // reserved for future use, do not use
+	LTEXT app_file(256 ) = ""; // name of application binary file (not including extension) - mandatory
+	LONG attributes = 0;
+	LTEXT localisable_resource_file(256 ) = ""; // path (not including drive) and name of localisable resource file
+	LONG localisable_resource_id = 1;
+	BYTE hidden = 0 ;
+	BYTE embeddability = 0 ;
+	BYTE newfile = 0 ;
+	BYTE launch = 0 ;
+	LTEXT group_name(16 ) = "";
+	BYTE default_screen_number = 0;
+	LEN WORD STRUCT datatype_list[]; // DATATYPE
+	LEN WORD STRUCT file_ownership_list[]; // FILE_OWNERSHIP_INFO
+	LEN WORD STRUCT service_list[]; // SERVICE_INFO
+	LLINK opaque_data = 0;	// use for opaque data to send to non-native application launchers i.e. MIDlet id
+	}
+
+
+# 13 "C:\\Symbian\\Carbide\\workspace\\StyleTapLauncherS60\\data\\StyleTapLauncherS60_reg.rss" 2
+
+
+UID2 0x101f8021 
+UID3 0x***uid3***
+
+RESOURCE APP_REGISTRATION_INFO
+{
+	app_file="StyleTapLauncherS60_***uid3***";
+	localisable_resource_file =  "\\resource\\apps\\StyleTapLauncherS60_***uid3***" ;
+	localisable_resource_id = 0x5f07c005 ;
+
+	embeddability= 0 ;
+	newfile= 0 ;
+	group_name="***installFolder***";
+	
+	datatype_list =
+    {
+        DATATYPE { priority=0xFFF9; type="application/vnd.styletap"; },
+        DATATYPE { priority=0xFFF9; type="application/vnd.palm"; },
+        DATATYPE { priority=0xFFF9; type="application/x-pilot"; }
+    };
+
+}
+

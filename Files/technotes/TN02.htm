@@ -1,0 +1,461 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Tech Note 02: More about PDB Files</TITLE>
+<link rel="stylesheet" href="style2.css">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=550>
+<TR>
+	<TD WIDTH="18%" VALIGN="TOP">
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+    <TD WIDTH="82%" VALIGN="TOP">
+	  <h2>Tech Note 02: More about PDB files</h2>
+      <h3>December 01, 2008</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+	</TD>
+</TR>
+</TABLE>
+<HR>
+<h3><BR>
+  <BR>
+
+  Contents
+</h3>
+<pre>
+    <a href="#intro">Overview</a>
+    <a href="#nonkey">Reading and Writing to non-Keyed Files</a>
+    <a href="#key">Reading and Writing to Keyed Files</a>
+    <a href="#variable">A few words about the "database" variable</a>
+    <a href="#pdb">PDB and PRC files Working Together</a>
+    <a href="#large">Access to Large files</a>
+    <a href="#faq">File Programming Frequently Asked Questions</a>
+    <a href="#resource">Resources and Suggested Reading</a>
+    <a href="#conduits">File Conversion Tools</a>
+</pre>
+
+
+<h3><a name="intro"></a>Overview of files in NSBasic/Symbian OS
+</h3>
+<P>
+<b><p>Storage on Symbian OS devices</b>
+<p>The storage on Symbian OS devices is somewhat similar to Windows. Files are stored in directories. Each type of storage is a Volume: main memory is called "C:", while a memory card might be called "E:". 
+
+<p>Using a utility like the Nokia PC Suite, it is easy to navigate the storage and see the volumes, directories and files. However, you will not see important system files and private directories. As NS Basic/Symbian OS apps are installed into the Private directory, like most apps, you cannot see them or files which may be installed with them. 
+
+<p>This library lets you create and access files in the public storage area. It also lets you copy files from the public area to your own program's private area and back. It also lets you access files in multiple formats, including txt, csv and indeed, any data structure.
+NS Basic provides simple, easy to use file format  that can be accessed as a flat file or with an index, called PDB. There is a wide variety of utilities that are available to convert between PDB, Access, CSV, Excel, and other formats. We have listed the ones we are aware of later in this document. Be sure to check out the <A HREF="http://groups.yahoo.com/group/nsbasic-symbian/">NSBasic Symbian OS Web Board</A> and ask around.  You'll find lots of useful information on this topic there.
+
+<P>NS Basic doesn't much care what you put in a file record. As far as it is concerned, a file record is just a series of bytes. Your app has to interpret those bytes in whatever way you want it to. </p>
+
+<P>&nbsp;</p> 
+<h3><a name="nonkey"></a>Reading and Writing to non-Keyed Files </h3>
+<p>This method of file access is probably the most simple in concept, but can often cause the most confusion. Think of a file in NSBasic as a sort of 'grid'. Each 'cell' in the holds one byte of data. The description of the DIM statement in the NSBasic OS Handbook has a list of the NSBasic data types and their storage requirements. Strings are an exception. They require one byte per character plus an additional byte for their terminator. So writing to a file the word 'Cat' from the begining of a record in the file would look something like this (the '\0' symbol denotes the end of the string):</p>
+<table border="1" width="45%" align="center">
+  <tr>
+    <td>C</td>
+    <td>a</td>
+    <td>t</td>
+    <td>\0</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>Writing to a non-keyed file is simple. You just need to be mindful of where you place your data. Dates and Numbers, for example, are easy enough, as they'll translate to 8-byte values (for dates and times) and 4-byte values (for Integers and single-precision floating point values). When you put Strings in the mix you need to force them to the length that you want your data to be in, otherwise you'll fire off DmWriteCheck exceptions.&nbsp;&nbsp;So if your field that contains the word Cat could be up to 15 characters in length what you store would look something like this in memory:</p> 
+<table width="45%" border="1" align="center">
+  <tr>
+    <td>C</td>
+    <td>a</td>
+    <td>t</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>\0</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>To write to a non-keyed file you need to use two different functions: dbPosition() and dbPut(). The dbPosition function will set your record pointer to the specific record number and 'offset' (or 'cell' as discussed above). When data is written using dbPut() the pointer into the record will be set to the end of the last piece of data written. In this example a name exists in a field object called fldName. This code will write the contents of fldName to the beginning of the first record of the file.</p> 
+
+<pre>
+'assume name is DIMed as String and db as database
+name = rightpad(fldName.text,15) 'set the string to be 15 characters long.
+
+res = dbposition(db, 1, 0)
+res = dbput (db,name)
+if res not = 0 then
+    msgbox "Write error: "+str (res)
+end if
+</pre>
+<p>To write more data to the same record is simple. Just use more dbPut
+  statements. </p>
+<pre>
+'assume that dDate is DIMed as a Date type
+res = dbput (db,dDate)
+if res not = 0 then
+    msgbox "Write error: "+str (res)
+end if
+
+'assume fmyFloat is DIMed as a Float
+res = dbput (db,fmyFloat)
+if res not = 0 then
+    msgbox "Write error: "+str (res)
+end if
+</pre>
+<p>To read these back is just about as simple. Just use dbPosition() along with
+  dbGet(). Each call to dbGet will move the pointer in the record, so there's
+  no need to use repeated calls to dbPosition (although you can if you only want
+  particular fields from a record in the file).</p>
+<pre>
+res = dbposition(db, 1, 0)
+res = dbget (db,name)
+if res not = 0 then
+    msgbox "Read error: "+str (res)
+end if
+fldName.text = rtrim(name) ' removes the spaces padded on by the rightpad() function.
+
+dDate=-1
+res = dbget (db,dDate)
+if res not = 0 then
+    msgbox "Read error: "+str (res)
+end if <br>
+fldDate.text = datemmddyy(dDate) 'convert the date into a displayable format
+
+res = dbget (db,fmyFloat)
+if res not = 0 then
+    msgbox "Read error: "+str (res)
+end if
+fldCost.text = str(fmyFloat)
+</pre>
+
+<p>Most desktop utilities that produce .pdb files create them without keys. Be
+  sure to use the "Operations by Position" functions to access them, not "Position
+  by Key."  </p>
+<h3><a name="key"></a>Reading and Writing to Keyed Files</h3>
+<p>Writing to a keyed file is a matter of having a unique ID for each record
+  (called a 'key'). The  file header maintains the key information
+  along with the offsets into the file where the information is stored.
+  The two biggest advantages to this are ease of access and ease of storage. To
+  find a record in a keyed file you need only search by the key value (in
+  a non-keyed file you need to search one record at a time). With keyed files
+  you can also store your information using a User Defined Type or UDT (created
+  with the NSBasic TYPE statement). This way instead of writing say, 50 elements,
+  into a file one element at time (as with dbPut) you have a single dbInsert()
+  statement with 3 arguments:</p>
+
+<pre>dbInsert (file,keyvalue,UDT)</pre>
+
+<p>Here's an example. Like the non-keyed file example above, this code will
+  write one string, one date and one floating point number into a pdb file.
+  Assume the following UDT:</p>
+
+<pre>type myData
+    name as string
+    dDate as Date
+    fmyFloat as float
+End type</pre>
+
+<p>Next, assume the following variables are defined in your Project Startup code:</p>
+
+<pre>Global db as database
+Global msgdata as string
+Global recordData as myData</pre>
+
+<p>Writing to the file with the dbInsert command is as simple as this (this
+  assumes the file has been created and is currently open):</p>
+
+<pre>recordData.name=&quot;John Doe&quot;
+recordData.dDate = mmddyytodate(&quot;09/29/99&quot;)
+recordData.fmyFloat = val(&quot;123.45&quot;)
+
+Dim res as Integer
+Dim keyval as Integer
+
+keyval=1
+res=dbinsert (db,keyval,recordData)
+</pre>
+<p>This writes a new record to the file with a key of 1 and now holds the
+  data shown above. Reading the data back out is almost exactly the same, just
+  in reverse:</p>
+
+<pre>keyval=1 ' must be set to the key of the record you want to retrieve
+
+res=dbread(db,keyval,recordData)
+if (res = 0) then
+    msgbox recorddata.name
+    msgbox datemmddyy(recorddata.dDate)
+    msgbox str(recorddata.fmyfloat)
+else
+    alert (&quot;Oops!&quot;,&quot;An error occured :&nbsp;&quot;+str(res),3,&quot;OK&quot;)
+end if</pre>
+
+<P>Please note that if you get a return value of 2 in 'res', this means that the
+record you tried to read wasn't found and the next closest record to it was returned
+instead.</P>
+<p>For more information on using keyed files read section 10.D.b - &quot;Operations
+  by Record Key&quot; in the NSBasic/Symbian OS Handbook. There is also an example of
+  creating a sequential key value that is described in Section 10.D.c - &quot;Using
+  a sequentially numbered key&quot; in the NSBasic/Symbian OS Handbook.</p>
+
+
+<h3><a name="variable"></a>A few words about the "file" variable</h3>
+By now you have probably noticed that all file-access statements use a "file" variable to refer to the file being opened, closed, erased, or otherwise manipulated.  Understanding the use of this variable will help keep you from making a common mistake which can be hard to debug (and fix) later.
+
+<p>When a file is created or opened by an application, it is assigned a unique number ("handle") by the operating system to refer to that file, and this unique handle is assigned to the NSBasic file variable:
+
+<PRE>Dim db1 as database ' our variable to hold the file handle
+Dim res as integer ' our result variable
+res=dbCreate(db1,"MyDB",0,"Test")
+res=dbOpen(db1,"MyDB",0)
+</Pre>
+
+<p>Every subsequent file operation refers to the file by this handle rather than by the file name:
+
+<pre>
+'examples...
+res=dbFind(db1,"Doe, John")
+res=dbInsert(db1, dbKey, dbData)
+</pre>
+
+Although your applications receive this handle, they should <b>never</b> attempt to modify it, as this would cause the OS to lose track of the file being used.  Not only shouldn't your applications modify the handle, they must not attempt to open another file using the same file variable:
+
+<pre>
+res=dbOpen(db1,"MyDB",0)
+res=dbOpen(db1,"NextDB",0) ' db1 no longer refers to "MyDB"
+res=dbOpen(db1,"NextDB",0) ' db1 now refers to the "NextDB", but this time opened in read-only mode
+</pre>
+
+<p>The appropriate way to refer to multiple files is to use a separate "file" variables for the different handles:
+
+<pre>
+Dim dbInventory as database
+Dim dbPrices as database
+res=dbOpen(dbInventory,"MyDB",0)
+res=dbOpen(dbPrices,"NextDB,0)
+'now both files are opened, and each handle is saved in a separate "file" variable
+'...file operations and other code...
+res=dbClose(dbPrices)
+res=dbClose(dbInventory)
+'now both files are closed, and can be safely opened again later if needed
+</pre>
+
+<p>Some programmers open all files at the beginning of an application, then close them all at the end, while some programmers open files only when they're needed, closing them immediately as soon as possible after any data manipulation.  Which method you use is up to you, but be sure to evaluate the return code of every file operation, to catch any errors that may creep in.
+
+
+<h3><a name="pdb"></a>PDB and PRC files Working Together</h3>
+<p>Files (PDB) are not stored "within" the application (PRC). They are still
+  separate. There are three attributes to a file: the Creator ID, the type,
+  and the name. The Creator ID and type are both four-byte values, such as 'appl',
+  'REAd', ''Font', 'Data', 'zrCT' ... basically anything. Note that in code these
+  characters are surrounded by single quotes as if they were char constants and
+  not the double quotes typically used for strings. An ID or type could also be
+  represented as a long integer (generally in hex) for instance 'appl' could also
+  be represented as 0x6170706C, although this is less common. </p>
+<p>There can only be one db with the type of 'appl' with any given ID on the device
+  at any time. This typically would be the PRC file that represents the executable
+  code of your program. This uniqueness attribute does not apply to other types.
+  For instance, if you use a &quot;Doc&quot; reader and have several Doc
+  files on your device there will be many files with a creator/type pair of
+  'REAd'/'TEXt'. The only truly unique aspect for any file
+  is the name -- which must be unique with respect to all other files on the
+  device regardless of their type/creater. For instance if you have a Doc with the
+  name "videos", you can not also have a NSBasic file w/ the same name. </p>
+<p>The StyleTap Launcher treats multiple files sharing the same ID in a special manner.
+  Using the StyleTap Launcher, when you delete the file with type 'appl' of any given ID ('fBAR') then
+  all other files with the same ID will also be removed from the device. This
+  prevents unusable data from cluttering up your valuable memory when you ditch
+  an old app. </p>
+<<p>The only reason to -not- use the same ID for the app and its data is if for
+  some reason you want the data to remain on the PDA when the application that
+  uses it is deleted.</p>
+<h3><a name="large"></a>Access to Large files</h3>
+
+<h3><a name="faq"></a>File Programming Frequently Asked Questions</h3>
+<p><b>Q: What's the difference between using dbInsert (for keyed files) and
+  dbPut (for non-keyed files)?</b></p>
+<p>A: Michael Verive put the description best:</p>
+<p>The dbInsert function will write a record to a keyed file, and requires
+  the use of a unique key. The record information is then stored along with the
+  key. When read, the records are read in key sequence alphabetically, saving
+  the hassle of sorting the records. The dbPut command will write the record in
+  a specific location, designated by dbPosition. No unique key is needed, since
+  the records are read either sequentially or by positioning the file pointer
+  to the specific record number and offset. </p>
+<p>Each form of file access has its own advantages and disadvantages. Keyed
+  files require the use of a unique key for each record, and only use a single
+  key. They are very useful when information needs to be searched for by a unique
+  key, and when having the data "sorted" is needed. Non-keyed files neither
+  use nor require a unique key, but are either accessed by direct record/offset
+  access, or sequentially. Since there is no key, searching for a specific record
+  may be more time consuming, although the data can be sorted, and a fast binary
+  search algorithm used. When all the records are the same length, direct access
+  by record number is very fast with non-keyed files. If you need the fastest
+  access, and space isn't a limitation (storing strings of different lengths in
+  non-keyed files by padding with spaces is very inefficient), the non-keyed
+  file may be your answer. You may need to develop your own sorting and binary
+  search routines, however. I have a demo of sort routines for arrays, but the
+  same concept can easily be applied to non-keyed files. </p>
+<p><b>Q:What format do you store  dates in?</b> </p>
+<p>A: In NS Basic/Symbian OS, dates are stored internally as (year-1900)*10000+month*100+day.
+</p>
+<p><b>Q: What format do you store timestamps in? </b></p>
+<p>A: It's h*10000+m*100+s. </p>
+<p><b>Q: Why would someone get a 'Bus Error' running an NSBasic/Symbian OS program?
+  </b></p>
+<p>A: A "Bus Error" may be caused by attempting to dbread using a key
+  field of a type other than the one used to dbinsert the record.</p>
+<p><b>Q: How do I access NSBasic files with Borland Delphi? </b></p>
+<p>A: If you're looking to do it via a conduit, you can use Tabdee Ltd's TurboSync
+  components. They have been updating their product to use the date and time formats
+  that NSBasic dates are stored in. You can find out more at <a href="http://www.tabdee.ltd.uk">http://www.tabdee.ltd.uk</a>
+  . </p>
+
+<p><b>Q: Using a keyed file, can we know the position when we use dbreadnext
+  or dbreadprev? </b></p>
+<p>A: (Thanks to Mike Verive [mverive&copy; peoplepc.com]) </p>
+<p>It all depends on how you get to your record. If you are using dbReadNext after
+  a dbReset, you can keep a pointer active that coincides with the record number
+  (ditto with dbReadPrev, since you can increment or decrement the pointer). This
+  technique is used (along with getting the number of records) in the Keyed Phone
+  DB. </p>
+<p>However, if you delete or insert records, you will have to reinitialize your
+  pointer. </p>
+<p>If you want the power of using keyed files, and need to know where you
+  are, there are a few other ways. One way is to use an array to keep track of
+  the keys and their position (this can also be done with a second file). Use
+  dbreset to start at the beginning of the file you want to track the keys
+  of, then build the array of keys (or file of keys) one at a time. The array
+  index (or new file position) can then be used to determine the record number.
+  Again, the delete/insert problem ith pointers remains, but that can be solved
+  in code as well.</p>
+<p><b>Q: How can I delete records from a non-keyed file?</b></p>
+<p>A: There is no NSBasic/Symbian OS call to manage record deletion in non-keyed files.
+  Your best approach would be to have a delete 'flag' field in your record of
+  your file. Then write a 'compress file' file management routine
+  that would re-write your file file, minus the records that have a the delete
+  flag set on them.</p>
+<p><b>Q: How can I delete records from a keyed file?</b></p>
+<p>A: Use the dbDelete() function call. See the dbOpen() function call for a list
+  of possible error codes.</p>
+<p><b>Q: When I call dbDelete() to delete a record and then call dbGetNoRecs(),
+  NSBasic still says I have the same number of records as before. Why?</b></p>
+<p>A: The call to dbDelete() only flags the record as being 'ready to delete'.
+  When the file is closed with dbClose() these records are automatically compressed
+  out. </p>
+<p><b>Q: How do memory cards work? (Compact Flash, SD, Memory Stick)</b></p>
+<p>A: Memory cards use the Virtual File System (VFS), which does not allow the use (directly) of the db statements. You can use them using NSBasic's VFS library, described in <A HREF="TN23.htm">Tech Note 23.</A>
+<p>Here are some excellent articles by Larry Garfield of InfoSync that explain what VFS cards can and cannot be used for:
+<UL>
+	<LI>Part 1: <A HREF="http://www.infosync.no/show.php?id=1768">http://www.infosync.no/show.php?id=1768</A>
+	<LI>Part 2: <A HREF="http://www.infosync.no/show.php?id=1772">http://www.infosync.no/show.php?id=1772</A>
+	
+  <LI>Part 3: <A HREF="http://www.infosync.no/show.php?id=1787">http://www.infosync.no/show.php?id=1787</A>
+	<h3></h3>
+</UL>
+
+<h3><a name="resource"></a>Resources and Suggested Reading</h3>
+<p>
+
+<p>Here are some documents that explain the format of .pdb and .prc files:
+<ul compact>
+  <li>Unofficial Documentation: <a href="http://www.mactech.com/articles/mactech/Vol.21/21.08/PDBFile/index.html">http://www.mactech.com/articles/mactech/Vol.21/21.08/PDBFile/index.html</a>
+  <li>Format of .prc files: <a href="http://web.mit.edu/tytso/www/pilot/prc-format.html">http://web.mit.edu/tytso/www/pilot/prc-format.html</a>
+  <li>Mizuno-ami's great explanation (for VB users): <A HREF="TN02a.htm">TechNote 02a</A>
+</ul>
+<a name="conduits"></a>
+<h3>File Conversion Tools</h3>
+<TABLE border=1 width=800>
+	
+  <TR>
+		
+	<TD><a href="http://www.nsbasic.com/desktop">NS Basic/Desktop</a></TD>
+	<TD>NS Basic/Desktop creates applications that run on Windows XP and Windows 2000. It's an easy to use, VB like environment. NS Basic/Desktop has special features for manipulating pdb files on the desktop.</TD>
+  </TR>
+		
+  <TR>
+		
+	<TD><a href="http://www.envicon.de/conduitdb/">ConduitDB SDK</a></TD>
+	<TD>Convert BDE and ODBC data bases to PDB. </TD>
+  </TR>
+	
+	
+  <TR>
+		
+	<TD><a href="http://www.heartware.dk/PalmPilot/">CSV2PDB, PDB2CSV</a></TD>
+	<TD>Comma separated file to PDB, PDB to comma separated file.</TD>
+  </TR>
+	
+	
+  <TR>
+		
+	<TD><a href="http://www.djw.org/product/palm/par/">Par</a></TD>
+	<TD>Create and manipulate .pdb and .prc files</TD>
+  </TR>
+	
+  <TR>
+		
+	<TD><A HREF="http://www.pda-tec.com">PDA-tec</A></TD>
+	<TD>This company make a variety of interesting tools that can access NS Basic files. Does MDB and PDF files. 
+</TD>
+  </TR>
+	
+	
+  <TR>
+		
+	<TD><a href="http://www.mverive.com/pdbconverter.htm">PDB Converter</a></TD>
+	<TD>Converts Excel, tab delimited and CSV files. Includes full source in VB6. By Michael Verive</TD>
+  </TR>
+	
+	
+  <TR>
+		
+	<TD><a href="http://www.palmspot.com/software/detail/ps3969a_9851.html">PDB Reader</a></TD>
+	<TD>PDB Reader lets you view pdb files on the desktop</TD>
+  </TR>
+	
+ 
+  <TR>
+	<TD><a href="http://xprsg.tripod.com/programing/toolz.htm">PDBingo!</a></TD>
+	<TD>Allows the analysis of PDB file Header as well as tweaking of the PDB file Header.</TD>
+  </TR>
+		
+  <TR>
+		
+	<TD><a href="http://search.cpan.org/author/JOHANVDB/XML-Generator-Pdb-0.1/scripts/pdbtoxml">pdb2xml</a></TD>
+	<TD>Generates an XML description from a pdb file.</TD>
+  </TR>
+					
+  <TR>
+
+		
+	<TD><a href="http://tech.groups.yahoo.com/group/nsbasic-symbian/files/">Web Board</a></TD>
+	<TD>Some more tools and samples</TD>
+  </TR>
+	
+</TABLE>
+<p>
+<H4>More?</H4>
+
+<P>If anyone hears of more useful resources on this topic or has useful experiences, please let us know at <A HREF="mailto:support&copy; nsbasic.com">support&copy; nsbasic.com</A> so we can improve this document. Code samples will be greatly appreciated by all!
+
+
+

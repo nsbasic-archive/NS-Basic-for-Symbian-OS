@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Tech Note 11: Signing your Application</TITLE>
+<link rel="stylesheet" href="style2.css">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=478>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+<TD WIDTH="78%" VALIGN="TOP">
+	  <h2>Tech Note 11: Signing your Application</h2>
+	  <h3>February 01, 2009</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+	</TD>
+</TR>
+</TABLE>
+<HR size="1" noshade>
+<BR><BR>
+
+<h4>Introduction</h4>
+
+Before an app can be run on most devices, it needs to be signed. Signing defines what Capabilities an app is allowed and provides a secure way to identify the originator of an app.
+
+<p>Signing is one of the most complex aspects of creating apps for Symbian OS. It was created to protect users and carriers from unwanted or dangerous software. We have done our best to make it easy to do signing with NS Basic/Symbian OS, especially during development.
+
+<p>Symbian has a special website dedicated to signing: <a href="http://www.symbiansigned.com" target="_top">http://www.symbiansigned.com</a>. There is a lot of additional information there, including <a href="http://developer.symbian.com/ssguide" target="_top">The Complete Guide To Symbian Signed</a>, which may need to be read several times to make sense.
+
+<h4>1. Self Signed</h4>
+
+<ul>
+	<li>Only installs on devices where "Software Installation" is set to "All" on the device.</li>
+	<li>Not recommended for commercial apps</li>
+	<li>Good for development</li>
+	<li>Has an extra warning message during installation</li>
+	<li>Will not run on devices that only allow signed apps.</li>
+	<li>No publisher ID required</li>
+	<li>Valid for about 1 year</li>
+	<li>Can be created using NS Basic/Symbian OS Standard Edition</li>
+</ul>
+
+An application is regarded as Untrusted if signed with the Self Signed Certificate. Self Signed apps are recommended for freeware applications using unrestricted capabilities.
+
+<p>The advantage of self-signing is that it's fast, since it's done locally on developer's machine and that a self-signed installable package can be installed on more than one device, i.e. no restriction applies (based on IMEI number, for example).
+
+<p>The drawback of self-signed certificate is that a user will be prompted a warning dialog. It says that the application is not trusted and the user should decide whether or not to continue the installation. The warning dialog does not appear when the application is signed via higher levels of Symbian Signed.
+
+<p>NS Basic/Symbian OS creates automatically creates Self Signed applications. No other steps are needed. For S60 devices, the file extension will be .sisx; for UIQ, it will be .sis.
+
+<h4>2. Open Signed Online (beta)</h4>
+<ul>
+	<li>Recommended for apps that are for personal use</li>
+	<li>Tied to single device by IMEI.</li>
+	<li>No publisher ID required</li>
+	<li>Valid for 3 years</li>
+	<li>NS Basic/Symbian OS Pro Edition required</li>
+</ul>
+
+The Open Signed Online server is here:
+<a href="https://www.symbiansigned.com/app/page/public/openSignedOnline.do" target="_top">https://www.symbiansigned.com/app/page/public/openSignedOnline.do</a>
+
+<p>You will need to enter your IMEI number and your email address, upload your .sis file (not the sisx), select all capabilities and complete the form.
+
+<p>A confirmation email will be sent to you which contains a web link. You need to open the web link to complete the confirmation. Following this confirmation your file will be processed and a download link will be sent in an email to the address you provided, usually within a minute or two.
+
+<p>Download this file: it will have the same name as the .sis file you uploaded. You can then install it to the specified device.
+
+<h4>3. Open Signed OffLine</h4>
+<ul>
+	<li>For apps that are for limited release and personal use</li>
+	<li>Tied to a limited number of devices by IMEI: up to 1000.</li>
+	<li>Publisher ID required</li>
+	<li>Requires Symbian Signed account</li>
+	<li>NS Basic/Symbian OS Pro Edition required</li>
+</ul>
+
+<h4>4. Express Signed</h4>
+<ul>
+	<li>For generally released applications</li>
+	<li>Requires Publisher ID (costs $200/yr)</li>
+	<li>Requires Symbian Signed account</li>
+	<li>Specified list of Capabilities</li>
+	<li>Valid for 10 years</li>
+	<li>Must meet Symbian Signed Test Critera (self test, may be audited)</li>
+	<li>NS Basic/Symbian OS Pro Edition required</li>
+</ul>
+
+<h4>5. Certified Signed</h4>
+<ul>
+	<li>For commercial applications</li>
+	<li>Requires Publisher ID ($200/yr)</li>
+	<li>Requires Symbian Signed account</li>
+	<li>Specified list of Capabilities</li>
+	<li>Valid for 10 years</li>
+	<li>Must meet Symbian Signed Test Critera (independent test house - will cost 185EUR - 560EUR)</li>
+	<li>NS Basic/Symbian OS Pro Edition required</li>
+</ul>
+
+<h4>UID3 Ranges</H4>
+
+A UID3 is a unique number that each application has, assigned by Symbian. This number is entered into Project Properties. 
+
+<p>UID3 values < 0x80000000 are called "Protected" and are used for commercial applications that have passed all the Symbian Signed testing system. If you intend to use this option you need to read the Symbian website. 
+
+<p>UID3 values >= 0x80000000 are called "Unprotected" and are used for Self Signed apps designed to be distributed (0xAxxxxxxxx) and for development and internal testing apps (0xExxxxxxxx).  By default, NS Basic/Symbian OS gives each new product a unique UID3 (to the user) value in the 0xExxxxxxxx range for development purposes.  If you wish to produce an application for distribution you will need to get a Symbian Signed Account and get Symbian to allocate you a unique block of UID3s in the 0xAxxxxxxxx range. This is easy to do and cost free.
+
+
+<p>The Protected range is < 0x80000000.
+
+<p>0xAxxxxxxxx is for applications that are self signed. The UID is requested and associated with a Symbian signed account. This prevents different applications using the same UID and assists tracability when redistributed. Specifically it is for applications requiring only user grantable capabilities. From FP2 this includes Location. By default the certificate has a life of a year. There is a patch to extend it.
+
+<p>0x2xxxxxxx range is for applications that must be Symbian signed by the licenced owner because they are using Extended Set capabilties. The UID is associated with a Symbian Signed account. This prevents different applications using the same UID. Specifically it is intended that ALL applications in this range will be Symbian Signed BEFORE being redistributed publically.
+
+<p>0XExxxxxx range is internal testing applications/prototypes/Proof of concept. These UIDS are for internal test applications requiring enhanced set capabilties. These uids are NOT associated with an email account and they are intended just for the developers personal machine as UID clashes can and will occur. Specifically these applications should not be redistributed at all. If you are not using any extended set capabiltiies, use a self signed certificate There is an update here to allow self signed sis files to have their certificate life extended from the default
+
+
+
+<p>Common Installer Errors:
+http://wiki.forum.nokia.com/index.php/S60_SW_installer_troubleshooting
+
+
+<H4>Glossary</H4>
+
+<table BORDER=1 CELLSPACING=0 cellpadding=1 >
+	<tr align=left valign=top>
+		<td>Term</td> <td>Definition</td>
+	</tr>
+	<tr>
+		<td>Capabilities</td> <td>The Symbian OS protects certain API functions. Apps must have permission to use them. The Symbian Signed certificates provide the permission. Here are the minimum capabilities required by an NS Basic/Symbian OS app:
+		<ol>
+		<li>Access to remote services
+		<li>Access to send or receive information locally
+		<li>Access to read personal data
+		<li>Access to create/change personal data
+		</ol></td>
+	</tr>
+	<tr>
+		<td>IMEI</td> <td>International Mobile Equipment Identity. A unique number that each phone has. You can usually get this from your device by dialing *#06#.</td>
+	</tr>
+	<tr>
+		<td>Protected Range</td> <td>UID3 values < 0x80000000. These numbers are assigned by Symbian</td>
+	</tr>
+	<tr>
+		<td>Publisher ID</td> <td>An ID, unique to the developer, issued by TC Trust Center, at <a href="http://www.trustcenter.de/order/publisherid/dev" target="_top">http://www.trustcenter.de/order/publisherid/dev</a></td>
+	</tr>
+	<tr>
+		<td>Trusted App</td> <td>An app which is Symbian Signed.</td>
+	</tr>
+	<tr>
+		<td>Unprotected Range</td> <td>UID3 values >= 0x80000000. For Self Signed and internal testing apps.</td>
+	</tr>
+	<tr>
+		<td>UID3</td> <td>A unique number assigned to each application. They can come from the Protected Range or the Unprotected Range. By default, NS Basic/Symbian OS gives each new product a unique UID3 (to the user) value in the Unprotected Range. </td>
+	</tr>
+</table>
+

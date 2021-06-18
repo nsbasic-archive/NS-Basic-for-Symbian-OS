@@ -1,0 +1,457 @@
+#/bin/sh
+#######
+NORM=b018012l
+BOLD=b018015l
+name=URWBookman
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+#######
+NORM=a010013l
+BOLD=a010015l
+name=Gothic
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+#######
+NORM=c059013l
+BOLD=c059016l
+name=CenturySchoolbook
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+#######
+NORM=n019003l
+BOLD=n019004l
+name=NimbusSans
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+#######
+NORM=n021003l
+BOLD=n021004l
+name=NimbusRoman
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+#######
+NORM=n022003l
+BOLD=n022004l
+name=NimbusMono
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+#######
+NORM=p052003l
+BOLD=p052004l
+name=URWPalladio
+A=15
+B=13
+
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=16
+B=14
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=17
+B=15
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=18
+B=16
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=19
+B=17
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=20
+B=18
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=22
+B=20
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+#
+A=24
+B=22
+./topluckergraykoi8r sonyhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-sony-os4.prc
+./topluckergraykoi8r palmhi.left KOI8R-$name$A urwCyr/$NORM.pfb $A urwCyr/$BOLD.pfb $A urwCyr/$NORM.pfb $B
+mv KOI8R-$name$A.prc KOI8R-$name$A-os5.prc
+mkdir KOI8R-$name
+mv KOI8R-$name*.prc KOI8R-$name
+zip -9 KOI8R-Plucker-sony-os4 COPYING README_prcs.txt KOI8R-$name/*-sony*
+zip -9 KOI8R-Plucker-os5 COPYING README_prcs.txt KOI8R-$name/*-os5*
+rm -r KOI8R-$name
+

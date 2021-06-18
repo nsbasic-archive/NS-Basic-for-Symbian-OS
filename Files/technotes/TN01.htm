@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Tech Note 01: Installation Issues</TITLE>
+<link rel="stylesheet" href="style2.css">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=478>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+<TD WIDTH="78%" VALIGN="TOP">
+	  <h2>Tech Note 01: Common Problems</h2>
+	  <h3>January 31, 2009</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+	</TD>
+</TR>
+</TABLE>
+<HR size="1" noshade>
+<BR><BR>
+
+<h4> 1. "Certificate Error. Contact the Application Supplier." when installing an app to a device.</h4>
+This is caused by the device being locked against unsigned apps being installed. You can get your app signed (see the Tech Note on Signing), but often it's much easier to change the setting of the device to allow unsigned apps to be installed. To do this, go into Tools on the device. Select App. Manager and highlight "App. downlds." Click the "Options" button on the left key.  Select "Settings". Change Software installation from "Signed only" to "All". Exit out and try the installation again.
+
+<h4> 2. "Certificate may not yet / no longer valid or not correct." or<br>
+"Zertifikat noch nicht / nicht mehr gültig oder Telefondatum nicht korrekt." or<br>
+"Component failed security check.  Cannot install."</h4>
+If you get any of these messages on the device when installing, check that the date and time on the device are correct. An app will not run if it was created on a system where the date and time are later than the device is currently set to, or if the date has expired. NS Basic/Symbian self signed apps are valid for one year from time of compilation.
+
+<p>Nokia 5800: This device has a bug that can cause this message to occur even when the certificate is valid. We have found a couple of things out about this. First, if you do not have SIM card installed, try it again with a SIM card. Otherwise, <a href="see%20this%20article%20on%20fixing%20the%20problem" target="_top">see this article on fixing the problem</a>.
+
+<h4>3. "Update Error" or "Aktualisierungsfehler" when installing an app to a device.</h4>
+This happens when the files you are installing conflict with files that are already installed. Usually, this can be fixed by changing the UID3 and Launcher Name in Project Properties or by deleting the conflicting app from the device before installing the new one. In extreme cases, a hard reset of the device may be needed.
+
+<h4>4. "The application installer on the phone does not support the file format of the application that was tried to be installed." when installing an app to a device.</h4>
+This appears on S60 devices that are not running 3rd or 5th Edition firmware.
+
+<p>Series 60 1st and 2nd Edition devices include: Nokia 7650, 3650, 6600, 7610, 6260, 6630, N-Gage, N-Gage QD, 6670, 6680, N70, N90 and N72 among others, plus the Siemens SX1, Sendo X, Samsung D720 and Panasonic X700. NS Basic/Symbian OS will not work on these devices. 
+<p>S60 3rd & 5th Edition devices include the Nokia N71, N73, N78, N79, N80, N81, N85, N91, N92, N93, N95, N96, E50, E51, E60, E61, E62, E70, 3250, 5500, 5800 plus others.
+<p>Here is a good chart showing the specifications of Nokia devices: <a href="http://3lib.ukonline.co.uk/s60history.htm" target="_top">http://3lib.ukonline.co.uk/s60history.htm
+</a>
+<p>UIQ2 devices include the Sony Ericsson P800, P900, and P910, the Motorola A920, A925, and A1000, and the Benq P30. These are not supported.
+
+<p>UIQ3 devices that do work include the Sony Ericsson P990i, M600i and W950i.
+
+<h4>5. Make sure your firmware is up to date</h4>
+On most devices, dialing *#0000# on the phone will bring up the firmware version which is installed on your device. This website will help you determine the current version on Nokia devices:
+<a href="http://hunajatehdas.net/nokia/firmware/en/" target="_top">http://hunajatehdas.net/nokia/firmware/en/</a>.
+
+<h4>6. Error '429' on starting NS Basic/Symbian OS</h4>
+Run the file \Program Files\nsbasic\symbian\register.bat as Administrator. This will re register all the controls that NS Basic/Symbian OS uses.
+
+<h4>7. Run Time Error 380 - Invalid Property Value</h4>
+This can be caused by having only True Type fonts enabled. In the Fonts Control panel, in the View Options dialog there's a True Type Fonts
+tab. In this is a check box entitled "Show only True Type fonts
+in the programs on my computer". Unchecking this solves the problem.
+<p>In some cases, this can be caused by Windows not being able to locate the special fonts that NS Basic/Symbian OS uses. You can fix this by moving the fonts in \program files\nsbasic\fonts into \windows\fonts.
+
+<h4>8. Removing NS Basic/Symbian OS completely</h4>
+The Windows Uninstaller only removes files that have not been modified since an application has been installed. As a result, uninstalling a package often leaves some files and registry keys. If you do the following, you will remove NS Basic completely from your system. This can be a useful procedure if you want to make a complete clean reinstallation.
+<OL>
+	<LI>Uninstall NS Basic from the Start Menu.
+	<LI>Delete the folder c:\nsbasic\. Make sure you back up any files of yours that might be there!
+	<LI>Delete the folder c:\program files\nsbasic\symbian. <br>
+	If you have NS Basic/CE (or Palm) installed, do not delete c:\program files\nsbasic\CE (or Palm).
+	<LI>Clean out the registry:<br>
+	 [Start]...[Run]...regedit. Click on OK. <br>
+	 Navigate to HKEY_CURRENT_USER\Software\NSBasic\symbian. <br>
+	 Right click on it to delete it.
+</OL>
+
+

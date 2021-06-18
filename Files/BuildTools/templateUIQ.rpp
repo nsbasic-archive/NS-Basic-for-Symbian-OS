@@ -1,0 +1,32 @@
+// Copyright 2008 NS BASIC Corporation
+
+STRUCT RSS_SIGNATURE
+    {
+    LONG signature= 4 ;
+    SRLINK self;
+    }
+
+STRUCT TBUF
+    {
+    BUF buf; // non-zero terminated text string
+    }
+
+STRUCT EIK_APP_INFO
+    {
+    LLINK hotkeys=0;
+    LLINK menubar=0;
+    LLINK toolbar=0;
+    LLINK toolband=0;
+    LLINK status_pane=0;
+    BYTE disable_system_screen_furniture=0;
+    }
+# 18 "C:\\Symbian\\Carbide\\workspace\\StyleTapLauncherUIQ\\data\\StyleTapLauncherUIQ.rss" 2
+
+NAME UNIQ
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = "StyleTapLauncherUIQ_***uid3***"; }
+
+RESOURCE EIK_APP_INFO {	}
+

@@ -1,0 +1,102 @@
+"mdl"
+8
+"Bit n Gadg","appl","Bit2",1016,505,0
+""
+0
+0
+""
+"1,0,0"
+""
+"Installat."
+""
+"E1000028"
+""
+"bmpfile"
+1
+"Bmpfile1014"
+1014
+"..\..\Bitmaps\Club.bmp"
+"bmpfile"
+1
+"Bmpfile1015"
+1015
+"..\..\Bitmaps\Club2.bmp"
+"bmpfile"
+1
+"Bmpfile1016"
+1016
+"..\..\Bitmaps\Club3.bmp"
+"vew"
+4,1004,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"Bit n Gadg"
+"Screen1004"
+"
+sub Screen1004_before()
+
+end sub
+"
+0
+"Sub Screen1004_after()
+  DrawRectangle 92,88,12,12,nsbpennormal
+End Sub"
+""
+0,0,0,0
+"gad"
+1
+"obj"
+3
+"gad","Gad1005",1005,92,88,44,40,#TRUE#,0,"Gad1005",0,0,0
+"Sub object1005()
+MsgBox ~gadget~
+End Sub"
+"lbl"
+1
+"obj"
+3
+"lbl","Lbl1008",1008,12,52,12,66,#TRUE#,0,"Label with script",0,0,0
+"Sub object1008()
+  MsgBox ~fired~
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","But1009",1009,12,28,16,116,#TRUE#,0," Button without script",0,0,0
+""
+"bmp"
+1
+1014
+"obj"
+3
+"bmp","Bmp1010",1010,108,104,12,12,#TRUE#,0,"Bmp1010",0,0,0
+"Sub object1010()
+  MsgBox ~bitmap3 code~
+End Sub"
+"bmp"
+1
+1015
+"obj"
+3
+"bmp","Bmp1011",1011,32,116,36,28,#TRUE#,0,"Bmp1011",0,0,0
+"Sub object1011()
+  MsgBox ~bitmap2 code~
+End Sub"
+"gad"
+1
+"obj"
+3
+"gad","Gad1012",1012,28,112,12,12,#TRUE#,0,"Gad1012",0,0,0
+"Sub object1012()
+MsgBox ~gadget2~
+End Sub"
+"bmp"
+1
+1016
+"obj"
+3
+"bmp","Bmp1013",1013,56,84,12,12,#TRUE#,0,"Bmp1013",0,0,0
+"sub object1013()
+  msgbox ~bitmap code~
+end sub"
+"end"

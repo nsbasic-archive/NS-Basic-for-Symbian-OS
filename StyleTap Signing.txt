@@ -1,0 +1,5 @@
+Edit nsbasic.rsrc
+Click on Strings
+Edit String Resource
+
+yufDwgTBsCWMbFyApYKHexPKRlqkDgnZreSpdUMmXIWMzIGCBuRgWyNFLjjfDuRZ

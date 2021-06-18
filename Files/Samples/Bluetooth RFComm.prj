@@ -1,0 +1,129 @@
+"mdl"
+9
+"BlueTooth","appl","Sert",1027,505,0
+"Sub main()
+    
+    Global gintErr as Integer
+    Global gstrReceived as String
+    Dim res as Integer
+
+    'open port
+    gintErr = SerialOpen(nsbRFCOMM,9600)
+    If gintErr > 0 Then MsgBox ~startup error ~ + str(ginterr) 
+  
+End Sub"
+0
+0
+"BT RFComm"
+"1,0,0"
+""
+"Installat."
+",,"
+"E1000109"
+"C:\NSBasic_Symbian\themes\Symbian.pdb"
+"sub project_termination_9915()
+    'close comms
+    gintErr = SerialClose()
+    if gintErr > 0 then msgbox ~end error ~ + str(gintErr)
+
+end sub
+"
+"resfile"
+1
+"Symbian"
+1027
+"DBIM"
+"C:\NSBasic_Symbian\themes\Symbian.pdb"
+"vew"
+4,1004,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"BlueTooth RFCOMM"
+"Screen1004"
+""
+0
+""
+"Sub Form1004_Event()
+    Dim err as Integer
+    Dim received as String
+    Dim numbytes as Integer
+    
+    If getEventType()=nsbSerialIn Then
+        numbytes=sysinfo(5)
+        MsgBox ~Bytes waiting ~ + str(numbytes)
+        
+        err=serialReceive(received, 10, 0)
+      If Err > 0 Then
+        Beep
+        error.text=str(err) 
+        data.text=data.text+~.~+Received
+      Else 
+        error.text=~~
+        data.text=data.text+received
+      End If 
+    End If 
+        
+End Sub"
+0,0,0,0
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","But1006",1006,4,52,12,104,#TRUE#,0,"Receive: timeout 5 secs",0,0,0
+"sub object1006()
+    dim received as string
+    dim err as integer
+    
+ retry:
+    error.text=~~
+    Err = SerialReceive(Received,1,5) 
+    if Err > 0 then
+        beep
+        error.text=str(err) 
+        data.text=data.text+~.~+Received
+    else 
+        error.text=~~
+        data.text=data.text+received
+        goto retry 
+    end if  
+     
+end sub"
+"fld"
+1
+#FALSE#,#TRUE#,#FALSE#,#TRUE#,#TRUE#,500,#FALSE#,#TRUE#,#FALSE#
+"obj"
+3
+"fld","data",1009,4,68,88,104,#TRUE#,0,"",0,0,0
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,10,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","error",1015,112,0,12,40,#TRUE#,0,"",0,0,0
+"sub object1015()
+
+end sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","But1023",1023,4,20,12,104,#TRUE#,0,"Send a message",0,0,0
+"Sub object1023()
+    Dim res as Integer
+    Dim buffer as String
+    buffer=~This is a message from the Symbian OS device.~
+    res=serialSend(buffer, len(buffer))
+    If res<>0 Then MsgBox ~Error ~ + str(res)
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1024",1024,4,36,12,104,#TRUE#,0,"Receive with Event",0,0,0
+"Sub object1024()
+    Dim err as Integer
+    err=serialReceiveWithEvent()
+End Sub"
+"end"

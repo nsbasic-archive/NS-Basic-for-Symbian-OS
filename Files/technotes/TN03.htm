@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Signing and Distributing your App</TITLE>
+<link rel="stylesheet" href="style2.css">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=478>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+<TD WIDTH="78%" VALIGN="TOP">
+	  <h2>Signing and Distributing your App</h2>
+	  <h3>May 14, 2008</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+	</TD>
+</TR>
+</TABLE>
+<HR size="1" noshade>
+<BR><BR>
+
+<h4>Self Signing</h4>
+
+
+How to sign a .Sis file with Self-Sign Certificate
+This article is specific to S60 3rd Edition development or newer. From S60 3rd Edition, which is based on Symbian OS 9, a user can install only signed applications.
+If an application requires basic capabilities only, it can be signed with self-signed certificate. Basic capabilities include LocalServices, NetworkServices, ReadUserData, UserEnvironment and WriteUserData. Starting with S60 3rd Edition Feature Pack 2 release (aka S60 3.2) the Location capability can also be granted to self-signed applications.
+An application that does not require any capabilities can also be signed with self-signed certificate. The advantage of self-signing is that it's fast, since it's done locally on developer's machine and that a self-signed installable package can be installed on more than one device, i.e. no restriction applies (based on IMEI number, for example).
+The drawback of self-signed certificate is that a user will be prompted a warning dialog. It says that the application is not trusted and the user can decide whether or not to continue the installation. The warning dialog does not appear when the application is signed via Symbian Signed.
+Please note that self-signing works even if the applicatiom demands stronger capabilities than what is in the basic set, however, it won't install on the device.
+
+<p>All Symbian OS apps need to be signed before they can run on a device. An Signed App has additional information bundled in it that identifies the app the to operating system for security purposes. This additional information is supplied on an app by app basis by Symbian. For more information, visit <a href="http://www.symbiansigned.com" target="_top">http://www.symbiansigned.com</a>.
+
+<p>For development and testing, the <a href="https://www.symbiansigned.com/app/page/public/openSignedOnline.do" target="_top">Open Signed Online</a> option is the right one to use. You can get your app signed online, 24 hours a day. Sign your app with a UID in the test range (0xE0000000...0xEFFFFFFF). You can pick a random value in that range as your test UID. The UID is unique to your app: you cannot reuse the UID on another app and run both on the same device.
+
+<p>Improperly signed apps will not install propertly on the device. In same cases, you may need to do a hard reset on the device to recover. Always test your signed apps on a test device before giving them someone else!
+
+
+
+
+<h4>Requesting a Symbian Developer Certificate</h4>
+
+
+<h4>Using the Online Signing Tool
+<ol>
+	<li>Enter in the IMEI number of your device</li>
+	<li>Enter your email address</li>
+	<li>Browse to your SIS file and choose it.</li>
+	<li>Check all the boxes in the Capability Information box.</li>
+	<li>Enter the Captcha code</li>
+	<li>Accept the legal agreement</li>
+	<li>Send</li>
+</ol>
+
+You'll get this page:
+<p><b>SUCCESS:</b><p>
+Your .sis file was uplaoded successfully. A confirmation email will be sent to you in which you will be required to confirm your request.
+Following this confirmation your file will be processed and a download link will be sent in an email to the address you provided.
+
+<p>Followed by this:
+
+<p><b>SUCCESS:</b><P>
+Your application StyleTapLauncherS60_0xE056F3A1.SIS signing request has been submitted successfully. 
+When your application has been signed and an email will be sent to you.
+	   
+<p>You will now get an email with a linked to the signed .SIS file.

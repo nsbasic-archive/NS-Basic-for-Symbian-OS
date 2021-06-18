@@ -1,0 +1,33 @@
+;NSBStub.pkg
+;
+;Language - standard language definitions
+&EN,FI,ZH,JA
+
+; standard SIS file header
+#{"NSBStub", "NSBStub", "NSBStub", "NSBStub"},(0xA000017F),1,0,0
+
+;Localised Vendor name
+%{"NSBasic", "NSBasic", "NSBasic", "NSBasic"}
+
+;Unique Vendor name
+:"NS BASIC Corporation"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"S60ProductID", "S60ProductID", "S60ProductID", "S60ProductID"}
+
+;Files to install
+"resources\NSBStub.exe" -"!:\sys\bin\NSBStub.exe"
+
+{
+"resources\NSBStub.rsc"
+"resources\NSBStub.r09"
+"resources\NSBStub.r31"
+"resources\NSBStub.r32"
+} -"!:\resource\apps\NSBStub.rsc"
+
+"resources\NSBStub_reg.rsc" -"!:\private\10003a3f\import\apps\NSBStub_reg.rsc"
+"resources\nsbIcon.mif"     -"!:\resource\apps\Helloworldbasic_aif.mif"
+
+;required for application to be covered by backup/restore facility
+"resources\backup_registration.xml" -"!:\private\A000017F\backup_registration.xml"
+

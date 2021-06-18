@@ -1,0 +1,352 @@
+Please note there are three Agreements here. One is for
+NS BASIC Corporation, the second for StyleTap, and the third
+for Nokia Corporation. By accepting this, you are agreeing to 
+all Agreements.
+
+LICENSE AGREEMENT
+
+PLEASE READ THIS LICENSE CAREFULLY BEFORE USING THE SOFTWARE. 
+BY USING THE SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE 
+TERMS OF THIS LICENSE. IF YOU DO NOT AGREE TO THE TERMS OF 
+THIS LICENSE, PROMPTLY RETURN THE PRODUCT TO THE PLACE WHERE 
+YOU OBTAINED IT AND YOUR MONEY WILL BE REFUNDED. 
+
+1. License. The application, demonstration, system, and other 
+software accompanying this License, whether on disk, in read 
+only memory, or on any other media (the "Software"), the 
+related documentation and fonts are licensed to you by NS 
+BASIC Corporation ("NSBC"). You own the media on which the 
+Software and fonts are recorded but NSBC and or NSBC's 
+Licenser(s) and suppliers retain title to the Software, 
+related documentation and fonts and are protected by United 
+States copyright laws, by laws of other nations and 
+international treaties. This License allows you to use the 
+Software and fonts on a single Windows Product (which, for 
+purposes of this License, shall mean a product bearing 
+Microsoft's Windows logo), and make one copy of the Software 
+and fonts in machine-readable form for backup purposes only. 
+You must reproduce on such copy the NSBC copyright notice and 
+any other proprietary legends that were on the original copy 
+of the Software and fonts. You may also transfer all your 
+license rights in the Software and fonts, the backup copy of 
+the Software and fonts, the related documentation and a copy 
+of this License to another party, provided the other party 
+reads and agrees to accept the terms and conditions of this 
+License.  
+
+2. Restrictions. The Software contains copyrighted material, 
+trade secrets and other proprietary material and in order to 
+protect them you may not decompile, reverse engineer, 
+disassemble or otherwise reduce the Software to a human-
+perceivable form. You may not modify, network, rent, lease, 
+load, distribute or create derivative works based upon the 
+Software in whole or in part. You may not electronically 
+transmit the Software from one device to another or over a 
+network.  
+
+3. Termination. This License is effective until terminated. 
+You may terminate this License at any time by destroying the 
+Software and related documentation and fonts. This License 
+will terminate immediately without notice from NSBC if you 
+fail to comply with any provision of this License. Upon 
+termination you must destroy the Software, related 
+documentation and fonts.  
+
+4. Export Law Assurances. You agree and certify that neither 
+the Software nor any other technical data received from NSBC, 
+nor the direct product thereof, will be exported outside the 
+United States except as authorized and as permitted by the 
+laws and regulations of the United States. If the Software 
+has been rightfully obtained by you outside of the United 
+States, you agree that you will not reexport the Software 
+nor any other technical data received from NSBC, nor the 
+direct product thereof, except as permitted by the laws and 
+regulations of the United States and the laws and regulations 
+of the jurisdiction in which you obtained the Software.  
+
+5. Government End Users. If you are acquiring the Software 
+and fonts on behalf of any unit or agency of the United 
+States Government, the following provisions apply. The 
+Government agrees: (i) if the Software and fonts are 
+supplied to the Department of Defense (DoD), the Software 
+and fonts are classified as "Commercial Computer Software" 
+and the Government is acquiring only "restricted rights" in 
+the Software, its documentation and fonts as that term is 
+defined in Clause 252.227-7013(c)(1) of the DFARS; and (ii) 
+if the Software and fonts are supplied to any unit or agency 
+of the United States Government other than DoD, the 
+Governments' rights in the Software, its documentation and 
+fonts will be as defined in Clause 52.227-19(c)(2) of the 
+FAR or, in the case of NASA, in Clause 18-52.227-86(d) of the 
+NASA supplement to the FAR.  
+
+6. NS BASIC will replace at no charge defective disks or 
+manuals within 90 days of the date of purchase. NS BASIC 
+warranties that the programs will perform generally in 
+compliance with the included documentation. NS BASIC does not 
+warrant that the programs and manuals are free from all bugs, 
+errors or omissions. 
+
+7. Disclaimer of Warranty on Software. You expressly 
+acknowledge and agree that use of the Software and fonts is 
+at your sole risk. The Software, related documentation and 
+fonts are provided "AS IS" and without warranty of any kind 
+and NSBC and NSBC's Licenser(s) (for the purposes of 
+provisions 7 and 8, NSBC and NSBC's Licenser(s) shall be 
+collectively referred to as "NSBC") EXPRESSLY DISCLAIM ALL 
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE. NSBC DOES NOT WARRANT THAT THE FUNCTIONS 
+CONTAINED IN THE SOFTWARE WILL MEET YOUR REQUIREMENTS, OR THAT 
+THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-
+FREE, OR THAT DEFECTS IN THE SOFTWARE AND THE FONTS WILL BE 
+CORRECTED. FURTHERMORE, NSBC DOES NOT WARRANT OR MAKE ANY 
+REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF 
+THE SOFTWARE AND FONTS OR RELATED DOCUMENTATION IN TERMS OF 
+THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. NO 
+ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY NSBC OR A NSBC 
+AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY OR IN ANY 
+WAY INCREASE THE SCOPE OF THIS WARRANTY. SHOULD THE SOFTWARE 
+PROVE DEFECTIVE, YOU (AND NOT NSBC OR AN NSBC AUTHORIZED 
+REPRESENTATIVE) ASSUME THE ENTIRE COST OF ALL NECESSARY 
+SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT 
+ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE 
+EXCLUSION MAY NOT APPLY TO YOU. This limited warranty gives 
+you specific rights. You may have others, which vary from 
+state to state. LICENSOR'S ENTIRE LIABILITY AND YOUR EXCLUSIVE 
+REMEDY SHALL BE, AT LICENSOR'S CHOICE, EITHER (A) RETURN OF 
+THE PRICE PAID OR (B) REPLACEMENT OF THE SOFTWARE THAT DOES 
+NOT MEET LICENSOR'S LIMITED WARRANTY AND WHICH IS RETURNED 
+TO LICENSOR WITH A COPY OF YOUR RECEIPT. Any replacement 
+Software will be warranted for the remainder of the original 
+warranty period or 30 days, whichever is longer. This Limited 
+Warranty is void if failure of the Software has resulted from 
+modification, accident, abuse, or misapplication.
+
+8. Limitation of Liability. Because software is inherently 
+complex and may not be free from errors, you are advised to 
+verify the work produced by the Program. UNDER NO 
+CIRCUMSTANCES INCLUDING NEGLIGENCE, SHALL NSBC BE LIABLE FOR 
+ANY INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT 
+FROM THE USE OR INABILITY TO USE THE SOFTWARE OR RELATED 
+DOCUMENTATION, EVEN IF NSBC OR A NSBC AUTHORIZED 
+REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR 
+EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL 
+DAMAGES SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY 
+TO YOU. In no event shall NSBC's total liability to you for 
+all damages, losses, and causes of action (whether in contract, 
+tort (including negligence) or otherwise) exceed the amount 
+paid by you for the Software and fonts. 
+
+9. Allocation of Risk: You acknowledge and agree that this 
+Agreement allocates risk between you and NSBC as authorized 
+by the Uniform Commercial Code and other applicable law and 
+that the pricing of NSBC's products reflects this allocation 
+of risk and the limitations of liability contained in this 
+Agreement. If any remedy hereunder is determined to have 
+failed of its essential purpose, all limitations of liability 
+and exclusions of damages as set forth in this Agreement will 
+remain in effect.
+
+10. Support. NSBC may, at its option, provide support services 
+at its standard fees for such services. Such support services 
+will be governed by the limitations of liability under this 
+Agreement.
+
+11. Additional Restrictions: Any upgrade or enhancement of the 
+program subsequently supplied by NSBC may only be used upon 
+the destruction of the prior version, and shall be governed 
+by the terms of this Agreement.
+
+12. Controlling Law and Severability. This License shall be 
+governed by and construed in accordance with the laws of the 
+United States and the State of Delaware, as applied to 
+agreements entered into and to be performed entirely within 
+Delaware between Delaware residents. If for any reason a 
+court of competent jurisdiction finds any provision of this 
+License, or portion thereof, to be unenforceable, that 
+provision of the License shall be enforced to the maximum 
+extent permissible so as to effect the intent of the parties, 
+and the remainder of this License shall continue in full force 
+and effect.  
+
+13. Complete Agreement. This License constitutes the entire 
+agreement between the parties with respect to the use of the 
+Software, related documentation and fonts, and supersedes all 
+prior or contemporaneous understandings or agreements, written 
+or oral, regarding such subject matter. No amendment to or 
+modification of this License will be binding unless in 
+writing and signed by a duly authorized representative of 
+NSBC. 
+
+
+
+
+STYLETAP END USER LICENSE AGREEMENT
+
+IMPORTANT: READ CAREFULLY - This SOFTWARE, including any "online" or electronic documentation provided in connection herewith, is subject to the terms and conditions of this agreement. 
+
+BY INSTALLING, COPYING OR OTHERWISE USING THE COMPONENTS, YOU ("CUSTOMER") AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT. IF CUSTOMER DOES NOT AGREE TO THESE TERMS AND CONDITIONS, DO NOT INSTALL, COPY OR USE THE SOFTWARE. IF CUSTOMER DOES NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, SELECT THE BUTTON LABELLED "Cancel" AND CANCEL THE INSTALLATION PROCESS.
+
+THIS AGREEMENT made as of the date of the first installation of the accompanying SOFTWARE (defined herein), between STYLETAP INC., an Ontario incorporated company ("STYLETAP") and you (the "CUSTOMER").
+
+WHEREAS STYLETAP is the developer of certain related object code and documentation (the "SOFTWARE"). The CUSTOMER desires to license the SOFTWARE on the terms and conditions herein;
+
+IN CONSIDERATION of the mutual covenants and agreements set forth herein, and other good and valuable consideration, the parties hereto mutually agree as follows:
+
+1. Grant of License
+
+a. Subject to the terms of this Agreement, CUSTOMER shall have a non-exclusive, non-assignable, non-transferable license to install and use the SOFTWARE on one handheld computer. 
+
+b. All other rights are reserved to STYLETAP. STYLETAP and its suppliers shall retain title and all ownership rights to the SOFTWARE, and this Agreement shall not be construed in any manner as transferring any rights of ownership to the SOFTWARE or to the features or information therein. The SOFTWARE is protected by intellectual property laws and international treaties, including laws and treaties relating to copyrights, trademarks, patents and trade secrets. The SOFTWARE is licensed, not sold. 
+
+c. After installing SOFTWARE for the first time, CUSTOMER may use the SOFTWARE for an evaluation period of 14 days. After this period, the license terminates automatically, unless the CUSTOMER purchases an unlocking code for the SOFTWARE from STYLETAP according to the terms discussed in the SOFTWARE documentation.
+
+d. CUSTOMER shall not use the SOFTWARE in any way that infringes the intellectual property rights of any third party, including those arising under the patent, trademark, copyright, or trade secret law of any jurisdiction.
+
+2. Termination
+ 
+This Agreement is effective until terminated in accordance with the terms contained herein. CUSTOMER may terminate this Agreement at any time by destroying all copies of the SOFTWARE. STYLETAP may terminate this Agreement if CUSTOMER fails to comply with any of these terms and conditions. STYLETAP will terminate this Agreement at the end of evaluation period if the CUSTOMER does not purchase an unlocking code for the SOFTWARE. Any such termination by STYLETAP shall be in addition to and without prejudice to such other rights and remedies as may be available to STYLETAP, including injunction and other equitable remedies. Upon termination, CUSTOMER's license to use the SOFTWARE shall terminate and CUSTOMER shall promptly return to STYLETAP, or certify destruction of, all full or partial copies of such SOFTWARE and related materials provided by STYLETAP. Sections 1b, and 4 to 12 herein shall survive termination of this Agreement.
+
+3. Compatibility
+
+The SOFTWARE is not necessarily compatible with any device.
+
+4. Confidentiality
+
+The SOFTWARE is proprietary and confidential to STYLETAP and its suppliers. CUSTOMER agrees not to disclose or provide any of the SOFTWARE, documentation, or any information relating to the SOFTWARE and its operation to any third party except as expressly provided herein without STYLETAP's express written permission. However, CUSTOMER may disclose Confidential Information in accordance with judicial or other governmental order, provided CUSTOMER shall give STYLETAP reasonable notice prior to such disclosure and shall comply with any applicable protective order or equivalent. CUSTOMER shall not be liable to STYLETAP for such information which CUSTOMER can prove (1) is already known to CUSTOMER; (2) becomes publicly known through no wrongful act of CUSTOMER; (3) is rightfully received from a third party without similar restriction and without breach of this Agreement; or (4) is independently developed by CUSTOMER. This provision shall survive the termination or expiration of this Agreement.
+
+5. No Warranties and Disclaimer of Warranty. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITH ALL FAULTS, AND WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, STYLETAP FURTHER DISCLAIMS ALL WARRANTIES, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, NON-INFRINGEMENT, ACCURACY OR COMPLETENESS OF RESPONSES, WORKMANLIKE EFFORT AND LACK OF NEGLIGENCE. THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF THE SOFTWARE AND DOCUMENTATION REMAINS WITH CUSTOMER.
+
+6. Limitation of Liability and Remedies
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL STYLETAP OR ITS SUPPLIERS BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF STYLETAP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME STATES/JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO CUSTOMER. THE ENTIRE LIABILITY OF STYLETAP OR ANY OF ITS SUPPLIERS FOR ANY DAMAGES SHALL BE LIMITED TO THE LESSER OF THE AMOUNT ACTUALLY PAID BY THE CUSTOMER FOR THE PRODUCT, AND USD$1,000. THE FOREGOING LIMITATION, EXCLUSION AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS ITS ESSENTIAL PURPOSE.
+
+7. Additional Limitations
+
+EXCEPT AS LAWFULLY PERMITTED, CUSTOMER CANNOT MODIFY, TRANSLATE, REVERSE ENGINEER, DECOMPILE, DISASSEMBLE OR REPRODUCE, IN WHOLE OR IN PART, OR CREATE DERIVATIVE WORKS BASED ON THE SOFTWARE OR INFORMATION CONTAINED THEREIN. CUSTOMER CANNOT RENT, LEASE, SELL, SUBLICENSE, ASSIGN, LEND, OR OTHERWISE TRANSFER THE SOFTWARE.
+
+8. Governing Law and Jurisdiction
+
+This Agreement is made, executed, and delivered in Ontario, Canada, and any controversy arising hereunder or relation to this Agreement shall be governed by and construed in accordance with the domestic laws of the Province of Ontario. CUSTOMER agrees that any claim arising under or relating to this agreement shall be adjudicated only in a court of competent jurisdiction in the Province of Ontario, Canada. The parties hereto hereby agree that the application of the United Nations Convention on Contracts for the International Sale of Goods to this Agreement does not apply and is strictly excluded. In the event of any litigation or other dispute arising as a result of or by reason of this Agreement, the prevailing party in any such litigation or other dispute shall be entitled to, in addition to any other damages assessed, its reasonable legal fees, and all other costs and expenses incurred in connection with settling or resolving such dispute.
+
+9. Modification of Terms and Conditions
+
+Any modifications or departure from these terms and conditions must be written and approved by an authorized signing officer for STYLETAP. STYLETAP reserves the right to modify these terms.
+
+10. Export Restrictions
+
+CUSTOMER shall not export or re-export the SOFTWARE to any country, person or entity, without STYLETAP's prior written consent.
+
+11. High Risk Activities and Warning on Supporting Technology
+
+THIS TECHNOLOGY AND THIS SOFTWARE ARE NOT FAULT TOLERANT AND ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR USE OR RESALE AS ONLINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS IN (BUT NOT LIMITED TO) THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF THESE TECHNOLOGIES COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE. STYLETAP AND ITS SUPPLIERS SPECIFICALLY DISCLAIM ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+
+12. Entire Agreement
+
+This Agreement is the complete and exclusive agreement between CUSTOMER and STYLETAP (including its dealers, distributors, agents and employees) concerning the SOFTWARE which supersedes any proposal or prior agreement or license, oral or written, and any other communications related to the subject matter of this Agreement. If one or more of the provisions of this Agreement is found to be illegal or unenforceable, this Agreement shall not be rendered inoperative but the remaining provisions shall continue in full force and effect.
+
+If you have any questions about this Agreement, write to STYLETAP at
+
+
+StyleTap Inc., Suite 308, 512 King Street East, Toronto, Ontario, Canada M5A 1M1
+
+
+BY PRESSING "OK" YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT AND AGREE TO BE BOUND BY ITS TERMS.
+
+
+
+
+
+
+COPYRIGHT LICENSE
+
+NOKIA CORPORATION END-USER SOFTWARE AGREEMENT 
+
+This Software Agreement ("Agreement") is between You (either an individual or an entity), the End User, and Nokia Corporation ("Nokia"). The Agreement authorizes You to use the Software specified in Clause 1 below, which may be stored on a CD-ROM, sent to You by electronic mail, or downloaded from Nokia's Web pages or Servers or from other sources under the terms and conditions set forth below.
+
+This is an agreement on end-user rights and not an agreement for sale. Nokia continues to own the copy of the Software and the physical media contained in the sales package and any other copy that You are authorized to make pursuant to this Agreement. You also acknowledge that the Software contains portions of software licensed by Symbian Software Limited whose registered office is situated at 2-6 Boundary Row, London SE1 8HP, UK ("Symbian") or its third party licensors and which has been licensed to Nokia under a separate agreement between Nokia and Symbian.
+
+Read this Agreement carefully before installing, downloading, or using the Software. By clicking on the "I Accept" button while installing, downloading, and/or using the Software, You agree to the terms and conditions of this Agreement. If You do not agree to all of the terms and conditions of this Agreement, promptly click the "Decline" or "I Do Not Accept" button, cancel the installation or downloading, or destroy or return the Software and accompanying documentation to Nokia. YOU AGREE THAT YOUR USE OF THE SOFTWARE ACKNOWLEDGES THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
+
+1. SOFTWARE
+
+As used in this Agreement, the term "Software" means, collectively: (i) the software product identified above (ii) all the contents of the disk(s), CD-ROM(s), electronic mail and its file attachments, or other media with which this Agreement is provided, including the object code form of the software delivered via a CD-ROM, electronic mail, or Web page (iii) digital images, stock photographs, clip art, or other artistic works ("Stock Files") (iv) related explanatory written materials and any other possible documentation related thereto ("Documentation"); (v) fonts, and (vi) upgrades, modified versions, updates, additions, and copies of the Software (collectively "Updates"), if any, licensed to You by Nokia under this Agreement.
+
+2. END USER RIGHTS AND USE
+
+Nokia grants to You non-exclusive, non-transferable end-user rights to install the Software on the local hard disk(s) or other permanent storage media of one computer and use the Software on a single computer or terminal at a time.
+
+You acknowledge that the use of the Software may require licenses to third party patents and that Nokia does not grant any licenses to such third party patents under this Agreement to the You.  Also, any and all standards related licenses with respect to Essential Patents (as defined below) are specifically excluded from the scope of this Agreement, and those licenses need to be acquired separately from Nokia or the respective right holders, as the case may be. “Essential Patent” means any patent claiming a feature necessarily and unavoidably required for compliance with industry standards (usually GSM, WCDMA or other similar mobile communications standard), to the limited extent only that infringement or use of such claims of a patent cannot be avoided in remaining compliant with industry standard either for technological reasons or for lack of commercially viable technical alternatives.  
+
+No patent licenses to any patents of Nokia and/ or its Affiliates are granted under this Agreement.  
+
+3. LIMITATIONS ON END USER RIGHTS
+
+You may not copy, distribute, or make derivative works of the Software except as follows:
+
+(a) You may not use, modify, translate, reproduce, or transfer the right to use the Software or copy the Software except as expressly provided in this Agreement.
+
+(b) You may not resell, sublicense, rent, lease, or lend the Software.
+
+(c) You may not reverse engineer, reverse compile, disassemble, or otherwise attempt to discover the source code of the Software (except to the extent that this restriction is expressly prohibited by law) or create derivative works based on the Software.
+
+(d) Unless stated otherwise in the Documentation, You shall not display, modify, reproduce, or distribute any of the Stock Files included with the Software. In the event that the Documentation allows You to display the Stock Files, You shall not distribute the Stock Files on a stand-alone basis, i.e., in circumstances in which the Stock Files constitute the primary value of the product being distributed. You should review the "Readme" files associated with the Stock Files that You use to ascertain what rights You have with respect to such materials. Stock Files may not be used in the production of libelous, defamatory, fraudulent, infringing, lewd, obscene, or pornographic material or in any otherwise illegal manner. You may not register or claim any rights in the Stock Files or derivative works thereof. 
+
+(e) You agree that You shall only use the Software in a manner that complies with all applicable laws in the jurisdiction in which You use the Software, including, but not limited to, applicable restrictions concerning copyright and other intellectual property rights.
+
+4. INTELLECTUAL PROPERTY RIGHTS
+
+The Software and all rights, without limitation including title and intellectual property rights therein, are owned by Nokia and/or its licensors and affiliates and are protected by international treaty provisions and all other applicable national laws of the country in which it is being used. The structure, organization, and code of the Software are the valuable trade secrets and confidential information of Nokia and/or its licensors and affiliates. You must not copy the Software, except as set forth in clause 3 (Limitations On End-User Rights). Any copies which You are permitted to make pursuant to this Agreement must contain the same copyright and other proprietary notices that appear on the Software. You specifically agree and acknowledge that you shall include and maintain a copyright notice in any application developed with equal prominence to that given any other copyright notice as follows: "This Application includes software licensed from Symbian Software Ltd © 1998-200[4]". You may, with the prior consent of Symbian and subject to such restrictions as Symbian may impose, use the Symbian Logo in connection with the marketing, sale and distribution of Your Applications, including on such Applications and the Application packaging.
+
+5. MULTIPLE ENVIRONMENT SOFTWARE / MULTIPLE LANGUAGE SOFTWARE / DUAL MEDIA SOFTWARE / MULTIPLE COPIES / UPDATES
+
+If the Software supports multiple platforms or languages, if You receive the Software on multiple media, or if You otherwise receive multiple copies of the Software, the number of computers on which all versions of the Software are installed shall be one computer. You may not rent, lease, sublicense, lend, or transfer versions or copies of the Software You do not use. If the Software is an Update to a previous version of the Software, You must possess valid end-user rights to such a previous version in order to use the Update, and You may use the previous version for ninety (90) days after You receive the Update in order to assist You in the transition to the Update. After such time You no longer have a right to use the previous version, except for the sole purpose of enabling You to install the Update.
+
+6. COMMENCEMENT & TERMINATION
+
+This Agreement is effective from the first date You install the Software. You may terminate this Agreement at any time by permanently deleting, destroying, and returning, at Your own costs, the Software, all backup copies, and all related materials provided by Nokia. Your end-user rights automatically and immediately terminate without notice from Nokia if You fail to comply with any provision of this Agreement. In such an event, You must immediately delete, destroy, or return at Your own cost, the Software, all backup copies, and all related material to Nokia.
+
+7. YOU ACKNOWLEDGE THAT THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW NEITHER NOKIA, ITS LICENSORS OR AFFILIATES, NOR THE COPYRIGHT HOLDERS MAKE ANY REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR THAT THE SOFTWARE WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS, OR OTHER RIGHTS. THERE IS NO WARRANTY BY NOKIA OR BY ANY OTHER PARTY THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE. YOU ASSUME ALL RESPONSIBILITY AND RISK FOR THE SELECTION OF THE SOFTWARE TO ACHIEVE YOUR INTENDED RESULTS AND FOR THE INSTALLATION, USE, AND RESULTS OBTAINED FROM IT.
+
+8. NO OTHER OBLIGATIONS
+
+This Agreement creates no obligations on the part of Nokia other than as specifically set forth herein.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL NOKIA, ITS EMPLOYEES OR LICENSORS OR AFFILIATES BE LIABLE FOR ANY LOST PROFITS, REVENUE, SALES, DATA, OR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, PROPERTY DAMAGE, PERSONAL INJURY, INTERRUPTION OF BUSINESS, LOSS OF BUSINESS INFORMATION, OR FOR ANY SPECIAL, DIRECT, INDIRECT, INCIDENTAL, ECONOMIC, COVER, PUNITIVE, SPECIAL, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND WHETHER ARISING UNDER CONTRACT, TORT, NEGLIGENCE, OR OTHER THEORY OF LIABILITY ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF NOKIA OR ITS LICENSORS OR AFFILIATES ARE ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME COUNTRIES/STATES/JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF LIABILITY, BUT MAY ALLOW LIABILITY TO BE LIMITED, IN SUCH CASES, NOKIA, ITS EMPLOYEES OR LICENSORS OR AFFILIATES' LIABILITY SHALL BE LIMITED TO U.S. $50. Nothing contained in this Agreement shall prejudice the statutory rights of any party dealing as a consumer. Nothing contained in this Agreement limits Nokia's liability to You in the event of death or personal injury resulting from Nokia's negligence. Nokia is acting on behalf of its employees and licensors or affiliates for the purpose of disclaiming, excluding, and/or restricting obligations, warranties, and liability as provided in this clause 9, but in no other respects and for no other purpose.
+
+10. INDEMNITY
+
+You shall defend, indemnify and hold Nokia and its licensors harmless against any claims, damages, liabilities, losses, costs, suits or expenditures incurred by Nokia, its Affiliates, or licensors as a result of any infringement or alleged infringement of intellectual property rights of a third party caused by Your development or exploitation of the Software.
+
+11. TECHNICAL SUPPORT
+
+Nokia has no obligation to furnish You with technical support unless separately agreed in writing between You and Nokia.
+
+12. EXPORT CONTROL
+
+The Software, including technical data, includes cryptographic software subject to export controls under the U.S. Export Administration Regulations ("EAR") and may be subject to import or export controls in other countries. The EAR prohibits the use of the Software and technical data by a Government End User, as defined hereafter, without a license from the U.S. government. A Government End User is defined in Part 772 of the EAR as "any foreign central, regional, or local government department, agency, or other entity performing governmental functions; including governmental research institutions, governmental corporations, or their separate business units (as defined in part 772 of the EAR) which are engaged in the manufacture or distribution of items or services controlled on the Wassenaar Munitions List, and international governmental organizations. This term does not include: utilities (telecommunications companies and Internet service providers; banks and financial institutions; transportation; broadcast or entertainment; educational organizations; civil health and medical organizations; retail or wholesale firms; and manufacturing or industrial entities not engaged in the manufacture or distribution of items or services controlled on the Wassenaar Munitions List.)" You agree to strictly comply with all applicable import and export regulations and acknowledge that You have the responsibility to obtain licenses to export, re-export, transfer, or import the Software. You further represent that You are not a Government End User as defined above, and You will not transfer the Software to any Government End User without a license.
+
+13. NOTICES
+
+All notices and return of the Software and Documentation should be delivered to:
+
+NOKIA CORPORATION 
+P.O. Box 100 
+FIN-00045 NOKIA GROUP 
+FINLAND 
+
+14. APPLICABLE LAW & GENERAL PROVISIONS
+
+This Agreement is governed by the laws of Finland. All disputes arising from or relating to this Agreement shall be settled by a single arbitrator appointed by the Central Chamber of Commerce of Finland. The arbitration procedure shall take place in Helsinki, Finland in the English language. If any part of this Agreement is found void and unenforceable, it will not affect the validity of the balance of the Agreement, which shall remain valid and enforceable according to its terms. This Agreement may only be modified by a writing signed by an authorized officer of Nokia, although Nokia may vary the terms of this Agreement.
+
+Without restricting any rights of Nokia, clauses 4, 7, 9 and 10 confer a benefit on Symbian and are intended to be enforceable by Symbian. Subject only to the exception in this Clause, nothing in this Agreement confers or purports to confer on any third party any benefit or right to enforce any of the terms of this Agreement.
+
+This is the entire agreement between Nokia and You relating to the Software, and it supersedes any prior representations, discussions, undertakings, end-user agreements, communications, or advertising relating to the Software. 
+
+PLEASE SUBMIT ANY ACCOMPANYING REGISTRATION FORMS TO RECEIVE REGISTRATION BENEFITS WHERE APPLICABLE

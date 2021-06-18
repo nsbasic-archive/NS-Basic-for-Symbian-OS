@@ -1,0 +1,93 @@
+; Copyright (c) 2009 NS BASIC Corporation. All Rights Reserved.
+
+; Installation file (.PKG) for NS Basic/Symbian OS
+
+;Language - standard language definitions
+&EN
+
+; standard SIS file header: name, UID3, VersionMajor, VersionMinor, Build
+#{"***LauncherName***"},(0x***uid3***),***version***
+
+;Localised Vendor name
+%{"***company***-EN"}
+
+; Vendor name: do not change or UIQ devices will abort!
+:"***company***"
+
+; following are the minimum OS versions that we support
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+;Supports Series 60 v 5.0
+[0x1028315F], 0, 0, 0, {"Series60ProductID"}
+;Supports UIQ 3.0
+[0x101F6300], 3, 0, 0, {"UIQ30ProductID"}
+
+"***license***" -"", FILETEXT, TEXTCONTINUE, TEXTEXIT 
+
+IF (Manufacturer=0x101F6CED) OR (Manufacturer=1) ; Sony-Ericsson or Motorola  
+
+;********************** UIQ Specific installation **************************
+
+***uiqcomment***"***prcdir***\StyleTapLauncherUIQ.exe"  -"!:\sys\bin\StyleTapLauncherUIQ_***uid3***.exe"
+
+***uiqcomment***"***tempdir***\StyleTapLauncherUIQ_loc.rsc" -"!:\resource\apps\StyleTapLauncherUIQ_***uid3***_loc.rsc"
+
+***uiqcomment***"***tempdir***\StyleTapLauncherUIQ_reg.rsc" -"!:\private\10003a3f\import\apps\StyleTapLauncherUIQ_***uid3***_reg.rsc"
+    
+***uiqcomment***"***prcdir***\StyleTapLauncherUIQ.mbm" -"!:\resource\apps\StyleTapLauncherUIQ_***uid3***.mbm"
+
+***uiqcomment***"***tempdir***\StyleTapLauncherUIQ.rsc" -"!:\resource\apps\StyleTapLauncherUIQ_***uid3***.rsc"
+    
+; Nota bene: name changes from source to target
+***uiqcomment***"***prcdir***\StyleTapSymbianUIQ.dll" - "!:\sys\bin\StyleTapSymbian_***uid3+1***.dll"
+
+***uiqcomment***"***buildtoolsdir***\StyleTapUIQ.rsc" - "!:\resource\apps\StyleTapSymbian_***uid3+1***.rsc"
+
+ELSE ; assume S60 
+
+;********************** Series 60 Specific installation ************************
+
+***s60comment***"***prcdir***\StyleTapLauncherS60.exe" -"!:\sys\bin\StyleTapLauncherS60_***uid3***.exe"
+    
+***s60comment***"***tempdir***\StyleTapLauncherS60.rsc" -"!:\resource\apps\StyleTapLauncherS60_***uid3***.rsc"
+    
+***s60comment***"***tempdir***\StyleTapLauncherS60_reg.rsc" -"!:\private\10003a3f\import\apps\StyleTapLauncherS60_***uid3***_reg.rsc"
+    
+***s60comment***"***prcdir***\StyleTapLauncherS60.mif" -"!:\resource\apps\StyleTapLauncherS60_***uid3***.mif"
+    
+; Nota bene: name changes from source to target
+***s60comment***"***prcdir***\StyleTapSymbianS60.dll" -"!:\sys\bin\StyleTapSymbian_***uid3+1***.dll"
+ 
+***s60comment***"***buildtoolsdir***\StyleTapS60.rsc" -"!:\resource\apps\StyleTapSymbian_***uid3+1***.rsc"
+    
+ENDIF ; condition blocks by type
+
+;********************** common *************************************************
+
+"***prcdir***\StyleTap.dll" -"!:\sys\bin\StyleTap_***uid3+2***.dll"
+
+"***buildtoolsdir***\StyleTapBitmaps.mbm" -"!:\resource\apps\StyleTap_***uid3+2***Bitmaps.mbm"
+
+; required for application to be covered by backup/restore facility 
+
+"***buildtoolsdir***\backup_registration.xml" -"!:\private\***uid3***\backup_registration.xml"
+
+"***prcdir***\cmd.txt" -"!:\private\***uid3***\cmd.txt"
+
+"***buildtoolsdir***\SystemResources.prc" - "!:\private\***uid3***\install\db\SystemResources.prc"
+
+"***buildtoolsdir***\STPCENSBasic.dat" - "!:\private\***uid3***\install\db\STPCENSBasic.dat"
+    
+"***buildtoolsdir***\SystemFontResources.prc" - "!:\private\***uid3***\install\db\SystemFontResources.prc"
+    
+
+; app follows
+
+;"***buildtoolsdir***\NSBRuntimeARM68K.prc" -"!:\private\***uid3***\install\db\NSBRuntimeARM68K.prc"
+    
+"***prcdir***\***filename***.prc" -"!:\private\***uid3***\install\db\***filename***.prc"
+    
+***Resources*** 
+    
+    

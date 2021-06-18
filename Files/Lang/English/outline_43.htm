@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta name=Generator content="Microsoft Office HTML Filter 2.0">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Originator content="Microsoft Word 9">
+<title>DbCreate </title>
+<style>
+<!--
+ 
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h4
+	{
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.Code, li.Code, div.Code
+	{
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Courier New";}
+p.ManualBody, li.ManualBody, div.ManualBody
+	{
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Arial;
+	color:black;}
+-->
+</style>
+</head>
+
+<body lang=EN-US>
+
+<div class=Section1>
+
+<h4>DbCreate                                                                                                 Function</h4>
+
+<p class=ManualBody>&nbsp;</p>
+
+<p class=ManualBody>DBCREATE(<i>dbName</i> as FileID, <i>fileName</i> as String, <i>NotUsed</i>
+as Integer, <i>UID3</i> as String)</p>
+
+<p class=ManualBody>&nbsp;</p>
+
+<p class=ManualBody><b>Description</b></p>
+
+<p class=ManualBody>Creates a new file on a specified memory card of the
+Device, and returns an integer result. See DBOPEN for a table of result codes.</p>
+
+<p class=ManualBody>&nbsp;</p>
+
+<p class=ManualBody><i>DbName</i> references
+the file inside the program. All actions on the file will identify it by this
+name. <i>FileName</i> is the name of the
+file in the device's memory. <i>NotUsed</i>
+is always 0. <i>UID3</i> is the 8 digit UID3
+which can be used to identify the owner or creator of the file. Normally, you
+will use the same UID3 as you used for your project. To avoid duplications,
+Symbian allows you to register your UID3 on their website to insure it is
+unique and not duplicated by someone else. The naming convention is to follow
+your file name with a hyphen and your UID3. You may leave this blank if
+you are not concerned with conflicts.</p>
+
+<p class=ManualBody>&nbsp;</p>
+
+<p class=ManualBody><b>Example</b></p>
+
+<p class=Code>Dim result as integer</p>
+
+<p class=Code>Dim CustomerDb as database</p>
+
+<p class=Code>Result=DbCreate(CustomerDb, &quot;Company-Test&quot;, 0,
+&quot;E0000001&quot;)</p>
+
+<p class=ManualBody>&nbsp;</p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";'><br clear=all style='
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,670 @@
+1000	&File
+1001	&Nuovo Progetto
+1002	&Apri Progetto...
+1003	Sal&va Progetto
+1004	Salva &Progetto con nome...
+1005	&Salva
+1006	Salva &con nome...
+1007	Salva T&utto
+1008	Impostazioni St&ampante...
+1009	&Stampa...
+1010	E&sci
+1011	&Modifica
+1012	&Annulla
+1013	Ripristina
+1014	T&aglia
+1015	&Copia
+1016	&Incolla
+1017	&Cancella
+1018	Seleziona T&utto
+1019	&Trova...
+1020	Trova &Successivo
+1021	S&osituisci...
+1022	&Vai alla riga...
+1023	&Visualizza
+1024	&Toolbar
+1025	&Barra di Stato
+1026	&Aggiorna
+1027	&Progetto
+1028	Aggiungi &Form
+1029	Aggiungi &Menu
+1030	Aggiungi &Immagine
+1031	&Codice Iniziale
+1032	&Codice Finale
+1033	&Codice d'Aiuto
+1034	Com&pila 
+1035	&Hotsync 
+1036	HotSync NS Basic Ru&ntime
+1037	HotSync Lib&rerie Condivise
+1038	P&roprietà...
+1039	Imposta Pro&getto Predefinito
+1040	Allinea&mento
+1041	&Giustificato
+1042	&A Sinistra
+1043	&Centrato
+1044	&A Destra
+1045	&In Alto
+1046	&Centro
+1047	&In Basso
+1048	Alla &Griglia
+1049	&Imposta della stessa dimensione
+1050	&Larhezza
+1051	&Altezza
+1052	&Entrambi
+1053	&Dimensiona alla Griglia
+1054	&Spaziatura Orizzontale
+1055	&Uguale
+1056	&Aumenta
+1057	&Diminuisci
+1058	&Rimuovi
+1059	&Spaziatura Verticale
+1064	&Centra Nel Form
+1065	&Orizzontale
+1066	&Verticale
+1067	&Ordina
+1068	Porta A&vanti
+1069	Porta in &Primo Piano
+1070	Porta sullo &Sfondo
+1071	&Porta Indietro
+1072	&Strumenti
+1073	Edita &Menu
+1074	&Opzioni...
+1075	&Finestra
+1076	&Toolbox
+1077	P&roprietà della finestra
+1078	A &Cascata
+1079	Affianca &Orizzontalmente
+1080	Affianca &Verticalmente
+1081	&Finestre...
+1082	&Aiuto
+1083	&Registra...
+1084	&Guida in Linea
+1085	&Sito Web NS Basic
+1086	&Informazioni su NS Basic/Symbian OS...
+1087	Nuovo
+1088	Apri
+1089	Salva
+1090	Stampa
+1091	Annulla
+1092	Ripristina
+1093	Taglia
+1094	Copia
+1095	Incolla
+1096	Elimina
+1097	Trova
+1098	Aggiungi Form
+1099	Aggiungi Immagine
+1100	Aggiungi Modulo
+1101	&Compila 
+1102	Proprietà
+1103	Edita Menu
+1104	Informazioni Progetto1
+1105	Informazioni di &Sistema...
+1106	OK
+1107	Attenzione: ...
+1108	Versione
+1109	Nome del Programma
+1110	Descrizione del Programma
+1111	Indietro
+1112	Avanti
+1113	Stop
+1114	Aggiorna
+1115	Home
+1116	Cerca
+1117	&Indirizzo:
+1118	&Esplora Progetto
+1119	Ottieni il &Creator ID
+1120	NS Basic/Symbian OS
+1121	Versione Demo
+1122	Il modo più semplice per programmare dispositivi Symbian!
+1123	Acquista
+1124	Informazioni sulla versione Demo
+1125	Trova
+1126	&Trova Cosa:
+1127	Sostituisci &con:
+1128	Cerca
+1129	Nel presente &Modulo
+1130	Nel presente &Progetto
+1131	Nel &Testo Selezionato
+1132	Trova solo parole &intere
+1133	Trova parola/frase e&satta
+1134	Trova &Successivo
+1135	Annulla
+1136	&Sostituisci
+1137	Sostituisci &Tutto
+1138	&Installa
+1139	&Annulla
+1141	Nuovo
+1142	Esistente
+1143	Recente
+1144	Non mostrare questo avviso in &futuro
+1145	&Apri
+1146	&Annulla
+1147	Nome del File:
+1148	Tipo di File:
+1149	Nuovo Progetto
+1150	Opzioni
+1151	Directory dei &Files
+1152	&Percorso del POSE
+1153	&Naviga
+1154	&Esegui POSE all'avvio
+1155	Quando NS Basic viene eseguito
+1156	Mostra pr&ogetti
+1157	Crea progetto di d&efault
+1158	Preferenze dell'E&ditor
+1159	Font di Testo Piano
+1160	Disegna Oggetto di Testo &Piano
+1161	&Font...
+1162	&Fissa alla Griglia
+1163	Dimensione &Griglia:
+1164	&Salva prima di Compilare
+1165	&Compila in un'unica Applicazione
+1166	Imposta &Alta Definizione per gli HandEra
+1167	Dopo aver Compilato...
+1168	Invia al POS&E
+1169	Esegui &Immediatamente
+1170	&Hotsync al Dispositivo
+1171	Non fare &Nulla
+172	N&aviga
+1173	Esempio
+1174	Esplora Progetto
+1175	Proprietà
+1176	Registrazione
+1177	Per ottenere una versione sbloccata e la completa documentazione, contatta NS BASIC Corporation al nostro sito, http://www.nsbasic.com, e segui le istruzioni per registrare il prodotto.
+1178	Numero &Seriale
+1179	Versione demo non registrata
+1180	Quando hai ricevuto il Numero Seriale, inseriscilo nello spazio sottostante. Se non hai legalmente ottenuto un numero seriale, il campo conterra' la voce "Versione Demo non registrata". Leggi la Licenza d'Uso per tutti i dettagli.
+1181	Impostazioni Avanzate
+1182	Mostra Spazi Bianchi
+1183	Commenta
+1184	Deseleziona il Commento
+1185	Imposta contatore ripetizione
+1186	Esegui Comando
+1202	Button
+1203	List
+1204	Label
+1205	Field
+1206	PushButton
+1207	Checkbox
+1208	Popup Trigger
+1209	Selector Trigger
+1210	Bitmap
+1211	Gadget
+1212	Repeating Button
+1213	Scrollbar
+1214	Graffiti Shift Indicator
+1215	&Esegui
+1216	&Opzioni di Compilazione...                            
+1217	Download Runtime
+1218	P&referenze...
+1219	Avvia l'&Emulatore Palm OS
+1220	&Avvio 
+1221	Ritorna al &Launcher
+1222	Download Libreria Condivisa
+1223	Download 
+1224	&Proteggi da Copia
+1225	Imposta lo Schermo Panoramico per l'AlphaSmart Dana
+1301	Project Explorer
+1302	Proprietà
+1303	Trova
+1304	Trova/Sostituisci
+1305	Vai alla pagina web dell'Emulatore Palm OS presso PalmOS.com
+1400	Versione
+1401	NS Basic/Symbian OS
+1403	Attenzione: Questo programma per computer e la sua documentazione sono protette dalle leggi sul copyright e dai trattati internazionali. La riproduzione non autorizzata, l'uso o la distribuzione di questo programma, o di una parte di esso, comporterà responsabilità civili e penali e sarà perseguita nella misura massima consentita dalla legge. Per favore leggi la Licenza d'Uso nel manuale NS BASIC.
+1404	OK
+1405	Informazioni di &Sistema...
+1406	\ / : * ? " < > |
+1407	Un nome di un file valido non può contenere uno dei seguenti caratteri:
+\ / : * ? " < > |
+1408	Valore Proprietà Invalido
+1409	\a/a[a]a|a+a=a-a(a)a*a&a^a%a$a#a@a!a:a;a'a"a{a}a<a>a,a.a?a a`a~
+1410	Nome di oggetto non valido: 
+1411	Uno o più font assenti. Per favore reinstalla NS Basic/Symbian OS.
+1412	Il progetto non sarà compilato senza almeno un form.
+1413	Per favore localizza il file Emulator.exe
+1414	&Esegui POSE all'avvio?
+1440	Generale
+1441	Opzioni Generali del Programma 
+1442	Editor
+1443	Opzioni Finestra Editor
+1444	DesignScreen
+1445	Opzioni Design Screen
+1446	Compila/Download
+1447	Opzioni Compila/Download 
+1450	NSBasicText9
+1451	NSBasicText9B
+1452	NSBasicText12
+1453	NSBasicSymbol9
+1454	NSBasicSymbol11
+1455	NSBasicSymbol7
+1456	NSBasicLED
+1457	NSBasicText12B
+1500	Visualizza O&ggetto
+1501	Visualizza C&odice
+1502	Visualizza Codice &Iniziale
+1503	Visualizza &Codice Finale
+1504	Visualizza Codice &Iniziale
+1505	Visualizza Codice &Finale
+1506	Visualizza Codice degli &Eventi
+1507	Visualiza Codice &Aiuto
+1508	&Aggiungi
+1509	&Form
+1510	&Menu
+1511	&Immagine
+1512	&Nuovo Modulo
+1513	Modulo &Esistente...
+1514	Aggiungi &Menu
+1515	Aggiungi &Dropdown
+1516	Aggiungi &Nuovo Modulo
+1517	Aggiungi Modulo &Esistente...
+1518	&Chiudi Progetto
+1519	Ri&muovi Immagine
+1520	Ri&muovi Modulo
+1600	Editor di Menu
+1601	Muovi &Su
+1602	Muovi &Giù
+1603	Inserisci &MenuBar
+1604	Aggiungi Menu&Bar
+1605	Inserisci Dro&pdown
+1606	Aggiungi D&ropdown
+1607	&Elimina
+1608	Muovi Su
+1609	Muovi Giù
+1610	M&enu:
+1611	&Titolo:
+1612	Nome Proc:
+1613	&Scorciatoia:
+1614	&Disposizione Menu
+1618	&Seguente
+1619	&OK
+1620	La voce del menu deve avere un titolo
+1621	Edita nome del Menu
+1622	Aggiungi Nuovo Menu
+1623	Inserisci Nome del Menu
+1624	Aggiungi Nuovo Menu
+1625	Inserisci nome della barra del Menu
+1626	Elimina Menu
+1627	Vuoi eliminare questo menu?
+1628	Inserisci nome del Dropdown
+1629	Aggiungi una Nuova MenuBar
+1630	Aggiungi un Nuovo Dropdown
+2000	(Niente)
+2001	(Icona)
+2002	Il Progetto non contiene un'immagine con questo ID
+2050	C'e' già un progetto in esecuzione con lo stesso nome
+2051	Un progetto esiste già con tale nome. Vuoi davvero sovrascriverlo?
+2052	Il Creator ID deve contenere almeno un carattere maiuscolo
+2100	 è già impostato come form di default del progetto? Desideri cambiare il form di default?
+2150	Il Progetto ha già un form chiamato: 
+2151	Il Form e le sue dimensioni non sono attualmente supportate da NS Basic/Symbian OS
+2152	I Form modali non sono ancora disponibili in NS Basic/Symbian OS
+2200	File>Carica Immagine>Files Immagini (*.gif;*.jpg;*.bmp;*.ico;*.emf;*.wmf)|*.gif;*.jpg;*.bmp;*.ico;*.emf;*.wmf|All Files|*.*>bmp
+2201	File>Carica Risorsa>Files Risorse (*.prc;*.pdb)|*.prc;*.pdb|Tutti i Files|*.*>prc
+2202	Aggiungi Immagine
+2250	Il progetto ha già un'immagine chiamata: 
+2300	File>Carica Modulo>Moduli (*.cod)|*.cod>cod
+2400	0 - Standard>1 - Standard Bold>2 - Large>3 - Symbol>4 - Symbol 11>5 - Symbol 7>6 - LED>7 - Large Bold
+2450	Il Progetto ha già un oggetto con il nome: 
+2550	Il progetto non ha una immagine con tale Risorsa ID
+2551	L'immagine con tale Risorsa ID è già in uso
+2700	Un altro oggetto con lo stesso Gruppo ID è già selezionato in questo form. Sei sicuro di voler assegnare a questo oggetto lo stesso Gruppo ID?
+2701	Un altro oggetto con lo stesso Gruppo ID è già selezionato in questo form.  Sei sicuro di voler selezionare questo oggetto?
+2702	Il range del gruppo ID è 0-255.
+2850	I numero massimo di caratteri deve essere maggiore di 0 e minore di 32767.
+2851	Un field non può essere dimensionato dinamicamente con uno scrollbar, vuoi rimuovere lo scrollbar?
+2852	Un field deve avere più linee per essere usato come scrollbar, vuoi rimuovere lo scrollbar?
+2950	Il numero di oggetti visibili deve essere maggiore di zero
+3050	Il Valore Minimo deve essere inferiore al Valore Massimo
+3051	Il Valore deve essere compreso tra il Valore Minimo e il Valore Massimo
+3100	La lista del Tipo Risorse non è attualmente disponibile in NS Basic/Symbian OS
+3101	Ri&muovi Progetto
+3102	&Elimina Form
+3103	Errore...
+3104	SUB o FUNCTION header mancante
+3105	L'unico comando che può seguire un SELECT CASE è il comando CASE.
+3106	Attesa una variabile numerica o una costante numerica.
+3107	Attesa una variabile di tipo STRING o una stringa letterale tra virgolette. Termine e tipo:
+3108	Assenti livelli richiesti di sottoscrizione
+3109	Trovato un termine più lungo del limite di
+3110	Subscripts devono essere costanti numeriche o variabili.
+3111	Nome usato come subscript non è definito altrove.
+3112	Atteso un valido nome di un LABEL.
+3113	Attesa un nome valido di una subroutine o di una funzione.
+3114	Il modulo ha superato la dimensione massima.
+3115	Errore di Sintassi.
+3116	Il codice compilato eccede la dimensione del buffer interno.
+3117	SUB o FUNCTION non definiti: 
+3118	Label non definita:
+3119	Assenti i comandi END SUB o END FUNCTION.
+3120	Parentesi destra trovata senza la corrispondente parentesi sinistra aperta.
+3121	Parentesi sinistra assente dopo il nome della funzione.
+3122	Parentesi destra mancante alla fine della funzione chiamata.
+3123	 occorrono: 
+3124	 trovato: 
+3125	Parentesi sinistra mancante alla fine della funzione.
+3126	Parentesi destra mancante alla fine della chiamata alla funzione.
+3127	Nome dell'oggetto table invalido
+3128	Non riesco a trovare un oggetto con il nome 
+3129	Nome Oggetto non valido
+3130	Il nome del Database non può coincidere con quello del progetto.
+3131	Atteso il nome di un database
+3132	Invalido nome di TYPE
+3133	Le strutture TYPE non possono essere usate come chiavi di un database.
+3134	L'Argomento non è un nome di una variabile valida o letterale.
+3135	Tipo di variabile utilizzata non corretta:
+3136	L'Argomento non è un nome di una variabile valida o letterale.
+3137	Tipo di variabile utilizzata non corretta:
+3138	Tipo di variabile utilizzata non corretta:
+3139	L'Argomento non è un nome di una variabile valida o letterale.
+3140	Tipo di variabile utilizzata non corretta:
+3141	Tipo di variabile utilizzata non corretta:
+3142	Tipo di variabile utilizzata non corretta:
+3143	L'Argomento non è un nome di una variabile valida o letterale.
+3144	Tipo di variabile utilizzata non corretta:
+3145	Tipo di variabile utilizzata non corretta:
+3146	Tipo di variabile utilizzata non corretta:
+3147	Tipo di variabile utilizzata non corretta:
+3148	Numero non corretto di argomenti funzione
+3149	L'Oggetto non supporta quel metodo o proprietà: 
+3150	Devi assegnare il risultato della funzione ad un nome di una variabile.
+3151	Il comando IF o SELECT CASE non corrisponde a ENDIF o END SELECT.
+3152	Parentesi destra mancante: 
+3153	Comando non identificabile:
+3154	Non posso usare una costante alla sinistra di =.
+3155	Possibile soltanto assegnare un CTypeDef ad un altro CTypeDef
+3156	Possibile soltanto assegnare variabili CtypeDef allo stesso tipo di CDefTypeVariable.
+3157	Troppi livelli di sottoscrizioni
+3158	Troppi livelli di sottoscrizioni
+3159	Troppi livelli di sottoscrizioni
+3160	Troppi livelli di sottoscrizioni
+3161	Troppi livelli di sottoscrizioni
+3162	Destra e sinistra = devono essere dello stesso tipo.
+3163	Trovato ENDIF senza IF
+3164	Trovato ENDWHILE senza WHILE
+3165	EXIT SUB non è ammesso in una funzione
+3166	EXIT FUNCTION non è ammesso in una subroutine
+3167	EXIT SUB non è ammesso in una funzione
+3168	IF non ha il corrispondente ENDIF
+3169	EXIT FUNCTION non ammesso in una subroutine
+3170	IF non ha il corrispondente ENDIF
+3171	Variabile già definita
+3172	Nome del TYPE già definito come variabile
+3173	Nome del TYPE già definito.
+3174	L'elemento della struttura TYPE è duplicata
+3175	TYPE definitions cannot contain other TYPE variables.
+3176	Nome dell'oggetto libreria duplicato: 
+3177	Impossibile aprire il file della libreria .INF
+3178	Variabile già definita
+3179	Troppi livelli di sottoscrizioni
+3180	Can only use DIM statement modifiers on numeric variables.
+3181	Function name same as subroutine or function name.
+3182	DEFINE not needed and may conflict with function definition.
+3183	Function type must be defined with AS clause
+3184	Previous SUB or FUNCTION not terminated by EXIT statement.
+3185	Function name same as paragraph or function name.
+3186	Numero errato di argomenti
+3187	Function type must be defined with AS clause
+3188	Function name defined in two places
+3189	Previous SUB or FUNCTION not terminated by EXIT statement
+3190	Subroutine name same as paragraph or function name.
+3191	Subroutine name defined in two places.
+3192	Numero errato di argomenti
+3193	Non è possibile usare CALL sulla stessa linea di IF
+3194	Subroutine name same as paragraph name or function name.
+3195	Numero errato di argomenti.
+3196	Informazioni extra alla fine del comando.
+3197	Il mome assegnato non è un nome di menu valido.
+3198	Comando troppo complesso.
+3199	NEXT senza il corrispondente FOR.
+3200	CASE senza SELECT CASE.
+3201	CASE senza valore non può seguire CASE ELSE
+3202	CASE non seguito da un valido dataname.
+3203	Comando troppo complesso
+3204	END SELECT senza SELECT CASE.
+3205	SELECT CASE non ha CASE statements
+3206	Non posso eseguire lo stack del comando IF sulla stessa linea.
+3207	Comando IF troppo complesso.
+3208	Comando troppo complesso.
+3209	Label duplicato.
+3210	NEXTFORM name must be in quotes or a string variable.
+3211	Devi usare il nome di un form tra virgolette.
+3212	NEXTFORM punta ad un form sconosciuto: 
+3213	Non posso ridisegnare questo tipo di oggetto.
+3214	Le Table subscript devono essere numeriche
+3215	Le Transfer tables devono contenere lo stesso tipo di dati.
+3216	Il label non può essere impostato prima che l'oggetto sia visualizato.
+3217	Non posso nascondere il Graffiti Shift Indicator.
+3218	Il valore del testo non può essere impostato prima che l'oggetto sia visualizzato.
+3219	L'oggetto non supporta questa azione.
+3220	Troppi livelli di sottoscrizione CTypeDef.
+3221	Modulo troppo largo.
+3222	Impossibile aprire il file .INF.
+3223	Invalid method declaration in .INF file: 
+3224	Non abbastanza arithmetic work variabili.
+3225	Non abbastanza string work variabili.
+3226	Non abbastanza logical work variabili.
+3227	Compilazione continuerà, ma non andrà a buon fine.
+3228	Bad IF logic in the internals of the program.
+3229	Internal compiler error - found function code:
+3230	Compilazione in corso...
+3231	Salvataggio in corso...
+3232	Download in corso... Stopping current app...
+3233	Download in corso...
+3234	Starting app...
+3235	Errore interno del compilatore
+3236	Form has more than one Pushbutton assigned the same group ID.  Only one member of a Group ID can have Selected status.
+3237	Versione del Form non valida: 
+3238	Incolla non valida: Versione Form
+3239	Invalida versione menu:
+3240	Incolla non valida: Oggetto Menu
+3241	Incolla non valida: Versione Menu
+3242	Incolla non valida: Oggetto Menubar
+3243	Incolla non valida: Versione Menubar
+3244	Invalida versione Menubar: 
+3245	Incolla non valida: Oggetto Dropdown
+3246	Incolla non valida: Versione Dropdown
+3247	Invalida versione Dropdown: 
+3248	Invalido Tipo di Oggetto: 
+3249	Invalida versione Oggetto: 
+3250	Incolla non valida: Tipo di Oggetto
+3251	Incolla non valida: Versione Oggetto
+3252	Modulo non trovato: 
+3253	Project name cannot contain double byte characters.
+3254	Errore: oggetto form non riconosciuto: 
+3255	Versione del Progetto invalida: 
+3256	Impossibile salvare il progetto.
+3257	Impossibile trovare il modulo: 
+3258	Tipo di Oggetto illegale: 
+3259	Errore nel caricare il progetto: 
+3260	Immagine non trovata: 
+3261	Vuoi nascondere il Titlebar?
+3262	Inserisci un nuovo titolo del form
+3263	Congratulazioni! Adesso hai una copia licenziata senza alcuna limitazione.
+3264	Passaggio alla Versione Demo non registrata. Per favore inserisci nuovamente il tuo numero seriale.
+3265	Questa è una versione demo. Non può essere registrata. Per favore contatta NS BASIC Corporation per ottenere una versione registrata.
+3266	Vuoi rimuovere questo oggetto?
+3267	Versione dell'Immagine non valida: 
+3268	Incolla non valida: Oggetto Immagine
+3269	Incolla non valida: Versione Immagine
+3270	Versione Button invalida: 
+3271	Incolla non valida: Oggetto Button
+3272	Incolla non valida: Versione Button
+3273	Invalida versione CheckBox: 
+3274	Incolla non valida: Oggetto Checkbox
+3275	Incolla non valida: Versione Checkbox
+3276	Invalida versione PushButton: 
+3277	Incolla non valida: Oggetto PushButton
+3278	Incolla non valida: Versione PushButton
+3279	Invalida versione Field: 
+3280	Incolla non valida: Oggetto Field
+3281	Incolla non valida: Versione Field
+3282	Invalida versione Gadget: 
+3283	Incolla non valida: Oggetto Gadget
+3284	Incolla non valida: Versione Gadget
+3285	Invalida versione Graffit Shift Indicator:
+3286	Incolla non valida: Oggetto Shift Indicator
+3287	Incolla non valida: Versione Shift Indicator
+3288	Invalida versione Label: 
+3289	Incolla non valida: Oggetto Label
+3290	Incolla non valida: Versione Label
+3291	Invalida versione List: 
+3292	Incolla non valida: Oggetto List
+3293	Incolla non valida: Versione List
+3294	Invalida versione Popup: 
+3295	Incolla non valida: Oggetto Popup
+3296	Incolla non valida: Versione Popup
+3297	Invalida versione Repeater: 
+3298	Incolla non valida: Oggetto Repeater
+3299	Incolla non valida: Versione Repeater
+3300	Invalida versione Scrollbar: 
+3301	Incolla non valida: Oggetto Scrollbar
+3302	Incolla non valida: Versione Scrollbar
+3303	Invalida versione Selector: 
+3304	Incolla non valida: Oggetto Selector
+3305	Incolla non valida: Versione Selector
+3306	Raggiunta la fine dell'area di ricerca. Vuoi cominciare dall'inizio?
+3307	Versione del File Immagine invalida:
+3308	Errore: l'Immagine ha zero bytes: 
+3309	Immagine non trovata: 
+3310	La versione Demo di NS Basic/Symbian OS è scaduta. E' tempo di acquistarne una copia.
+3311	Giorni di valutazione rimanenti
+3312	Benvenuto nella versione Demo NS Basic/Symbian!
+3313	Clicca su Acquista per ottenere maggiori informazioni o per ottenere l'ultima versione di NS Basic/Symbian OS con il pieno supporto e un manuale di 140 pagine.
+3314	Questa è una versione completa di NS Basic/Symbian OS con le sole seguenti limitazioni:
+3315	1. I Programmi funzioneranno soltanto per 5 giorni.
+3316	2. I Programmi non necessitano del runtime.
+3317	3. Questa versione demo funzionerà soltanto per 30 giorni.
+3318	4. Le librerie Condivise non sono incluse.
+3319	Assicurati di aver letto le note di rilascio per ottenere Be sure to read the release notes for full information on getting started.
+3320	Il testo cercato non è stato trovato.
+3321	Fine della ricerca
+3322	Per favore seleziona un nome utente.
+3323	Il Programma sarà installato sul dispositivo Palm durante il prossimo Hotsync.
+3324	Non trovo alcun Username per installare i programmi. Installazione annullata.
+3325	Non trovo alcun Browser associato.
+3326	Indirizzo URL errato. Pagina Web non aperta.
+3327	Il Progetto è già in esecuzione: 
+3328	Impossibile aprire il Progetto: 
+3329	Salva
+3330	Il Progetto è già aperto
+3331	Il Modulo è stato modificato. Vuoi salvarlo?
+3332	Download Fallito
+3333	Impossibile visualizzare i contenuti dell'Aiuto.
+3334	Clicca OK quando il reset è completo.
+3335	Download... Copia...
+3336	Download fallito.
+3337	Non è selezionata l'opzione download nelle opzioni Compila/Download
+3338	Sono stati riscontrati errori. La compilazione non è stata completata.
+3339	Percorso del POSE invalido.
+3340	Non riesco ad eseguire l'applicazione nel POSE: 
+3341	Il POSE non risponde. E' in esecuzione ?
+3342	Alcuni errori durante la compilazione...
+3343	Pronto per eseguire il download al Palm o al POSE
+3344	Compilazione Completata
+3345	Ci sono degli errori. Il Programma non sarà downloadato.
+3346	Riavvia NS Basic per visualizzare le nuove impostazioni del linguaggio.
+3347	L'oggetto Immagine ha una risorsa ID invalida: 
+3348	MS Sans Serif
+3349	9
+3350	0
+3351	 Variable table overflow. Reduce number of variables and literals.
+3352	Note &Tecniche
+3353	Stampa soltanto il modulo corrente?
+3354	CASE must be followed by a string or numeric literal or a simple variable name. Calculated values or functions are not allowed.
+3355	Aggiungi Risorsa
+3356	Rimuovi Risorsa
+3357	Aggiungi Risorsa
+3358	File del Programma (*.prc;*.pdb;)|*.prc;*.pdb
+3359	Risorsa
+3360	Risorsa non trovata: 
+3361	Errore: Risorsa > 64k:
+3362	I Numeri decimali devono essere al massimo 2.
+3363	Termine sconosciuto: 
+3364	Devi utilizzare il nome del form tra virgolette.
+3365	NEXTFORM references unknown form name.
+3366	 Literal table overflow (65535 max). Reduce the number of string and numeric literals in your code.
+3367	DateDiff è una parola riservata e non può essere usata come nome di una funzione.
+3368	TimeDiff è una parola riservata e non può essere usata come nome di una funzione.
+3369	Startup SUB statement not formatted properly.
+3370	Definizione 'End Select' mancante.
+3371 	Definizione 'Next' mancante
+3372	Un oggetto sullo schermo ha lo stesso nome di un form: 
+3373	Il progetto non può contenere un modulo vuoto.
+3374	Versione di NS Basic non registrata - il programma cesserà di funzionare dopo 5 giorni.
+3375    Impossibile aprire il nuovo file .INF, prova ad utilizzare il vecchio formato.
+3376	Percorso per il Si&mulatore
+3377	E&segui il Simulatore all'avvio
+3378	Invia al Simulatore
+3379	Esegui immediatamente
+3380	Avvia il Simulatore
+3381	Per favore individua il file PalmSim.exe
+3382	Percorso del Simulatore invalido.
+3383	Errore nel comunicare con il Simulatore: 
+3384	Non posso eseguire lo stop:
+3385	Impossibile impostare la Porta del Simulatore 
+3386	Invalido 68KDebuggerPort in PalmSim.ini
+3387	In attesa del Simulatore...
+3388	POSE o Simulator devono essere in esecuzione prima di iniziare il download. Prova di nuovo dopo averli interamente caricato.
+3389	Il Simulatore deve essere in esecuzione prima di iniziare il download. Prova di nuovo dopo averlo interamente caricato.
+3390	Riordina...
+3391	Includi il Runtime ARM Nativo (OS5)
+3392	Errore: Versione di Griglia invalida: 
+3392	Il massimo delle righe/colonne deve essere compreso tra 1 e 32767.
+3393	Incolla invalida: Tipo di Griglia
+3394	Incolla invalida: Versione di Griglia
+3395	Must provide a database record layout name.
+3396 	Database record name cannot be an array.
+3397	Devi inserire il nome del database tra virgolette.
+3398	Il nome del file deve essere seguito da 'CREATOR "cccc".
+3399	Database format syntax is incorrect--expecting WITH RECORD
+3400	Functions cannot return a user defined TYPE result
+3401	Database record must be a TYPE name.
+3402	Atteso un nome del database.
+3403	Errore interno -- non riesco a trovare il database dal numero.
+3404	Atteso un campo del database.
+3405	Sintassi troppo complicata -- per favore semplificala.
+3406	Griglia
+3407	Database format syntax is incorrect--expecting record name.
+3408	Database record's keyField is not defined by DIM statement.
+3409	Database keyField cannot be a TYPE name, must be simple variable.
+3410	Database keyField cannot be subscripted.
+3411	Database format syntax is incorrect--expecting record layout name.
+3412	Must supply the database keyField and/or record layout name.
+3413	Il codice del modulo è soltanto in lettura. Le modifiche non saranno salvate.
+3414	Il nome del Database è già stato definito altrove.
+3415	Slider
+3416	Errore: versione dello Slider non Valida: 
+3417	Per favore invia questo messaggio di errore a support@nsbasic.com.
+3418	Incolla non valida: Oggetto Slider.
+3419	Incolla non valida: Versione Slider.
+3420	Il programma non ha alcuna variabile definita.
+3421	errore del programma -- non posso aggiornare la lista delle variabili al node# = 
+3422	Debugger nel modulo 
+3423	La variabile selezionata è già nella lista delle variabili da visualizzare.
+3424	&Continua
+3425	&Visualizza Lista delle variabili
+3426	&Variabili
+3427	Esegui lo &Stack
+3428	Cancella i Breakpoints nel &modulo corrente
+3429	Cancella &tutti i Breakpoints
+3430	Continua senza Breakpoints
+3431	Visualizza Lista delle Variabili
+3432	&Aggiungi
+3433	&Elimina
+3434	&Cancella Tutto
+3435	Variabili
+3436	Chiamata al Debugger Stack
+3437	Modalità Debug
+3438	Fine del modulo, vuoi continuare a cercare dall'inizio?
+3439	Non puoi chiudere la finestra nella modalità Debug. Continua la sua esecuzione invece.
+3440	Errore nell'avviare il Debugger.
+3441	Fine
+3442	Sei sicuro di voler eliminare il form 
+3443	Il numero massimo di risorse in un progetto è 9999. Per continuare con questo progetto, aggiusta il HighestSequenceNo nel record di intestazione del progetto.
+3444	Fine del modulo, vuoi continuare a cercare dall'inizio?
+3445	Guida
+3446	&Crea Installer
+3447	Crea Installer per &S60
+3448	Crea Installer per &UIQ
+3449	La versione deve essere nel formato #,#,#

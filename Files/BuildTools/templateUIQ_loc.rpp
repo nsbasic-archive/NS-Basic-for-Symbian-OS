@@ -1,0 +1,37 @@
+// Copyright 2008 NS BASIC Corporation
+
+STRUCT LOCALISABLE_APP_INFO
+	{
+	LONG reserved_long = 0; // reserved for future use, do not use
+	LLINK reserved_llink = 0; // reserved for future use, do not use
+	LTEXT short_caption(256 ) = "";
+	STRUCT caption_and_icon; // CAPTION_AND_ICON_INFO
+	LEN WORD STRUCT view_list[]; // VIEW_DATA
+	LTEXT group_name(16 ) = "";
+	}
+
+STRUCT CAPTION_AND_ICON_INFO
+	{
+	LONG reserved_long = 0; // reserved for future use, do not use
+	LLINK reserved_llink = 0; // reserved for future use, do not use
+	LTEXT caption(256 ) = "";
+	WORD number_of_icons = 0; // each icon must be a bitmap/mask pair
+	LTEXT icon_file(256 ) = "";
+	}
+
+
+# 13 "C:\\Symbian\\Carbide\\workspace\\StyleTapLauncherUIQ\\data\\StyleTapLauncherUIQ_loc.rss" 2
+
+RESOURCE LOCALISABLE_APP_INFO
+	{
+	caption_and_icon =
+		{
+		CAPTION_AND_ICON_INFO
+			{
+			caption = "***name***";
+			number_of_icons = 3;
+			icon_file = "\\Resource\\Apps\\***mbmFile***_***uid3***.mbm";
+			}
+		};
+	}
+

@@ -1,0 +1,119 @@
+"mdl"
+6
+"tutMyProject","Test","MyPr",1016,1,0
+"sub main()
+  Global MyName as String
+  Global MyDate as date
+
+  MyDate=ToDate(~1999/01/01~)
+end sub
+"
+""
+""
+""
+""
+""
+"vew"
+3,1004,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#TRUE#,#TRUE#
+"Screen1004"
+"My Screen 1"
+""
+0
+""
+""
+"sel"
+1
+#FALSE#
+"obj"
+2
+"sel","selDate",1005,36,44,20,68,#TRUE#,0,"01/01/1999"
+"sub object1005()
+ dim result as integer
+ result=PopupDate (MyDate, ~Enter your birthdate:~) 
+ controlSetText( ~selDate~, str(  MyDate))
+  redraw
+end sub
+"
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,10,#FALSE#,#FALSE#,#FALSE#
+"obj"
+2
+"fld","fldName",1006,36,72,12,52,#TRUE#,0,"Test Name"
+""
+"but"
+1
+#TRUE#,#TRUE#,#FALSE#
+"obj"
+2
+"but","But1007",1007,44,108,12,64,#TRUE#,0,"Show the Date"
+"sub object1007()
+   MyName = fieldGetText( ~fldName~ ) 
+   NextScreen ~My Screen 2~
+end sub
+"
+"vew"
+3,1009,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"Screen1009"
+"My Screen 2"
+"sub Screen1009_before()
+end sub
+"
+0
+"sub Screen1009_after()
+  fieldSetText( ~fldName2~,  MyName)
+  fieldSetText( ~fldDate2~, DateMMDDYY ( MyDate ))
+  fieldSetText(~fldDayName~, str(DayOfWeek(MyDate)) 
+end sub
+"
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,10,#FALSE#,#FALSE#,#FALSE#
+"obj"
+2
+"fld","fldName2",1010,48,28,20,104,#TRUE#,0,"Test"
+""
+"lbl"
+1
+"obj"
+2
+"lbl","Lbl1011",1011,16,28,12,36,#TRUE#,0,"Name="
+""
+"lbl"
+1
+"obj"
+2
+"lbl","Lbl1012",1012,16,56,12,52,#TRUE#,0,"Birthdate="
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,10,#FALSE#,#FALSE#,#FALSE#
+"obj"
+2
+"fld","fldDate2",1013,76,52,16,80,#TRUE#,0,"TEST"
+""
+"but"
+1
+#TRUE#,#TRUE#,#FALSE#
+"obj"
+2
+"but","But1014",1014,40,124,12,40,#TRUE#,0,"Go Back"
+"sub object1014()
+  nextScreen ~My Screen 1~
+end sub
+"
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,10,#FALSE#,#FALSE#,#FALSE#
+"obj"
+2
+"fld","fldDayName",1015,72,104,12,64,#TRUE#,0,"XXXXXXXXXX"
+""
+"lbl"
+1
+"obj"
+2
+"lbl","Lbl1016",1016,16,88,12,96,#TRUE#,0,"The day of the week is"
+""
+"end"

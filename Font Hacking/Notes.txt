@@ -1,0 +1,11 @@
+Font Hacking
+
+.pfn: text file with header and glyphs
+.fnt: add as a resource. Use DefineFontFromResource
+.pdb: add as a resource. Use DefineAlphaFont
+
+xFont takes a TT font and makes a .pfn file
+  It seems to only make single density fonts.
+  Lets you design your own fonts of any size.
+  
+pilrc takes .pfn and makes a resource

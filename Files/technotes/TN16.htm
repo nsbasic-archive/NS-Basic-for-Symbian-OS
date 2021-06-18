@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<title>Tech Note 16: Communications</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF"
+vlink="#800080">
+
+<table border="0" cellspacing="0" width="550">
+  <TBODY>    
+  <tr>
+        
+	<td valign="top" width="19%"><img
+        src="http://nsbasic.com/symbian/info/technotes/images/BigIcon.GIF"
+        width="86" height="103"></td>
+        
+	<td valign="top" width="81%">
+	  <h2>Tech Note 16 Communications</h2>
+	  <h3>March 25, 2009</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+        </td>
+    </tr>
+</TBODY></table>
+<hr>
+
+This Tech Note gives more information on communications than is contained the Handbook. It concerns itself with Serial, IR, TCP/IP and Bluetooth communications. 
+
+<p>If you have notes or tips to add, please send them to <a href="mailto:support@nsbasic.com">support@nsbasic.com</a>.
+
+<h4>Contents</h4>
+<pre>
+    1. <a href="#serial">Serial Communications - RS-232</a>
+    2. <a href="#ir">IR Communications</a>
+    3. <a href="#tcpip">TCP/IP</a>
+    4. <a href="#bluetooth">Bluetooth</a>
+</pre>
+
+
+<hr><a name="serial"><h1>1. Serial Communications - RS-232</h1>
+
+<p>Serial communication over an RS-232 connection is often the easiest way to talk to other devices. Until recently, it was the standard used by almost all devices. You'll need to check whether the device you are using supports serial communication.
+
+<p>The best way to test serial communications is hook your device up to the serial port on your PC. Run HyperTerminal on the PC and set it to 9600 baud, local connection. On your device, run the SerTester sample. You'll be able to send and receive data in both directions.
+
+<p>Have a look at the SerialOpen function in your Handbook or in the Help to get the proper port numbers for opening serial communications. In most cases, you will use 0 as the port number.
+
+
+<h4>Notes and Warnings</h4>
+
+<b>a. Using Serial Comms on a device with USB port</b>
+
+To do serial communications with a device that has a USB port, you'll need a usb to serial cable.  If you have the right cable, you should be able to open and use the serial port normally.
+
+
+<b><p>b. SerialReceiveWithEvents</b>
+
+<p>This useful feature allows an NS Basic program to respond to an incoming message with an event, rather than having to poll the serial port continuously to see if data comes through. However, it does not fire on all devices. It is often better to use SerialReceive with a timer. See SysInfoSet(Timer, x) in the Language Reference for more information.
+
+
+<hr><a name="ir"<h1>2. IR Communications</h1>
+
+There are several different protocols that are used for IR communications.  They are:
+
+<ul>
+	<li>Simple IR (SIR) is the easiest one. There is no handshaking between the two participants: the character information is simply spewed out of the IR port. It is the responsibility of the programmer to define any error checking. NS Basic/Symbian OS does not support SIR.</li>
+
+	<li>IrDA has built in handshaking and error correction. There are many types of protocols within the IrDA specification. NS Basic/Symbian OS supports the IRComm protocol, which is widely used. See the <a href="http://www.irda.org/">IrDA website</a> for more information. </li>
+
+	<li>Consumer IR is used to control TV, VCR and other home electronics devices. It uses a different carrier signal, so it cannot normally be sent or received by Symbian OS devices.</li>
+</ul>
+
+<p><b>More on IRComm (IRDA)</b>
+
+<p>To open an IR port for IRComm communications,
+<pre>
+   res=SerialOpen(nsbIRCOMM,9600)
+</pre>
+
+
+<p>IRComm is easy to use. It's not as fast as SIR, but much more reliable and runs on all devices. Baud rate (9600) does not seem to matter: the protocol works out the best rate. 
+
+<p>For sample code, simply take the BlueTooth RFCOMM sample and change the port number. 
+
+<hr><a name="tcpip"<h1>3. TCP/IP</h1>
+
+<p>TCP/IP is the communications protocol used by the internet. All Symbian devices have some capability to use TCP/IP. It's a very flexible protocol, but is more trouble to configure.
+
+<p>First, a TCP/IP connection must be established between the device and the system you want to communicate with. From a hardware perspective, this requires a WiFi card (or perhaps a device with built in WiFi) or a USB or serial cable. Next, you need to configure the Network settings in Prefs. The exact settings will depend on the physical connection, then tap Connect.
+
+
+<p>NS Basic communicates with TCP/IP using the TcpIpLib. This is described in <a href="TN18.htm" target="_top">Tech Note 18</a>. Once the connection is established, most standard internet protocols can be used. NS Basic includes the sample TcpClient and TcpServer samples which exchanges messages with a Visual Basic program on the desktop.
+
+
+<hr><a name="bluetooth"<h1>4. Bluetooth</h1>
+
+<p>To open Bluetooth virtual port for serial communications,
+<pre>
+   res=SerialOpen(nsbRFCOMM,9600)
+</pre>
+
+<p>Bluetooth is also easy to use. Baud rate (9600) does not seem to matter. Device discovery is done when the port is opened by prompts to the operator.
+
+<p>For sample code, see the BlueTooth RFCOMM sample.  You can test by using HyperTerminal on the desktop and setting up a serial connection. The com port for Hyperterminal will depend on your system. Baud rate and other connection settings can be ignored: the protocal negotiates its own settings.
+
+
+
+</html>
+
+
+

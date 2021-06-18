@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Tech Note 09: Creating Launcher Icons</TITLE>
+<link rel="stylesheet" href="style2.css">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=478>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+<TD WIDTH="78%" VALIGN="TOP">
+	  <h2>Tech Note 09: Creating Launcher Icons</h2>
+	  <h3>March 01, 2009</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+	</TD>
+</TR>
+</TABLE>
+<HR size="1" noshade>
+
+<h3>Introduction</h3>
+
+S60 and UIQ devices each use completely different methods to produce icons. This Tech Note walks you through the steps of producing icons for each platform.
+
+<p>The pathnames to your icons are set up in the Project Properties of your app. If you do not specify an icon, NS Basic/Symbian OS will use a generic one. If you do not see the new icon when you install an update of your app, try turning the phone off and on.
+
+<p>Here is how to create the icon files:
+
+<h3>S60 Icons</h3>
+
+<p>S60 device icons are in a proprietary format called MIF (Multi Icon Format). It's a very efficient format, but not easy to make. MIF files can only be created from SVG-T (Scaled Vector Graphics - Tiny) files. This conversion is built into NS Basic/Symbian OS, but you need to produce the SVG-T file somehow. There are 3 ways to do this:
+
+<ol>
+	<li>The easiest way is to buy Adobe Illustrator to draw icons and save in SVG-Tiny format. It's expensive ($599 USD!) but it will save you a lot of time. It includes a feature that will convert a photo to an SVG line drawing with color fills. </li>
+	<li>You can download a free editor named <a href="http://www.inkscape.org/" target="_top">Inkscape</a>. Inkscape saves to SVG format but not SVG-T. Nokia has a utility to convert to SVG-T, but only a subset of the full SVG format is supported. Start with a very simple image such as a box, then build up from there. Pasting a BMP into InkScape does not work, but saving an eps as a .pdf, then importing it into InkScape works.
+	<p>To convert the SVG file to SVG-T, use the SVGBinEncode.exe utility, installed as part of the S60 SDK (455 megs, downloadable from the Nokia web site). The file extension should be .svg, not .svgt.
+	<p>There is also a free web based utility to <a href="http://comp1.gibbsdc.com/php/jpg2svg.php" target="_top">convert jpg to svg</a> files. 
+	<li>You can type an SVG file into a text editor. It's XML syntax. This is probably only useful for trivial cases.</li>
+</ol>
+
+Once you have the SVG-T file, enter it into the Launcher Icon field in your Project Properties. 
+
+<p>If the device does not show your new icon after installation, turn the device off and on. The icons get cached, so a changed icon will not appear automatically.
+
+<h3>UIQ Icons</h3>
+
+<p>UIQ also has their own format, called MBM (Multi Bit Map). The icons are created from standard Windows .bmp files. The icons must be provided in 3 sizes: 18x18, 40x40 and 64x64. Icons should be in 8 bit color format. 
+
+<p>Name the bitmaps Filename18.bmp, Filename40.bmp and Filename64.bmp. In Project Properties, enter Filename.bmp, without the bitmap size.

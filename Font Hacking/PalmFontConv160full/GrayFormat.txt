@@ -1,0 +1,137 @@
+$Id: GrayFormat.txt,v 1.9 2003/11/30 05:31:27 arpruss Exp $
+
+Gray-scale fonts are stored in resource databases consisting of the following resources.
+
+GrFn: The gray-scale font information header.
+
+Bitmaps are stored in resources labeled:
+    GXYZ
+Where:
+X can take the values:
+    U: upright
+    L: 90 degrees left (counterclockwise)
+    R: 90 degrees right.
+Y indicates the version number of the bitmap, currently either 1 or 3.
+Z indicates the bit-depth of the bitmaps, currently only 4 being supported.
+
+The GrFn resource starts with this header (in big-endian format):
+
+typedef struct {
+    UInt16 fontVersion;
+    UInt16 firstChar;
+    UInt16 lastChar;
+    UInt16 fRectWidth;
+    UInt16 fRectHeight;
+    Int16  ascent;
+    Int16  descent;
+    Int16  leading;
+    UInt16 numberOfBitmapResources;
+    UInt16 bitmapResourceTableOffset;
+    UInt16 glyphInfoTableOffset;
+    Int16  minLeftKerning;   /* not included in version 0x0001 fonts, should be
+                                taken as zero from such fonts */
+    Int16  maxRightOverhang; /* not included in version 0x0001 fonts, should be
+                                taken as zero from such fonts */
+    UInt16 reserved[4];      /* not included in version 0x0001 fonts, should be
+                                zero for version 0x0002 fonts */
+} GrayFontType;
+
+The fontVersion is currently 0x0002.  The convention is that fonts expected
+to be backwards compatible with rendering software may have version numbers
+that differ only in the last hex digit.  Thus, if the gray-scale font
+description ever gets changed to have fontVersion 0x0003, these fonts will
+be expected to be backwards compatible, but fontVersion 0x0010 will not.
+
+Software that implements gray scale fonts should also detect standard Palm
+fonts that might be found in the same resources, namely by a fontVersion
+that is compatible with Palm's fonts, say 0x9000.  This way one can store a
+normal bitmap font in a GrFn structure (though not all software will support
+this), and then fontVersion will the standard nfnt or NFNT fontType identifier.
+Furthermore, the software should detect a special fontVersion of 0x4000 which
+is then followed by a UInt16 that specifies a fontID (either grayscale or
+not) that the font is to be remapped to.  Multiple layers of substitution are
+not supported and have undefined effects, including possibly crashes.
+
+
+fRectWidth:  maximum advance value for a glyph.
+fRectHeight: pixel height of font.
+ascend:      length of ascender part of font
+descend:     length of descender part of font
+leading:     pixels of line spacing
+numberOfBitmapResources:
+             the number of GXYZ resources of any given XYZ type needed for
+             the font's glyphs.  If a font has multiple types of GXYZ
+             resources, e.g., both GU24 and GU34 resources, the number
+             of resources for both types must be the same, and must be equal
+             to numberOfBitmapResources.  A small font will have only
+             one resource, but Palm limits will force larger ones to have
+             their glyphs split between multiple GXYZ resources.
+bitmapResourceTableOffset:
+             byte offset from beginning of GrayScaleFontType header to
+             a table of type GrayFontBitmapsInfo[] of length
+             numberOfBitmapResources.
+glyphInfoTableOffset:
+             byte offset from begining of GrayScaleFontType header to a
+             table of type GrayFontGlyphInfo[] of length lastChar-firstChar+1.
+minLeftKerning:
+             Negative or zero integer indicating the smallest value of
+             leftKerning in the font.
+maxRightOverhang:
+             Maximum value of bitmapWidth + leftKerning - advance.
+
+The GrayFontBitmapsInfo[] and GrayFontGlyphInfo[] tables can follow in any order
+anywhere in the GrFn resource, aligned on an address divisible by four.
+
+typedef struct {
+    UInt16 firstGlyph;   /* first glyph found in resource */
+    UInt16 lastGlyph;    /* last glyph found in resource */
+    UInt16 resourceID;   /* the ID of the resource */
+    UInt16 reserved;     /* should be zero for now */
+} GrayFontBitmapsInfo;
+
+typedef struct {
+    Int16  leftKerning;
+    Int16  advance;
+    UInt16 bitmapWidth;
+    UInt16 resourceNumber;
+    UInt16 positionInResourceIndex;
+    UInt16 reserved;   /* should be zero for now */
+} GrayFontGlyphInfo;
+
+This is glyph number glyphNumber.  The numbers must be sequential, but
+skipping is permitted.   The bitmap has width bitmapWidth.  If the cursor
+position is x before the character is drawn, the renderer draws a bitmap of
+width bitmapWidth at x + leftKerning.  It then moves the cursor position to x +
+advance.  leftKerning can be zero or negative.  advance must not exceed
+bitmapWidth + leftKerning.
+
+resourceNumber:
+    the sequential number in the GrayFontBitmapsInfo[] table of the GXYZ resource in
+    which the bitmap is to be found, ranging from 1 to numberOfBitmapResources:
+    one needs to look in GrayFontBitmapsInfo[ resourceNumber - 1 ] then.
+    A zero indicates a missing glyph.
+positionInResourceIndex:
+    the index of the bitmap in the GrayFontResourceIndexEntry[] table at the
+    beginning of the GXYZ resource.
+
+Finally, the GXYZ resources start with a table of entries for the glyphs
+found in the resource, plus one.  Each entry is of type:
+    typedef struct {
+        UInt16 offset;
+        UInt16 length;
+    } GrayFontResourceIndexEntry;
+
+offset:
+    byte offset from the start of the resource to the bitmap.  The offset must
+    be 32-bit aligned.
+length:
+    length of bitmap.
+
+The entries should be in order of glyph number, with missing glyphs being
+filled in with zero offset and zero length.
+
+And finally come the bitmaps in the GXYZ resource, each 32-bit aligned.
+These are standard Palm version 1 or 3 bitmaps, with no transparency,
+no color map, with optional scanline compression (no other compression types
+are legal).
+

@@ -1,0 +1,516 @@
+#/bin/sh
+# $Id: urwBuildScript,v 1.4 2004/01/10 05:14:33 arpruss Exp $
+#######
+NORM=b018012l
+BOLD=b018015l
+name=URWBookman
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#########
+NORM=n019043l
+BOLD=n019044l
+
+name=NimbusSansCond
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#######
+NORM=a010013l
+BOLD=a010015l
+name=Gothic
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#######
+NORM=c059013l
+BOLD=c059016l
+name=CenturySchoolbook
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#######
+NORM=n019003l
+BOLD=n019004l
+name=NimbusSans
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#######
+NORM=n021003l
+BOLD=n021004l
+name=NimbusRoman
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#######
+NORM=n022003l
+BOLD=n022004l
+name=NimbusMono
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+#######
+NORM=p052003l
+BOLD=p052004l
+name=URWPalladio
+A=15
+B=13
+
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=16
+B=14
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=17
+B=15
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=18
+B=16
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=19
+B=17
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=20
+B=18
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=22
+B=20
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+#
+A=24
+B=22
+./topluckergray sonyhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-sony-os4.prc
+./topluckergray palmhi.left $name$A urw/$NORM.pfb $A urw/$BOLD.pfb $A urw/$NORM.pfb $B
+mv $name$A.prc $name$A-os5.prc
+mkdir $name
+mv $name*.prc $name
+zip -9 Plucker-sony-os4 COPYING README_prcs.txt $name/*-sony*
+zip -9 Plucker-os5 COPYING README_prcs.txt $name/*-os5*
+

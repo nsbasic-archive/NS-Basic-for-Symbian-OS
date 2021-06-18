@@ -1,0 +1,8 @@
+perl quickFS.pl Gothic urw/a010013l.pfb urw/a010015l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+perl quickFS.pl URWBookman urw/b018012l.pfb urw/b018015l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+perl quickFS.pl "CenturySchoolbook" urw/c059013l.pfb urw/c059016l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+perl quickFS.pl "NimbusSansCond" urw/n019043l.pfb urw/n019044l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+perl quickFS.pl "NimbusSans" urw/n019003l.pfb urw/n019004l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+perl quickFS.pl "NimbusRoman" urw/n021003l.pfb urw/n021004l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+perl quickFS.pl "URWPalladio" urw/p052003l.pfb urw/p052004l.pfb 12 14  14 17  15 18  16 19  17 20  18 22  19 23  20 24
+

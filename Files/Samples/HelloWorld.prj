@@ -1,0 +1,32 @@
+"mdl"
+8
+"Hello World","appl","HEL0",1004,505,0
+""
+0
+0
+""
+"1,0,0"
+""
+"Installat."
+",,"
+"E110002E"
+""
+"vew"
+4,1003,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"Hello World"
+"Form1003"
+""
+0
+""
+""
+0,0,0,0
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1004",1004,48,60,12,52,#TRUE#,0,"Click Me!",0,0,0
+"Sub object1004()
+	MsgBox ~Hello World~
+End Sub"
+"end"

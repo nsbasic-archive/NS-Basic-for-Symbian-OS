@@ -1,0 +1,519 @@
+"mdl"
+9
+"FileLib Demo","appl","Test",1070,505,0
+"Sub Project_Startup()
+Dim res as Integer
+Type RecType
+	RecNo as Integer
+	FirstName as String
+	LastName as String
+	TelNo as String
+	Age as Integer
+End Type
+Global AddBook as RecType
+Global path as String
+Global volRef(4) as Integer
+Global dir as String
+Global FirstTime as Integer
+LoadLibrary ~NSBFileLib~, ~Flib~
+res = Flib.Init()                        'initialize
+dir=~~
+FirstTime=1
+
+End Sub
+
+Function GetNoRecords(filename as String) as Integer
+	Dim err as Integer
+	Dim data16 as Short
+	Dim fileref as Integer
+	
+	fileRef = Flib.Open(filename,2)   'Read access
+	err = Flib.GetLastError
+	If err>0 Then MsgBox ~Error # ~+str(err)' error
+		
+	Flib.FileSeekBegin(fileref, 76) 'go to offset for number of records
+	data16 = Flib.Read16(fileref)   'read the byte there
+	GetNoRecords=data16
+End Function
+
+Function GetCreatorID(filename as String) as String
+	Dim err as Integer
+	Dim datastr as String
+	Dim fileref as Integer
+	
+	fileRef = Flib.Open(filename,2)  'Read access
+	err = Flib.GetLastError
+	If err>0 Then MsgBox ~Error # ~+str(err)' error
+		
+	Flib.FileSeekBegin(fileref, 64) 'go to offset for Creator ID
+	datastr = Flib.Readstring(fileref)   'read the string there
+	GetCreatorID=datastr
+End Function
+	
+Sub getPDBRecord(rec as Integer, filename as String)
+	Dim fileRef as Integer
+	Dim err as Integer
+	Dim data16 as Short
+	Dim data16a as Short
+	Dim fs as Integer
+	Dim i as Integer
+	Dim offset as Integer
+	
+	fileRef = Flib.Open(filename,2)	'Read
+	err = Flib.GetLastError
+	If err>0 Then GoTo ex
+		
+	offset=70+(rec)*8  'goto offset for record location ' the # 70 varies
+	Flib.FileSeekBegin(fileRef, offset)
+	data16a = Flib.Read16(fileRef)'0, 1, 2 or 3...indicates first digit in hex
+	data16 = Flib.Read16(fileRef) 'indicates second digit in hex
+	offset=data16+4+data16a*65536 ' the number 4 varies in this and the next line
+	If data16<0 Then offset=data16+4+(data16a+1)*65536 'Convert to decimal
+	Flib.FileSeekBegin(fileRef, offset) 'Go to Beginning of Record
+	
+	'Put your UDT Structure here.
+	'You must specify each read variable individually, even if you don't need it
+	'----------------------------------------------------------------------------
+	Addbook.RecNo=Flib.Read32(fileRef)  'First variable in our UDT- Read32=integer
+	Addbook.FirstName=Flib.ReadString(fileRef)  'FirstName
+	Addbook.LastName =Flib.ReadString(fileRef)  'LastName
+	Addbook.telNo =Flib.ReadString(fileRef)  'TelNo
+	Addbook.age=Flib.Read32(fileRef)  'Age
+	'----------------------------------------------------------------------------
+	
+xx:
+	fs = Flib.FileSize(fileRef)
+	Flib.Close(fileRef)
+	
+ex:'exit
+End Sub"
+0
+0
+""
+"1,0,0"
+""
+"Installat."
+",,"
+"E110086E"
+"..\..\Themes\Symbian.pdb"
+""
+"resfile"
+1
+"Symbian"
+1061
+"DBIM"
+"..\..\Themes\Symbian.pdb"
+"resfile"
+1
+"NSBFileLib"
+1070
+"DBIM"
+"..\..\Lib\NSBFileLib.prc"
+"vew"
+4,1003,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#FALSE#
+"Directory Listing"
+"Form1003"
+""
+0
+"Sub Form1003_After()
+
+If FirstTime>0 Then
+	Call fillPopDir()
+	Call fillLstFiles()
+	FirstTime=0
+End If
+
+End Sub
+
+Sub fillLstFiles()
+Dim err as Integer 
+Dim tmp as String
+Dim name as String
+Dim attr as Integer
+Dim fileRef as Integer
+lstFiles.clear                                 
+lstFiles.selected=1
+If dir<>~~ Then lstFiles.Add ~..~
+Flib.BeginDirEntryEnumerate(dir)         'begin to get file names
+err = Flib.GetLastError                  'any errors?
+If err>0 Then Exit Sub                   'yes - go to Exit
+	
+Do 
+	name = Flib.DirEntryEnumerate()        'filename
+	err = Flib.GetLastError()               
+	If err<>0 Then Exit Do				  			 '10509 end of loop
+	
+	tmp = dir & name                       'we must specify full filename
+	fileRef = Flib.Open(tmp,2)           
+	attr = Flib.GetAttributes(fileRef, 2)  'is it hidden?
+	If attr = 1 Then tmp = tmp & ~<h>~
+	attr = Flib.GetAttributes(fileRef, 16) 'is it dir?
+	If attr = 1 Then tmp = tmp & ~<dir>~
+	lstFiles.add tmp, nodisplay
+	Flib.Close(fileRef)
+Loop
+lstFiles.Redraw
+
+err = Flib.GetLastError
+Flib.EndDirEntryEnumerate
+
+Flib.Close(fileRef)
+End Sub
+
+Sub fillpopDir()
+Dim numvol as Integer
+Dim err as Integer
+Dim dbLib as Database
+Dim i as Integer
+
+popDir.Clear
+Flib.SetCurVolume(0)                     'set the volume
+Flib.BeginVolumeEnumerate()              'begin to get # of memory sticks
+numVol = 0 
+Do 
+	i = Flib.GetNextVolume()             'look for next memory stick
+	err = Flib.GetLastError()            'any errors?
+	If err<>0 Then Exit Do
+	
+	numVol = numVol + 1
+	volRef(numVol) = i
+	popDir.Add str(numVol) & ~ ~ & volType(i)
+Loop
+popDir.Selected=1
+Flib.SetCurVolume(volRef(numVol))
+End Sub
+
+Function volType(vol as integer) as String
+	Dim t as Integer
+	Dim media as String
+	Dim label as String
+	
+	Flib.setCurVolume(vol)
+	label=Flib.GetVolumeLabel()
+	t=Flib.getVolumeMediaType()
+	Select Case t
+	Case 0
+		media = ~?~
+	Case 1
+		media = ~MS~
+	Case 2
+		media = ~CF~
+	Case 3
+		media = ~SD~
+	Case 4
+		media = ~MM~
+	Case 5
+		media = ~SM~
+	Case 6
+		media = ~RAM~		
+	End Select
+	volType = media & ~ ~ & Label
+End Function"
+""
+0,0,0,0
+"lst"
+2
+4
+""
+"obj"
+3
+"lst","lstFiles",1005,0,20,100,160,#TRUE#,0,"",0,0,0
+"Sub object1005()
+	Dim filename as String
+	Dim i as Integer
+	
+	filename=lstFiles.text(lstFiles.Selected)
+	If right(filename,5)=~<dir>~ or right(filename, 7)=~Private~ Then
+		dir=left(filename,len(filename)-5) & ~/~
+		fillLstFiles
+	End If
+	If filename=~..~ Then
+		For i=len(dir) to 1 step -1
+			If mid(filename,i,1)=~/~ Then Exit For
+		Next
+		dir=left(filename,i-1)
+		fillLstFiles
+	End If
+			
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1006",1006,84,128,12,72,#TRUE#,0,"Copy to Private",0,0,0
+"Sub object1006()
+Dim pathName as String
+Dim dbName as String
+Dim err as Integer
+Dim dialogTitle as String
+Dim actionStr as String
+Dim selectedname as String
+
+If lstFiles.selected=0 Then
+	MsgBox ~No file selected~
+End If
+
+selectedName= lstFiles.text(lstFiles.selected)
+pathname=~~+selectedname
+
+'Copy to Main Memory
+'-------------------
+dialogTitle=~Copying file~
+actionStr=~Copying ~+selectedname+~ to Private memory...~
+selectedname = Flib.ImportDialog(pathName, dialogTitle, actionStr)				
+err = Flib.GetLastError()
+
+Select Case err  'error checking
+Case 0
+    MsgBox ~No errors~
+Case 10758
+    MsgBox ~File already exists~
+Case 1282
+    MsgBox ~No file selected~
+Case 537
+    MsgBox ~File already exists~
+Case 519
+    MsgBox ~File not found in memory~
+Case Else
+    MsgBox ~Error #~+str(err)
+End Select
+
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1014",1014,4,144,12,68,#TRUE#,0,"Open File",0,0,0
+"Sub object1014()
+	NextForm ~form1016~
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1030",1030,4,128,12,68,#TRUE#,0,"Create & Copy",0,0,0
+"Sub object1030()
+Dim j as Integer
+Dim i as Integer
+Dim res as Integer
+Dim pdb as Database
+
+MsgBox ~This button creates a pdb file in the private area and copies it to the Public area~
+Flib.Delete(~TestDb.pdb~)'delete file on public area
+
+res = dbOpen(pdb,~TestDb~,0)
+If res=0 Then       'delete file if it exists in private
+    res=dbclose(pdb)
+    res=dberase(pdb)
+EndIf
+
+'Database creation
+'see type defn in startup code
+
+res=dbcreate(pdb,~TestDb~,0,~test~)
+If res=0 Then 'success
+	res = dbOpen(pdb,~TestDb~,0)
+	For i = 1 to 25
+		Addbook.RecNo=i
+		Addbook.FirstName=~First~+str(i)
+		Addbook.LastName =~Last~+str(i)
+		Addbook.telNo =~(604)555-1212~+str(i)
+		Addbook.age=i+20
+		dbinsert(pdb,i,addbook)
+	Next
+	res=DbClose(pdb)
+End If
+
+'Copy to Card
+Flib.ExportDialog(~TestDb~,~TestDb.pdb~, ~Title~, ~Copying...~)'copy with dialog
+res = Flib.GetLastError()'did it copy?
+
+Select Case res  'error checking
+Case 0
+    MsgBox ~No errors~
+Case 519
+    MsgBox ~File not found in memory~
+Case Else
+    MsgBox ~Other Error ~ & str(res)
+End Select
+
+Call fillLstFiles()   'refresh directory
+
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1040",1040,84,144,12,72,#TRUE#,0,"Copy to Public",0,0,0
+"Sub object1040()
+Dim pathName as String
+Dim dbName as String
+Dim err as Integer
+Dim dialogTitle as String
+Dim actionStr as String
+
+'Copy to Card
+'-------------------------
+dbName=~TestDb~ 'name of db or prc in Main memory - no extension
+pathname=~TestDb.pdb~  'full name of location including filename
+'Flib.Export(dbName, pathName) 'copy without display dialog
+dialogTitle=~Copying file~
+actionStr=~Copying to card...~
+Flib.ExportDialog(dbname, pathName, dialogTitle, actionStr)'copy with dialog
+err = Flib.GetLastError()'did it copy?
+
+Select Case err  'error checking
+Case 0
+    MsgBox ~No errors~
+Case 10758
+    MsgBox ~File already exists~
+Case 519
+    MsgBox ~File not found in memory~
+Case Else
+    MsgBox ~Other Error: ~ & str(err)
+End Select
+
+End Sub"
+"pop"
+2
+#TRUE#,0,4
+""
+"obj"
+3
+"pop","popDir",1059,0,4,12,160,#TRUE#,0,"Popup",0,0,0
+"Sub object1059()
+	Flib.SetCurVolume(volRef(popDir.Selected))
+	dir=~~
+	Call FillLstFiles
+End Sub"
+"vew"
+4,1016,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"Read File"
+"Form1016"
+""
+0
+"Sub Form1016_After()
+Dim i as Integer
+Dim filename as String
+Dim Id as String
+filename=~TestDB.pdb~
+
+filename=~Testdb.pdb~
+i=GetNoRecords(filename)
+Id=GetCreatorID(filename)
+field1068.Text=~of ~ & str(i) & ~ ~ & Id
+field1041.text=~1~
+getPDBRecord(1,filename)
+
+End Sub"
+""
+0,0,0,0
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1022",1022,4,144,12,36,#TRUE#,0,"Back",0,0,0
+"Sub object1022()
+NextForm ~form1003~
+End Sub"
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","Field1041",1041,48,32,12,50,#TRUE#,0,"",0,0,0
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","Field1043",1043,48,48,12,50,#TRUE#,0,"",0,0,0
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","Field1045",1045,48,64,12,50,#TRUE#,0,"",0,0,0
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","Field1047",1047,48,80,12,100,#TRUE#,0,"",0,0,0
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","Field1049",1049,48,96,12,100,#TRUE#,0,"",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1051",1051,4,32,12,38,#TRUE#,0,"Record #",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1052",1052,12,48,12,31,#TRUE#,0,"Field 1:",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1053",1053,12,64,12,31,#TRUE#,0,"Field 2:",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1054",1054,12,80,12,31,#TRUE#,0,"Field 3:",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1055",1055,12,96,12,31,#TRUE#,0,"Field 4:",0,0,0
+""
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1056",1056,84,144,12,68,#TRUE#,0,"Read Record",0,0,0
+"Sub object1056()
+Dim i as Integer
+Dim j as Integer
+Dim filename as String
+
+filename=~Testdb.pdb~
+j=GetNoRecords(filename)
+i=val(field1041.text)
+If i>j Then i=j 'Don't read past end of file
+	
+getPDBRecord(i,filename)
+field1043.text=addbook.firstname
+field1045.text=addbook.lastname
+field1047.text=addbook.telno
+field1049.text=str(addbook.age)
+
+End Sub"
+"fld"
+1
+#FALSE#,#TRUE#,#TRUE#,#TRUE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","Field1068",1068,104,32,12,50,#TRUE#,0,"",0,0,0
+""
+"end"

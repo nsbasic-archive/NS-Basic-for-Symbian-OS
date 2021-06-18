@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Tech Note 05: Libraries in NS Basic/Symbian OS</TITLE>
+<link rel="stylesheet" href="style2.css">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BGCOLOR="#ffffff">
+
+<TABLE CELLSPACING=0 BORDER=0 WIDTH=478>
+<TR><TD WIDTH="22%" VALIGN="TOP">
+<P><IMG SRC="images/BigIcon.GIF" WIDTH=86 HEIGHT=103></TD>
+<TD WIDTH="78%" VALIGN="TOP">
+	  <h2>Tech Note 05: Libraries in NS Basic/Symbian OS</h2>
+	  <h3>May 01, 2008</h3>
+	  <h5>© 2009 NS BASIC Corporation. All rights reserved.</h5>
+	</TD>
+</TR>
+</TABLE>
+<HR>
+<p>NS Basic's libraries are like dynamically linked libraries on desktop systems
+and make functions and subroutines available to other programs. 
+NS Basic provides a way to use many libraries
+within an NSBasic program.  <a href="TN05a.htm">Tech Note 05a: Using Libraries</a> describes how to use a
+library.  In addition, there are tech notes and examples for using many specific libraries.</p>
+
+<p>Libraries come from several different sources:</p>
+
+<ul>
+<li>There are many libraries available from NSBasic, all free of charge.  In addition, there
+are other libraries written for NSBasic by third parties.  There is a list of the ones known to
+work at the end of this tech note.</li>
+<li>You can write your own libraries in languages such as C, C++, and Pascal.  You cannot, however,
+use NSBasic itself to write libraries.</li>
+<li>Many, but not all, libraries available elsewhere can be adapted for use in NSBasic.</li>
+</ul>
+
+<p>For more information on writing and adapting libraries,
+see <a href="TN05b.htm">Tech Note 05b: Writing and Adapting Libraries</a><p>
+
+<p>A library for use with NSBasic has two components:</p>
+<p>One is a file containing the library.  The name ends in <code>.prc</code>.  This file must be
+included as a resource in each NS Basic app that will use the library.  These files should be kept in the Download folder within
+the NS Basic OS install folder (<i>e.g.</i> <code>C:\NSBasic\Download</code>). </p>
+
+<p>The other is an information file, whose name ends in <code>.inf</code>.  These files are kept in the Libs folder 
+within the NSBasic install folder (<i>e.g.</i> <code>C:\NSBasic\Lib</code>).  Information files provide information 
+for the IDE to use when constructing calls to libraries.  They are not downloaded onto the device.  The process of
+adapting a library to run under NS Basic, when possible, only requires changing the information file.  There are two
+versions of information files.  The main difference is that version 2 provides automatic type checking.  All new development
+should use version 2.  Version 1 is deprecated, but there are still some of this version around.  For more information, see
+<a href="TN05a.htm">Using Libraries</a>.</p>
+
+<h3>List of Libraries</h3>
+
+<p>This is a list libraries and extensions that are known to work with NS Basic/Symbian OS.  If you know of additional libraries that should be listed here, <A HREF="support&copy; nsbasic.com">please let us know</A>.</p>
+<p>For further information on each library, click the documentation link.</p>
+<table width="720" border="0" cellspacing="3" cellpadding="0">
+  <tr bgcolor="cccccc">
+	<th>Name</th>
+	<th>Description</th>
+	<th bgcolor="cccccc">Type</th>
+	<th bgcolor="cccccc">Price</th>
+	<th bgcolor="cccccc">Sample</th>
+  </tr>
+ <tr bgcolor="dddddd">
+	<td><a href="TN10.htm">BitsNBytesLib</a></td>
+	<td>BitsNbyteslib adds a number of handy functions to NS Basic/Symbian OS for doing bit manipulation and conversions. You can do a variety of bitwise AND, OR and NOT operations, shift bits left and right, and convert between hex, binary and decimal. Included with NS Basic.</td>
+	<td>
+	  <div align="center">Included in NS Basic</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+	<td>
+	  <p>BitnGadf.prj in Samples folder</p>
+	</td>
+  </tr>
+  <tr bgcolor="dddddd">
+	<td><a href="http://www.tektonica.com/projects/httplib2/">HttpLib2</a></td>
+	<td>The HTTPLib2 library is an HTTP library which allows an application developer to write NSBasic programs that interact with a web service over the Internet via the HTTP protocol. This library does not need the iNetLib, unlike HTTPLib.</td>
+	<td>
+	  <div align="center">Shareware/ Commercial</div>
+	</td>
+	<td>
+	  <div align="center">
+25/100</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+  </tr>
+
+  <tr bgcolor="dddddd">
+	<td><a href="TN13.htm">ScreenLib</a></td>
+	<td>It allows you to change the bit depth and color attributes. There are also drawing functions and a screen lock function.  Included with NS Basic.</td>
+	<td>
+	  <div align="center">Included in NS Basic</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+	<td>ScreenLibTest.prj in Samples folder</td>
+  </tr>
+
+ <tr bgcolor="dddddd">
+	<td><a href="TN15.htm">StringLib</a></td>
+	<td>NSBStringLib adds a number of handy functions to NS Basic/Symbian OS for doing string manipulation and data formatting.  Included with NS Basic.</td>
+	<td>
+	  <div align="center">Included in NS Basic</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+	<td>StringLibUse.prj in Samples folder</td>
+  </tr>
+   <tr bgcolor="dddddd">
+	<td><a href="TN14.htm">SystemLib</a></td>
+	<td>NSBSystemLib contains functions that provide access to the underlying API functions.  Some of these functions allow calls to APIs that can not currently be called using NSBasic's SysTrap statements. Others, just provide a simplified interface.  Included with NS Basic.</td>
+	<td>
+	  <div align="center">Included in NS Basic</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+	<td>SysLibTest.prj in Samples folder</td>
+  </tr>
+  <tr bgcolor="dddddd">
+	<td><a href="TN18.htm">TcpIpLib</a></td>
+	<td>TcpIpLib is a simple to use library that lets you communicate from a device using Tcp/IP.  There is also sample code to exchange data with a VB app on the desktop. Included with NS Basic.</td>
+	<td>
+	  <div align="center">Included in NS Basic</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+	<td>TCPIPDemo.prj in Samples folder</td>
+  </tr>
+  <tr bgcolor="dddddd">
+	<td><a href="TN23.htm">VFSLib</a></td>
+	<td>NSBVFSLib contains functions that provide access to the external storage card(s).  Included with NS Basic.</td>
+	<td>
+	  <div align="center">Included in NS Basic</div>
+	</td>
+	<td>
+	  <div align="center">--</div>
+	</td>
+	<td>VFSTest.prj in Samples folder</td>
+  </tr>
+</table>
+
+
+</body></html>
+

@@ -1,0 +1,65 @@
+#
+# $Id: Makefile.bcc,v 1.12 2004/06/02 13:45:32 arpruss Exp $
+# Makefile for palmfontconv project
+#
+
+#
+# As of 1.31 this Makefile is no longer going to be maintained as
+# the free optimizing Visual C++ compiler is better.
+#
+
+CC		= bcc32.exe
+FREETYPE_LIBRARY = ../freetype/freetype03272003.LIB
+FREETYPE_INCLUDE = -I../freetype/include
+
+SHELL           = /bin/sh
+EXE             = .exe
+
+FSNAME_SRC	= fsconvert.c
+FSNAME		= ./fsconvert$(EXE)
+
+FONTCONV_SRC    = fontconv.c
+FONTCONV        = ./fontconv$(EXE)
+
+TOPALMTEXT_SRC  = topalmtext.c fontconv.c
+TOPALMTEXT      = ./topalmtext$(EXE)
+
+TOGRAY_SRC      = togray.c fontconv.c
+TOGRAY          = ./togray$(EXE)
+
+TOPRC_SRC       = toprc.c
+TOPRC           = ./toprc$(EXE)
+
+TOREMAP_SRC	= toremap.c
+TOREMAP		= ./toremap$(EXE)
+
+EXTRACTFONT_SRC = extractfont.c fontconv.c
+EXTRACTFONT     = ./extractfont$(EXE)
+
+CFLAGS		= -O2
+
+all: $(FONTCONV) $(TOPALMTEXT) $(TOGRAY) $(TOPRC) $(FSNAME) $(EXTRACTFONT) $(TOREMAP)
+
+$(FSNAME): $(FSNAME_SRC) 
+	$(CC) $(CFLAGS) $(FSNAME_SRC)
+
+$(TOREMAP): $(TOREMAP_SRC) palmtypes.h
+	$(CC) $(CFLAGS) $(TOREMAP_SRC)
+
+$(FONTCONV): $(FONTCONV_SRC) palmtypes.h
+	$(CC) $(CFLAGS) $(FONTCONV_SRC)
+
+$(TOPRC): $(TOPRC_SRC) palmtypes.h
+	$(CC) $(CFLAGS) $(TOPRC_SRC)
+
+$(TOGRAY): $(TOGRAY_SRC) palmtypes.h
+	$(CC) -DFONTCONV_LIB $(CFLAGS) $(TOGRAY_SRC)
+
+$(EXTRACTFONT): $(EXTRACTFONT_SRC) palmtypes.h
+	$(CC) -DFONTCONV_LIB $(CFLAGS) $(EXTRACTFONT_SRC)
+
+$(TOPALMTEXT): $(TOPALMTEXT_SRC)
+	$(CC) -DFONTCONV_LIB $(CFLAGS) $(FREETYPE_INCLUDE) $(TOPALMTEXT_SRC) $(FREETYPE_LIBRARY)
+
+clean:
+	rm *.o *.exe

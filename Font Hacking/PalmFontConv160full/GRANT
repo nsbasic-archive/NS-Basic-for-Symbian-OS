@@ -1,0 +1,30 @@
+The following additional license grant does NOT apply to the URW font code or
+to the stdfixedfont_x2.txt font (in locales where the latter is copyrightable):
+
+You may distribute the PalmFontConv project, minus the URW fonts and
+stdfixedfont_x2.txt, in executable format under the terms of the GPL minus
+the requirement for you to make available the source code for:
+ (a) the unmodified FreeType 2 library even if statically linked to the binaries
+ (b) an ANSI or POSIX C library even if statically linked to the binaries
+ (c) a standard TCL/TK interpreter even if included as part of the package in
+     a way that makes it be part of a derivative work,
+providing that ALL of the following conditions are satisfied:
+  (i) The version of the FreeType 2 library linked in is either an official
+      release or a beta version from the official FreeType 2 project
+      (www.freetype.org)
+ (ii) The use of the FreeType 2 library is acknowledged as per the FreeType 2
+      alternative license.  Inclusion of the PalmFontConv README.TXT file
+      should be sufficient.
+(iii) The FreeType 2 library is compiled in a way that does not make the
+      resulting code infringe on any U.S. patents.
+ (iv) The FreeType 2 library is compiled in a way that does not make the
+      resulting code infringe on any patents at your location.
+  (v) All necessary copyright acknowledgments, say for ComboBox.tcl, are included.
+(vi) This GRANT file is included in the distribution.
+All the other license requirements of the GPL remain, including the obligation
+to make available all other source code in a derivative work, with only (a), (b)
+and (c) being exempted.  Copying of PalmFontConv code, whether in source or
+executable format, in contravention to the GPL as modified above is a violation
+of copyright law.
+
+

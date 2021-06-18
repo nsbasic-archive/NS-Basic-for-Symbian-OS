@@ -1,0 +1,12 @@
+# $Id: sampleGrayScaleBuildScript,v 1.5 2004/01/10 05:14:33 arpruss Exp $
+./topluckergray sonyhi.left Luxi18 .fonts/Type1/l048013t.pfa 18 .fonts/Type1/l048016t.pfa 18
+mv Luxi18.prc Luxi18SonyHi.prc
+./topluckergray palmhi.left Luxi18 .fonts/Type1/l048013t.pfa 18 .fonts/Type1/l048016t.pfa 18
+mv Luxi18.prc Luxi18PalmHi.prc
+./topluckergray sonyhi.left Luxi16 .fonts/Type1/l048013t.pfa 16 .fonts/Type1/l048016t.pfa 16
+mv Luxi16.prc Luxi16SonyHi.prc
+./topluckergray palmhi.left Luxi16 .fonts/Type1/l048013t.pfa 16 .fonts/Type1/l048016t.pfa 16
+mv Luxi16.prc Luxi16PalmHi.prc
+./topluckergray lo Luxi9 .fonts/Type1/l048013t.pfa 9 .fonts/Type1/l048016t.pfa 9
+mv Luxi9.prc Luxi9Lo.prc
+

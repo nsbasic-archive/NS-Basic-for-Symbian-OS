@@ -1,0 +1,99 @@
+; Copyright (c) 2008 StyleTap Inc. All Rights Reserved.
+
+; Installation file (.PKG) for StyleTap CrossPlatform for Symbian OS OEM Kit
+; nota bene: in the following example, the Package ID and the UID3 and SID of
+;            the executables is 0x2000C5BB. DO NOT USE THIS IN YOUR VERSION!
+;            This ids are registered by StyleTap for its retail product. 
+
+
+;Language - standard language definitions
+&EN
+
+; standard SIS file header: name, UID3, VersionMajor, VersionMinor, Build
+#{"StyleTap Launcher"},(0x2000C5BB),0,9,21
+
+;Localised Vendor name
+%{"StyleTap Inc.-EN"}
+
+; Vendor name: do not change or UIQ devices will abort!
+:"Vendor"
+
+; following are the minimum OS versions that we support
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+;Supports S60 release 5.0
+[0x1028315F], 0, 0, 0, {"Series60ProductID"}
+; ProductID for UIQ 3.0
+[0x101F6300], 3, 0, 0, {"UIQ30ProductID"}
+
+"License.txt" -"", FILETEXT, TEXTCONTINUE, TEXTEXIT 
+
+IF (Manufacturer=0x101F6CED) OR (Manufacturer=1) ; Sony-Ericsson or Motorola  
+
+;********************** UIQ Specific installation **************************
+
+"StyleTapLauncherUIQ.exe"  -"!:\sys\bin\StyleTapLauncherUIQ.exe"
+
+"StyleTapLauncherUIQ_loc.rsc" -"!:\resource\apps\StyleTapLauncherUIQ_loc.rsc"
+
+"StyleTapLauncherUIQ_reg.rsc" -"!:\private\10003a3f\import\apps\StyleTapLauncherUIQ_reg.rsc"
+    
+"StyleTapLauncherUIQAppIcon.mbm" -"!:\resource\apps\StyleTapLauncherUIQAppIcon.mbm"
+
+"StyleTapLauncherUIQ.rsc" -"!:\resource\apps\StyleTapLauncherUIQ.rsc"
+    
+; Nota bene: name changes from source to target
+"StyleTapSymbianUIQ.dll" - "!:\sys\bin\StyleTapSymbian.dll"
+
+"StyleTapUIQ.rsc" - "!:\resource\apps\StyleTapSymbian.rsc"
+
+ELSE ; assume S60 
+
+;********************** Series 60 Specific installation ************************
+
+"StyleTapLauncherS60.exe" -"!:\sys\bin\StyleTapLauncherS60.exe"
+    
+"StyleTapLauncherS60.rsc" -"!:\resource\apps\StyleTapLauncherS60.rsc"
+    
+"StyleTapLauncherS60_reg.rsc" -"!:\private\10003a3f\import\apps\StyleTapLauncherS60_reg.rsc"
+    
+"StyleTapLauncherS60.mif" -"!:\resource\apps\StyleTapLauncherS60.mif"
+    
+; Nota bene: name changes from source to target
+"StyleTapSymbianS60.dll" -"!:\sys\bin\StyleTapSymbian.dll"
+    
+"StyleTapS60.rsc" -"!:\resource\apps\StyleTapSymbian.rsc"
+    
+ENDIF ; condition blocks by type
+
+;********************** common *************************************************
+
+"StyleTap.dll" -"!:\sys\bin\StyleTap.dll"
+
+"StyleTapBitmaps.mbm" -"!:\resource\apps\StyleTapBitmaps.mbm"
+    
+
+; required for application to be covered by backup/restore facility 
+
+"backup_registration.xml" -"!:\private\2000C5BB\backup_registration.xml"
+
+"cmd.txt" -"!:\private\2000C5BB\cmd.txt"
+
+;======================== StyleTap databases follow
+
+; nota bene: these files are copied into the private directory of this exe first, 
+; so that we can then copy them to the right public directory depending on whether
+; the user has decided to install StyleTap in main memory, or on a media card.
+; Note also that only files to and from the db directory are copied currently
+
+"StyleTapInit.ini" -"!:\private\2000C5BB\install\db\StyleTapInit.ini"
+
+"SystemResources.prc" - "!:\private\2000C5BB\install\db\SystemResources.prc"
+    
+"SystemFontResources.prc" - "!:\private\2000C5BB\install\db\SystemFontResources.prc"
+    
+"STLaunch.prc" - "!:\private\2000C5BB\install\db\STLaunch.prc"
+
+"pilotmines.prc" - "!:\private\2000C5BB\install\db\pilotmines.prc"
+    

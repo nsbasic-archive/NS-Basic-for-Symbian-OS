@@ -1,0 +1,34 @@
+;NSBStub.pkg
+;
+;Language - standard language definitions
+&EN,FI,ZH,JA
+
+; standard SIS file header
+#{"NSBStub", "NSBStub", "NSBStub", "NSBStub"},(0xA00051B2),1,0,0
+
+;Localised Vendor name
+%{"NS BASIC Corporation", "NS BASIC Corporation", "NS BASIC Corporation", "NS BASIC Corporation"}
+
+;Unique Vendor name
+:"NS BASIC Corporation"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"S60ProductID", "S60ProductID", "S60ProductID", "S60ProductID"}
+
+;Files to install
+"c:\Symbian\9.3\S60_3rd_FP2_Beta\epoc32\release\gcce\urel\HelloWorldBasic.exe" -"!:\sys\bin\HelloWorldBasic.exe"
+
+{
+"c:\Symbian\9.3\S60_3rd_FP2_Beta\epoc32\data\z\resource\apps\HelloWorldBasic.rsc"
+"c:\Symbian\9.3\S60_3rd_FP2_Beta\epoc32\data\z\resource\apps\HelloWorldBasic.r09"
+"c:\Symbian\9.3\S60_3rd_FP2_Beta\epoc32\data\z\resource\apps\HelloWorldBasic.r31"
+"c:\Symbian\9.3\S60_3rd_FP2_Beta\epoc32\data\z\resource\apps\HelloWorldBasic.r32"
+} -"!:\resource\apps\HelloWorldBasic.rsc"
+
+;"c:\Symbian\9.3\S60_3rd_FP2_Beta\epoc32\data\z\private\10003a3f\import\apps\HelloWorldBasic_reg.rsc" -"!:\private\10003a3f\import\apps\HelloWorldBasic_reg.rsc"
+"resources\NSBStub_reg.rsc" -"!:\private\10003a3f\import\apps\NSBStub_reg.rsc"
+"resources\nsbIcon.mif"     -"!:\resource\apps\Helloworldbasic_aif.mif"
+
+;required for application to be covered by backup/restore facility
+"resources\backup_registration.xml" -"!:\private\A000017F\backup_registration.xml"
+

@@ -1,0 +1,252 @@
+"mdl"
+8
+"TinyFont","appl","Tiny",1024,505,0
+"Sub Project_Startup()
+
+    LoadLibrary ~NSBSystemLib~, ~NSL~
+    
+    Global hTinyFont0   as Variant
+    Global hTinyFont1   as Variant
+    Global hTinyFont2   as Variant
+    Global hTinyFont7   as Variant
+    Global hAlphaFont   as Variant
+    Global hJFont1      as Variant
+    
+    'Extract sample Alpha font and J fonts collection
+    Dim res as Integer
+    res = DbCreateDatabaseFromResource( ~DBIM~, 1023 )
+    res = DbCreateDatabaseFromResource( ~DBIM~, 1024 )
+
+    'Make the font resources available to the OS
+    hTinyFont0 = DefineFontFromResource( 128, ~DBIM~, 1004 )
+    hTinyFont1 = DefineFontFromResource( 129, ~DBIM~, 1005 )
+    hTinyFont2 = DefineFontFromResource( 130, ~DBIM~, 1006 )
+    hTinyFont7 = DefineFontFromResource( 131, ~DBIM~, 1007 )
+
+    'Make Alpha and J fonts available to the OS
+    hAlphaFont = DefineAlphaFont( 132, ~Compact-Ro~ )
+    hJFont1    = DefineJFont( 133, 1 )  '1=First J font
+End Sub
+
+Function DefineFontFromResource( fontID as Short, resType as String, resID as Short ) as Variant
+
+    Dim resTypeVal      as Integer
+    Dim shortID         as Short
+    Dim fontIdVal       as Short
+    Dim handle          as Variant
+    Dim ptr             as Variant
+    
+    resTypeVal = NSL.String4ToInt( resType )
+    shortID    = resID
+    If fontID > 127 Then
+        fontIdVal  = ( fontID * 256 ) - 65536
+    Else
+        fontIdVal  = fontID * 256
+    End If
+    
+    handle = SysTrapFunc( 95, 2, resTypeVal, shortID )  'DmGetResource
+    ptr    = SysTrapFunc( 33, 1, handle )               'MemHandleLock
+    SysTrapSub 801, 2, fontIdVal, ptr                   'FntDefineFont
+    
+    DefineFontFromResource = handle
+    
+End Function
+
+Function DefineAlphaFont( fontID as Short, dbName as String ) as Variant
+
+    Dim mode            as Short
+    Dim card            as Short
+    Dim dbID            as Integer
+    Dim dmRef           as Variant
+    Dim index           as Short
+    Dim fontIdVal       as Short
+    Dim handle          as Variant
+    Dim ptr             as Variant
+    
+    If fontID > 127 Then
+        fontIdVal  = ( fontID * 256 ) - 65536
+    Else
+        fontIdVal  = fontID * 256
+    End If
+
+    card   = 0
+    dbID   = SysTrapfunc( 69, 2, card, dbName )         'DmFindDatabase
+    If dbID <> 0 Then
+        mode   = 3                                      'ReadWrite
+        dmRef  = SysTrapFunc( 73, 3, card, dbID, mode ) 'DmOpenDatabase
+        If dmRef <> 0 Then
+            index  = 0                                  'First record
+            handle = SysTrapFunc( 91, 2, dmRef, index ) 'DmQueryRecord
+            If handle <> 0 Then
+                ptr    = SysTrapFunc( 33, 1, handle )   'MemHandleLock
+                SysTrapSub 801, 2, fontIdVal, ptr       'FntDefineFont
+            End If
+            SysTrapSub 74, 1, dmRef                     'DmCloseDatabase
+        End If
+    End If
+    
+    DefineAlphaFont = handle
+    
+End Function
+
+Function DefineJFont( fontID as Short, jID as Short ) as Variant
+
+    Dim mode            as Short
+    Dim card            as Short
+    Dim dbID            as Integer
+    Dim dmRef           as Variant
+    Dim index           as Short
+    Dim fontIdVal       as Short
+    Dim handle          as Variant
+    Dim ptr             as Variant
+    
+    If fontID > 127 Then
+        fontIdVal  = ( fontID * 256 ) - 65536
+    Else
+        fontIdVal  = fontID * 256
+    End If
+
+    card   = 0
+    dbID   = SysTrapfunc( 69, 2, card, ~J-Fonts!~ )     'DmFindDatabase
+    If dbID <> 0 Then
+        mode   = 3                                      'ReadWrite
+        dmRef  = SysTrapFunc( 73, 3, card, dbID, mode ) 'DmOpenDatabase
+        If dmRef <> 0 Then
+            index  = jID - 1                            'OS uses zero base
+            handle = SysTrapFunc( 91, 2, dmRef, index ) 'DmQueryRecord
+            If handle <> 0 Then
+                ptr    = SysTrapFunc( 33, 1, handle )   'MemHandleLock
+                SysTrapSub 801, 2, fontIdVal, ptr       'FntDefineFont
+            End If
+            SysTrapSub 74, 1, dmRef                     'DmCloseDatabase
+        End If
+    End If
+    
+    DefineJFont = handle
+    
+End Function"
+0
+0
+""
+"1,0,0"
+""
+"Installat."
+""
+"E10002B0"
+"Sub Project_Termination()
+
+    'Release the lock on each font resource we defined
+    SysTrapSub 97, 1, hTinyFont0    'DmReleaseResource
+    SysTrapSub 97, 1, hTinyFont1
+    SysTrapSub 97, 1, hTinyFont2
+    SysTrapSub 97, 1, hTinyFont7  
+    SysTrapSub 97, 1, hAlphaFont  
+    SysTrapSub 97, 1, hJFont1
+
+End Sub"
+"resfile"
+1
+""
+1004
+"DBIM"
+".\Tiny0.fnt"
+"resfile"
+1
+""
+1005
+"DBIM"
+".\Tiny1.fnt"
+"resfile"
+1
+""
+1006
+"DBIM"
+".\Tiny2.fnt"
+"resfile"
+1
+""
+1007
+"DBIM"
+".\Tiny7.fnt"
+"resfile"
+1
+"NSBSystemLib"
+1008
+"libr"
+"..\Lib\NSBSystemLib.prc"
+"resfile"
+1
+"Compact-Ro"
+1023
+"DBIM"
+".\Compact-Ro.pdb"
+"resfile"
+1
+"J-Fonts!"
+1024
+"DBIM"
+".\J-Fonts!.pdb"
+"vew"
+4,1003,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"Tiny Fonts Demo"
+"Form1003"
+""
+0
+"Sub Form1003_After()
+
+    Dim msg as String
+    
+    msg = ~This project demonstrates the use of ~
+    msg = msg + ~sample tiny fonts available on ~
+    msg = msg + ~the Palm OS website.  A version ~
+    msg = msg + ~exists for each of the four ~
+    msg = msg + ~regular latin text fonts.~
+    
+    fldSample.Text = msg
+    fldFontID.Text = ~0~
+    fldFontID.SetFocus
+
+End Sub"
+""
+0,0,0,0
+"fld"
+1
+#TRUE#,#TRUE#,#FALSE#,#FALSE#,#TRUE#,80,#FALSE#,#FALSE#,#FALSE#
+"obj"
+3
+"fld","fldSample",1014,4,20,84,156,#TRUE#,0,"",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1016",1016,5,107,12,50,#TRUE#,0,"New font ID:",0,0,0
+""
+"fld"
+1
+#TRUE#,#TRUE#,#TRUE#,#FALSE#,#TRUE#,3,#FALSE#,#FALSE#,#TRUE#
+"obj"
+3
+"fld","fldFontID",1017,60,108,12,20,#TRUE#,0,"",0,0,0
+""
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","cmdApply",1019,96,107,12,36,#TRUE#,0,"Apply",0,0,0
+"Sub object1019()
+
+    Dim newFontID as Integer
+    
+    newFontID = val( fldFontID.Text )
+    NSL.FieldSetFont( 1014, newFontID )
+
+End Sub"
+"lbl"
+1
+"obj"
+3
+"lbl","Label1020",1020,4,126,12,140,#TRUE#,0,"Try font IDs 0, 1, 2, 7; or 128 - 133.",0,0,0
+""
+"end"

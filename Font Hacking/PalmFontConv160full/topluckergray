@@ -1,0 +1,37 @@
+#! /bin/sh
+# $Id: topluckergray,v 1.9 2003/12/13 16:22:16 arpruss Exp $
+# Convert a font to Plucker Gray scale format
+fname=$2
+if test "X$1" = Xsonyhi; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; irecordid=0460; iboldrecordid=0461; inarrowrecordid=0464; versions=GU14; fonttype=NFNT; fi
+if test "X$1" = Xlo; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; irecordid=0260; iboldrecordid=0261; inarrowrecordid=0264; versions=GU14; fonttype=NFNT; fi
+if test "X$1" = Xpalmhi; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; irecordid=0660; iboldrecordid=0661; inarrowrecordid=0664; versions=GU34; fonttype=nfnt; fi
+if test "X$1" = Xsonyhi.right; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; irecordid=0460; iboldrecordid=0461; inarrowrecordid=0464; versions="GU14 GR14"; fonttype=NFNT; fi
+if test "X$1" = Xlo.right; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; irecordid=0260; iboldrecordid=0261; inarrowrecordid=0264; fonttype=NFNT; versions="GU14 GR14"; fi
+if test "X$1" = Xpalmhi.right; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; irecordid=0660; iboldrecordid=0661; inarrowrecordid=0664; fonttype=nfnt; versions="GU34 GR34"; fi
+if test "X$1" = Xsonyhi.left; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; irecordid=0460; iboldrecordid=0461; inarrowrecordid=0464; versions="GU14 GL14"; fonttype=NFNT; fi
+if test "X$1" = Xlo.left; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; irecordid=0260; iboldrecordid=0261; inarrowrecordid=0264; fonttype=NFNT; versions="GU14 GL14"; fi
+if test "X$1" = Xpalmhi.left; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; irecordid=0660; iboldrecordid=0661; inarrowrecordid=0664; fonttype=nfnt; versions="GU34 GL34"; fi
+if test "X$1" = Xsonyhi.both; then bitmapversion=1; recordid=0420; boldrecordid=0421; narrowrecordid=0424; irecordid=0460; iboldrecordid=0461; inarrowrecordid=0464; versions="GU14 GL14 GR13"; fonttype=NFNT; fi
+if test "X$1" = Xlo.both; then bitmapversion=1; recordid=0220; boldrecordid=0221; narrowrecordid=0224; irecordid=0260; iboldrecordid=0261; inarrowrecordid=0264; fonttype=NFNT; versions="GU14 GL14 GR14"; fi
+if test "X$1" = Xpalmhi.both; then bitmapversion=3; recordid=0620; boldrecordid=0621; narrowrecordid=0624; irecordid=0660; iboldrecordid=0661; inarrowrecordid=0664; fonttype=nfnt; versions="GU34 GL34 GR34"; fi
+depth=4
+if test "X$bitmapversion" = X; then echo "topluckergray lo|palmhi|sonyhi[.right|.left|.both] dbname inputfilename pixelsize [inputfilename boldpixelsize [inputfilename narrowpixelsize]]"; exit; fi
+rm G*.bin nfnt*.bin NFNT*.bin 2> /dev/null
+echo Processing outline fonts...
+if ! ./topalmtext -f $3 $4 gray > topluckergray-font.txt; then echo "Error processing"; exit; fi
+if test "X$6" != X; then echo \(bold\)...; ./topalmtext -f $5 $6 gray > topluckergray-boldfont.txt; extra_args="- $fonttype$boldrecordid topluckergray-boldfont.txt $versions"; fi
+if test "X$8" != X; then echo \(narrow\)...; ./topalmtext -f $7 $8 gray > topluckergray-narrowfont.txt; extra_args2="- $fonttype$narrowrecordid topluckergray-narrowfont.txt $versions"; fi
+shift
+shift
+if test "X$8" != X; then echo \(italic\)...; ./topalmtext -f $7 $8 gray > topluckergray-italicfont.txt; extra_args3="- $fonttype$irecordid topluckergray-italicfont.txt $versions"; fi
+shift
+shift
+if test "X$8" != X; then echo \(bold italic\)...; ./topalmtext -f $7 $8 gray > topluckergray-bolditalicfont.txt; extra_args4="- $fonttype$iboldrecordid topluckergray-bolditalicfont.txt $versions"; fi
+shift
+shift
+if test "X$8" != X; then echo \(narrow italic\)...; ./topalmtext -f $7 $8 gray > topluckergray-narrowitalicfont.txt; extra_args5="- $fonttype$inarrowrecordid topluckergray-narrowitalicfont.txt $versions"; fi
+echo Generating Plucker bitmaps in versions $versions...
+./togray $fonttype$recordid topluckergray-font.txt $versions $extra_args $extra_args2 $extra_args3 $extra_args4 $extra_args5
+#par c -a "resource|backup" $fname.prc "$fname" Font Plkr *.bin
+./toprc $fname.prc "$fname" Font Plkr *.bin
+
