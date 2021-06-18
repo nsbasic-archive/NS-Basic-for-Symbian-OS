@@ -1,4 +1,5 @@
 # NS-Basic-for-Symbian-OS
+
 NS Basic/Symbian was an implementation of BASIC for Symbian OS devices. Development was done on Windows, creating apps which would execute using the StyleTap runtime.
 
 It's a miracle this even exists.
@@ -12,7 +13,7 @@ Seriously, it's 10 years since I've looked at the source.
 
 The desktop side of the app was developed using [Visual BASIC 6](https://visual-basic-6.com/).
 
-The runtime was developed using [MetroWerks CodeWarrior](https://palmdb.net/app/codewarrior and [StyleTap](https://styletap.com/).
+The runtime was developed using [MetroWerks CodeWarrior](https://palmdb.net/app/codewarrior and [StyleTap](https://styletap.com/). Much of the code is shared with [NS Basic/Palm](https://github.com/nsbasic-archive/NS-Basic-for-Palm-OS).
 
 NS BASIC for Symbian was released in 2007 and was developed until 2009.
 
